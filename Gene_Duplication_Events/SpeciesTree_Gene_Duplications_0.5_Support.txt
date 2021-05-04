@@ -1,0 +1,1 @@
+(Mcap.protein_34726:1,Pocillopora_acuta_PredGenes_experimental_v1.transcripts.pep_20103:1)N0_110;
