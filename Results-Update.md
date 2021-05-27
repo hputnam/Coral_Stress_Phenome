@@ -1,8 +1,14 @@
 # Coral Stress Phenome Paper
 
-link to google doc [paper](https://docs.google.com/document/d/1geXeJEXaPVHWE6Ivdi6BW2qoF3PHT_Ok1Fv9iM8aLwg/edit).  
+**Writing**  
 
-Variables included: Chl-c2, TAC, Soluble Protein, Host AFDW, Sym AFDW, S:H Ratio.
+[Main paper google doc link](https://docs.google.com/document/d/1geXeJEXaPVHWE6Ivdi6BW2qoF3PHT_Ok1Fv9iM8aLwg/edit).  
+[Supplemental Methods google doc link](https://docs.google.com/document/d/1EQtKXPAxybWeG9LPgz5mEjV0kLC8PoA571XGKSlX2ek/edit).
+
+### Experimental Design
+
+![expt-sch](https://github.com/hputnam/Acclim_Dynamics/blob/master/Environmental_data/HoloInt-schematic.png?raw=true)
+
 
 *M. capitata* PERMANOVA
 
