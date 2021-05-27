@@ -59,7 +59,7 @@ Holobiont physiology: protein content, total antioxidant capacity, chlorophyll c
 - Growth rates  
 - Pocillopora acuta identity (mtORF Seq)   
 
-## Experimental Treatments
+### Experimental Treatments
 
 **Hobo Logger Data**
 
@@ -72,6 +72,10 @@ To be placed here from version in CSP.
 **Discrete Carbonate Chemistry**
 
 To be placed here from version in CSP.
+
+### Physiological data
+
+Only what is to be included in Coral Stress Phenome paper. Link to results package from HoloInt [here](https://github.com/hputnam/Acclim_Dynamics/blob/master/HoloInt-Results-package.md).
 
 
 ### Statistics
