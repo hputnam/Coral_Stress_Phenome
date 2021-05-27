@@ -77,6 +77,15 @@ To be placed here from version in CSP.
 
 Only what is to be included in Coral Stress Phenome paper. Link to results package from HoloInt [here](https://github.com/hputnam/Acclim_Dynamics/blob/master/HoloInt-Results-package.md).
 
+**Survivorship**  
+
+Figure as of 2021-05-27. For now these are just copied from HoloInt repo. 
+
+![sur](https://github.com/hputnam/Coral_Stress_Phenome/blob/main/Physiology-data/All_survivorship_20210527.png?raw=true)
+
+
+
+
 
 ### Statistics
 
