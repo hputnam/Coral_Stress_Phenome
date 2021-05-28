@@ -151,7 +151,7 @@ Total                     100    600.00                 1.00000
 
 ### ITS2 Sequencing
 
-![its2]()
+![its2](https://github.com/hputnam/Coral_Stress_Phenome/blob/main/Final-figures/ITS2_20210528.png?raw=true)
 
 *Mcapitata* PERMANOVA results:
 
