@@ -91,9 +91,7 @@ Corals were photographed every week until sampled.
 
 #### Multivariate physiology  
 
-Emma to re-run TAC, modify script, and re-run PCA analysis. Will insert here when done.
-
-This will have to re-run once more when symbiont density counts are done.
+![]()
 
 ### Statistics
 
@@ -102,7 +100,24 @@ This will have to re-run once more when symbiont density counts are done.
 PERMANOVA
 
 ```
-Will insert once updated
+Call:
+adonis(formula = Mcap.data.scaled ~ Timepoint * Temperature *      CO2, data = Mcap.info, method = "eu")
+
+Permutation: free
+Number of permutations: 999
+
+Terms added sequentially (first to last)
+
+                           Df SumsOfSqs MeanSqs F.Model      R2 Pr(>F)
+Timepoint                   4     80.06 20.0148  3.7709 0.11808  0.001
+Temperature                 1      9.12  9.1233  1.7189 0.01346  0.128
+CO2                         1      1.86  1.8593  0.3503 0.00274  0.841
+Timepoint:Temperature       4     41.39 10.3478  1.9496 0.06105  0.022
+Timepoint:CO2               4     18.82  4.7041  0.8863 0.02775  0.557
+Temperature:CO2             1      4.56  4.5629  0.8597 0.00673  0.458
+Timepoint:Temperature:CO2   4     23.27  5.8167  1.0959 0.03432  0.349
+Residuals                  94    498.92  5.3077         0.73587       
+Total                     113    678.00                 1.00000  
 ```
 
 **Pacuta multivariate physiology**
@@ -110,7 +125,26 @@ Will insert once updated
 PERMANOVA
 
 ```
-Will insert once updated
+adonis(Pact.data.scaled ~ Timepoint*Temperature*CO2, data = Pact.info, method='eu')
+
+Call:
+adonis(formula = Pact.data.scaled ~ Timepoint * Temperature *      CO2, data = Pact.info, method = "eu")
+
+Permutation: free
+Number of permutations: 999
+
+Terms added sequentially (first to last)
+
+                           Df SumsOfSqs MeanSqs F.Model      R2 Pr(>F)
+Timepoint                   4     71.93  17.982  3.7145 0.11988  0.001
+Temperature                 1     40.18  40.179  8.2996 0.06696  0.001
+CO2                         1      2.53   2.534  0.5235 0.00422  0.675
+Timepoint:Temperature       4     52.81  13.204  2.7275 0.08802  0.006
+Timepoint:CO2               4     17.91   4.477  0.9248 0.02985  0.527
+Temperature:CO2             1      1.92   1.916  0.3957 0.00319  0.794
+Timepoint:Temperature:CO2   3     15.76   5.252  1.0849 0.02626  0.378
+Residuals                  82    396.96   4.841         0.66161       
+Total                     100    600.00                 1.00000  
 ```
 
 ### ITS2 Sequencing
