@@ -91,7 +91,9 @@ Corals were photographed every week until sampled.
 
 #### Multivariate physiology  
 
-![mcap](https://github.com/hputnam/Coral_Stress_Phenome/blob/main/Physiology-data/Mcap-multi-20210528.png?raw=true)
+![mcap](https://github.com/hputnam/Coral_Stress_Phenome/blob/main/Physiology-data/CSP-inset-mcap_20210528.png?raw=true)
+
+![pc](https://github.com/hputnam/Coral_Stress_Phenome/blob/main/Physiology-data/CSP-inset-pacuta_20210528.png?raw=true)
 
 ### Statistics
 
@@ -149,12 +151,52 @@ Total                     100    600.00                 1.00000
 
 ### ITS2 Sequencing
 
-Emma to re-run ITS2 analysis once more and insert once updated.
+![its2]()
 
-PERMANOVA results:
+*Mcapitata* PERMANOVA results:
 
 ```
-Will insert once updated
+Call:
+adonis(formula = MC.mat ~ Temperature * CO2 * Timepoint, data = MC.info,      permutations = 999, method = "bray")
+
+Permutation: free
+Number of permutations: 999
+
+Terms added sequentially (first to last)
+
+                           Df SumsOfSqs MeanSqs F.Model      R2 Pr(>F)
+Temperature                 1     0.132 0.13225 0.44232 0.00325  0.714
+CO2                         1     0.052 0.05177 0.17316 0.00127  0.935
+Timepoint                  11     4.477 0.40697 1.36117 0.11002  0.105
+Temperature:CO2             1     0.334 0.33384 1.11659 0.00820  0.345
+Temperature:Timepoint      10     4.259 0.42590 1.42450 0.10467  0.078
+CO2:Timepoint              10     3.538 0.35376 1.18320 0.08694  0.269
+Temperature:CO2:Timepoint  10     1.886 0.18860 0.63081 0.04635  0.941
+Residuals                  87    26.012 0.29898         0.63928       
+Total                     131    40.689                 1.00000
+```
+
+*Pacuta* PERMANOVA results:
+
+```
+Call:
+adonis(formula = PA.mat ~ Temperature * CO2 * Timepoint, data = PA.info,      permutations = 999, method = "bray")
+
+Permutation: free
+Number of permutations: 999
+
+Terms added sequentially (first to last)
+
+                           Df SumsOfSqs MeanSqs F.Model      R2 Pr(>F)
+Temperature                 1    0.0080 0.00795  0.0346 0.00029  0.994
+CO2                         1    0.3987 0.39872  1.7335 0.01472  0.172
+Timepoint                   9    1.3509 0.15010  0.6526 0.04987  0.889
+Temperature:CO2             1    0.7355 0.73549  3.1977 0.02715  0.042
+Temperature:Timepoint       9    2.0960 0.23289  1.0125 0.07738  0.442
+CO2:Timepoint               9    2.5414 0.28238  1.2277 0.09383  0.247
+Temperature:CO2:Timepoint   9    1.7853 0.19837  0.8624 0.06591  0.619
+Residuals                  79   18.1707 0.23001         0.67084       
+Total                     118   27.0865                 1.00000
 ```
 
 ### 16s Sequencing
