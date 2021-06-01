@@ -81,19 +81,19 @@ Only what is to be included in Coral Stress Phenome paper. Link to results packa
 
 Figure as of 2021-05-27. For now these are just copied from HoloInt repo.
 
-![sur](https://github.com/hputnam/Coral_Stress_Phenome/blob/main/Physiology-data/All_survivorship_20210527.png?raw=true)
+![suv](https://github.com/hputnam/Coral_Stress_Phenome/blob/main/Final-figures/All_survivorship_20210527.png?raw=true)
 
 #### Color Score
 
 Corals were photographed every week until sampled.
 
-![bl](https://github.com/hputnam/Coral_Stress_Phenome/blob/main/Physiology-data/Photographic_Bleaching_20210527.png?raw=true)
+![bl](https://github.com/hputnam/Coral_Stress_Phenome/blob/main/Final-figures/Photographic_Bleaching_20210527.png?raw=true)
 
 #### Multivariate physiology  
 
-![mcap](https://github.com/hputnam/Coral_Stress_Phenome/blob/main/Physiology-data/CSP-inset-mcap_20210528.png?raw=true)
+![mcap](https://github.com/hputnam/Coral_Stress_Phenome/blob/main/Final-figures/CSP-inset-mcap_20210528.png?raw=true)
 
-![pc](https://github.com/hputnam/Coral_Stress_Phenome/blob/main/Physiology-data/CSP-inset-pacuta_20210528.png?raw=true)
+![pc](https://github.com/hputnam/Coral_Stress_Phenome/blob/main/Final-figures/CSP-inset-pacuta_20210528.png?raw=true)
 
 ### Statistics
 
