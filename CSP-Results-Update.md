@@ -67,11 +67,16 @@ Emma needs to parse hobo logger data for times they were out of the water and th
 
 **Discrete Temperature and pH Measurements**
 
-To be placed here from version in CSP.
+![pH](https://github.com/hputnam/Coral_Stress_Phenome/blob/main/Final-figures/CSP-Discrete-pH.png?raw=true)
+
+![temp](https://github.com/hputnam/Coral_Stress_Phenome/blob/main/Final-figures/CSP-Discrete-Temperature.png?raw=true)
+
+![trtph](https://github.com/hputnam/Coral_Stress_Phenome/blob/main/Final-figures/CSP-Discrete-Temp-pH-Trt.png?raw=true)
 
 **Discrete Carbonate Chemistry**
 
-To be placed here from version in CSP.
+![cc](https://github.com/hputnam/Coral_Stress_Phenome/blob/main/Final-figures/CSP-Carbonate-Chemistry.png?raw=true)
+
 
 ### Physiological data
 
