@@ -167,7 +167,7 @@ prcomp run on just Mcap ATAC data or just Pacuta ATAC data and grouped by Site.N
 
 ![Mcap-reef](https://github.com/hputnam/Coral_Stress_Phenome/blob/main/Final-figures/PCA-by-reef.png?raw=true)
 
-![]
+![Pact](https://github.com/hputnam/Coral_Stress_Phenome/blob/main/Final-figures/PCA-by-reef-Pacuta.png?raw=true)
 
 
 ### ITS2 Sequencing
