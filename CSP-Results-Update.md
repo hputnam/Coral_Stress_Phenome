@@ -160,6 +160,16 @@ Residuals                  82    396.96   4.841         0.66161
 Total                     100    600.00                 1.00000  
 ```
 
+
+Just ATAC by reef --
+
+prcomp run on just Mcap ATAC data or just Pacuta ATAC data and grouped by Site.Name in the below figure. Not subsetted by timepoint.
+
+![Mcap-reef](https://github.com/hputnam/Coral_Stress_Phenome/blob/main/Final-figures/PCA-by-reef.png?raw=true)
+
+![]
+
+
 ### ITS2 Sequencing
 
 ![its2](https://github.com/hputnam/Coral_Stress_Phenome/blob/main/Final-figures/ITS2_20210528.png?raw=true)
