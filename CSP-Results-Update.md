@@ -63,7 +63,9 @@ Holobiont physiology: protein content, total antioxidant capacity, chlorophyll c
 
 **Hobo Logger Data**
 
-Emma needs to parse hobo logger data for times they were out of the water and then will put an updated version here.
+Emma is working on parsing the hobo logger data.
+
+![hobo](https://github.com/hputnam/Coral_Stress_Phenome/blob/main/Final-figures/CSP-Hobo-loggers.png?raw=true)
 
 We could make this into DHW or # C above monthly average?
 
