@@ -65,6 +65,8 @@ Holobiont physiology: protein content, total antioxidant capacity, chlorophyll c
 
 Emma needs to parse hobo logger data for times they were out of the water and then will put an updated version here.
 
+We could make this into DHW or # C above monthly average?
+
 **Discrete Temperature and pH Measurements**
 
 ![pH](https://github.com/hputnam/Coral_Stress_Phenome/blob/main/Final-figures/CSP-Discrete-pH.png?raw=true)
@@ -76,6 +78,8 @@ Emma needs to parse hobo logger data for times they were out of the water and th
 **Discrete Carbonate Chemistry**
 
 ![cc](https://github.com/hputnam/Coral_Stress_Phenome/blob/main/Final-figures/CSP-Carbonate-Chemistry.png?raw=true)
+
+**Apex continuous data**
 
 
 ### Physiological data
