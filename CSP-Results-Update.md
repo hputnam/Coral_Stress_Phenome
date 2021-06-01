@@ -16,6 +16,8 @@ ATHC = Ambient Temperature (27C) High pCO2 (~1,200 uatm)
 HTAC = High Temperature (29.5C) Ambient pCO2 (~480 uatm)  
 HTHC = High Temperature (29.5C) High pCO2 (~1,200 uatm)
 
+![sites](https://github.com/hputnam/Coral_Stress_Phenome/blob/main/Final-figures/Site-Map.png?raw=true)
+
 ### Collection Timeline
 
 | Date Collected 	| Site Name         	| Coordinates                	|
