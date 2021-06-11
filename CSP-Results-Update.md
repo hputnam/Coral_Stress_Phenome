@@ -187,16 +187,19 @@ Number of permutations: 999
 
 Terms added sequentially (first to last)
 
-                           Df SumsOfSqs MeanSqs F.Model      R2 Pr(>F)
-Temperature                 1     0.132 0.13225 0.44232 0.00325  0.714
-CO2                         1     0.052 0.05177 0.17316 0.00127  0.935
-Timepoint                  11     4.477 0.40697 1.36117 0.11002  0.105
-Temperature:CO2             1     0.334 0.33384 1.11659 0.00820  0.345
-Temperature:Timepoint      10     4.259 0.42590 1.42450 0.10467  0.078
-CO2:Timepoint              10     3.538 0.35376 1.18320 0.08694  0.269
-Temperature:CO2:Timepoint  10     1.886 0.18860 0.63081 0.04635  0.941
-Residuals                  87    26.012 0.29898         0.63928       
-Total                     131    40.689                 1.00000
+                           Df SumsOfSqs MeanSqs F.Model      R2 Pr(>F)  
+Temperature                 1     0.130 0.12973 0.43631 0.00324  0.709  
+CO2                         1     0.054 0.05377 0.18086 0.00134  0.917  
+Timepoint                  10     3.823 0.38230 1.28580 0.09534  0.164  
+Temperature:CO2             1     0.352 0.35220 1.18455 0.00878  0.292  
+Temperature:Timepoint      10     4.400 0.43995 1.47969 0.10972  0.091 .
+CO2:Timepoint              10     3.347 0.33472 1.12577 0.08348  0.333  
+Temperature:CO2:Timepoint  10     1.828 0.18282 0.61487 0.04559  0.944  
+Residuals                  88    26.165 0.29733         0.65251         
+Total                     131    40.098                 1.00000         
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
 ```
 
 *Pacuta* PERMANOVA results:
@@ -210,16 +213,18 @@ Number of permutations: 999
 
 Terms added sequentially (first to last)
 
-                           Df SumsOfSqs MeanSqs F.Model      R2 Pr(>F)
-Temperature                 1    0.0080 0.00795  0.0346 0.00029  0.994
-CO2                         1    0.3987 0.39872  1.7335 0.01472  0.172
-Timepoint                   9    1.3509 0.15010  0.6526 0.04987  0.889
-Temperature:CO2             1    0.7355 0.73549  3.1977 0.02715  0.042
-Temperature:Timepoint       9    2.0960 0.23289  1.0125 0.07738  0.442
-CO2:Timepoint               9    2.5414 0.28238  1.2277 0.09383  0.247
-Temperature:CO2:Timepoint   9    1.7853 0.19837  0.8624 0.06591  0.619
-Residuals                  79   18.1707 0.23001         0.67084       
-Total                     118   27.0865                 1.00000
+                           Df SumsOfSqs MeanSqs F.Model      R2 Pr(>F)  
+Temperature                 1    0.0123 0.01232  0.0546 0.00047  0.965  
+CO2                         1    0.4337 0.43367  1.9207 0.01644  0.144  
+Timepoint                   9    1.2209 0.13566  0.6008 0.04629  0.900  
+Temperature:CO2             1    0.8171 0.81712  3.6190 0.03098  0.032 *
+Temperature:Timepoint       9    1.8427 0.20475  0.9068 0.06987  0.560  
+CO2:Timepoint               9    2.4246 0.26940  1.1931 0.09193  0.273  
+Temperature:CO2:Timepoint   9    1.7854 0.19838  0.8786 0.06770  0.603  
+Residuals                  79   17.8374 0.22579         0.67632         
+Total                     118   26.3742                 1.00000         
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
 ```
 
 ### 16s Sequencing
