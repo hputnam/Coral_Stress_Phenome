@@ -1,5 +1,24 @@
 # Coral Stress Phenome Paper
 
+As of 2021-07-01 the CSP paper is going to be focused on the gene expression patterns of the symbiont and host. We will use the color score and survivorship figures as the main figures for this paper. The rest will likely be in my first chapter. Refer to Acclim Dynamics Results.
+
+### At what point do all the univariate variables have a significant effect of temperature?
+
+Based on the below, I would say it is safe to combine Day 1 and Day 2 and possibly Week 1 for future molecular analyses. The only variable that is significant or even close is S:H Biomass for Mcap at 1 week.
+
+| Variable 	| Mcap        	| Pacuta                	|
+|----------------	|-------------------	|----------------------------	|  
+| Color Score | At least 6 weeks | At least 4 weeks |  
+| Host biomass | Never | 2 weeks |  
+| Sym biomass | At 2 weeks only | 2 weeks |  
+| Ratio biomass | At 1 week only | 2 weeks |  
+| chlorophyll | Close at 2 and 8 weeks | Close at 4 and 6 weeks; significant at 8 weeks |  
+| protein | At 2 weeks only; pCO2 at 6 weeks | 4 weeks |  
+| antioxidant capacity | 12 weeks only | never |   
+| respiration | Close at 2 weeks only | 4 weeks |  
+| photosynthesis | At 2 weeks then at 8 weeks | 4 weeks |
+
+
 ### Writing
 
 [Main paper google doc link](https://docs.google.com/document/d/1geXeJEXaPVHWE6Ivdi6BW2qoF3PHT_Ok1Fv9iM8aLwg/edit).  
@@ -174,7 +193,13 @@ prcomp run on just Mcap ATAC data or just Pacuta ATAC data and grouped by Site.N
 
 ### ITS2 Sequencing
 
-![its2](https://github.com/hputnam/Coral_Stress_Phenome/blob/main/Final-figures/ITS2_20210528.png?raw=true)
+![its2](https://github.com/hputnam/Coral_Stress_Phenome/blob/main/Final-figures/rel.abund.its2.png?raw=true)
+
+![its2](https://github.com/hputnam/Acclim_Dynamics/blob/master/Output/Final_Figures/rel.abund.its2.bubble.png?raw=true)
+
+5 TP figure:
+
+![5tp](https://github.com/hputnam/Coral_Stress_Phenome/blob/main/Final-figures/CSP-rel.abund.its2.png?raw=true)
 
 *Mcapitata* PERMANOVA results:
 
@@ -233,4 +258,5 @@ Samples are at the URI Genome Sequencing Center being processed.
 
 ### Whole Genome Bisulfite Sequencing
 
-60 Pacuta from 5 time points in processing in lab at URI. Estimated ship date to sequencing center = June 14th.
+60 Pacuta from 5 time points in processing in lab at URI.   
+30 hour, 2 week, 4 week, 8 week, 12 week.
