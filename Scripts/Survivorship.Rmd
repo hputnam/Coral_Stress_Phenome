@@ -1,154 +1,108 @@
 ---
 title: "Survivorship"
 author: "EL Strand"
-date: "6/10/2020"
-output:
-  pdf_document: default
-  html_document: default
+date: "8/24/2021"
+output: 
+html_document: default
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-Clears workspace. 
+### Loading in required libraries. 
 ```{r}
-rm(list=ls())
-```
-
-Installing and loading required libraries.
-```{r}
-if ("tidyr" %in% rownames(installed.packages()) == 'FALSE') install.packages('tidyr') 
-if ("tidyverse" %in% rownames(installed.packages()) == 'FALSE') install.packages('tidyverse') 
-if ("reshape" %in% rownames(installed.packages()) == 'FALSE') install.packages('reshape') 
-if ("stringr" %in% rownames(installed.packages()) == 'FALSE') install.packages('stringr') 
-if ("survival" %in% rownames(installed.packages()) == 'FALSE') install.packages('survival') 
-if ("ranger" %in% rownames(installed.packages()) == 'FALSE') install.packages('ranger') 
-if ("ggplot2" %in% rownames(installed.packages()) == 'FALSE') install.packages('ggplot2') 
-if ("dplyr" %in% rownames(installed.packages()) == 'FALSE') install.packages('dplyr') 
-if ("ggfortify" %in% rownames(installed.packages()) == 'FALSE') install.packages('ggfortify') 
-if ("gridExtra" %in% rownames(installed.packages()) == 'FALSE') install.packages('gridExtra') 
-if ("survminer" %in% rownames(installed.packages()) == 'FALSE') install.packages('survminer') 
-if ("graphics" %in% rownames(installed.packages()) == 'FALSE') install.packages('graphics') 
-if ("grid" %in% rownames(installed.packages()) == 'FALSE') install.packages('grid') 
-
-#Read in required libraries
-##### Include Versions of libraries
-library(tidyr)
+#library(tidyr)
 library(tidyverse)
-library(reshape)
-library(stringr)
+#library(reshape)
+#library(stringr)
 library(survival)
-library(ranger)
-library(ggplot2)
-library(dplyr)
+#library(ranger)
+#library(ggplot2)
+#library(dplyr)
 library(ggfortify)
-library(gridExtra)
+#library(gridExtra)
 library(survminer)
-library(graphics)
-library(grid)
+#library(graphics)
+#library(grid)
 library(coxme)
-library(jstable)
+#library(jstable)
 ```
 
 Loading dataframes. 
 ```{r}
-Data <- read.csv("Physiology_variables/coral_survivorship_QC.csv", header=T, sep=",", na.string="NA", stringsAsFactors = F) #read in data file
-Tank.Info <- read.csv("Environmental_data/Tank_to_Treatment.csv", header=T, sep=",", na.string="NA") #read in data file 
-Data.Trt <- merge(Data, Tank.Info, by="Tank")
+Data <- read.csv("Data/coral_survivorship_QC.csv", header=T, sep=",", na.string="NA", stringsAsFactors = F) #read in data file
+Sample.Info <- read.csv("Data/Master_Fragment_Sheet_Drive.csv", header=T, sep=",", na.string="NA") %>%
+  select(PLUG.ID, Temperature, CO2, Timepoint)
+Sample.Info$group <-paste0(Sample.Info$Temperature, " Temperature"," x ",Sample.Info$CO2, " CO2") 
 
-Sample.Info <- read.csv("Environmental_data/Master_Fragment.csv", header=T, sep=",", na.string="NA") %>%
-  select(Tank, Temperature, CO2)
+Data.Trt <- left_join(Sample.Info, Data, by = "PLUG.ID")
+Data.Trt <- Data.Trt %>% filter(Acclimation.End== "alive")
 
-Data.Trt <- merge(Data.Trt, Sample.Info, by = "Tank")
+Data.Trt$sampled <- rowSums(Data.Trt[,14:126] == "sampled", na.rm = TRUE)
+Data.Trt <- Data.Trt %>% filter(sampled!= 1)
+
+Data.Trt <- Data.Trt %>% select(PLUG.ID, group, Temperature, CO2, Timepoint, Species, Day.0:Day.112)
+
+#Data.Trt$group <- paste0(Data.Trt$Temperature, "_",Data.Trt$CO2) 
+#Data.Trt$time.group <- paste0(Data.Trt$Timepoint, "_",Data.Trt$Temperature, "_",Data.Trt$CO2) 
+
+Data.Trt$time <- rowSums(Data.Trt[,7:119] == "alive", na.rm = TRUE)
+#less than 113 = dead
+Data.Trt$status <- as.numeric(as.factor(Data.Trt$Day.112))
+
 ```
 
 
-Replace sampled with alive. 
-```{r}
-Data.Trt.x <- Data.Trt %>% mutate_if(is.character, str_replace_all, pattern = 'sampled', replacement = 'alive')
-Data.Trt.x$lifespan <- rowSums(Data.Trt.x[,10:120] == "alive")
-Data.Trt.x$status <- as.numeric(as.factor(Data.Trt.x$Day.110))
-```
+
 
 Survivorship analysis. 
 ```{r}
 ### Montipora capitata
-Mc.Data <- subset(Data.Trt.x, Species=="Mcapitata")
-Mc.Data$group <- paste0(Mc.Data$Treatment) 
-Mc.km <- with(Mc.Data, Surv(lifespan, status))
-Mc.km_fit <- survfit(Surv(lifespan, status) ~ Treatment, data=Mc.Data)
-summary(Mc.km_fit)
+Mc.Data <- Data.Trt %>% filter(Species=="Mcapitata")
+unique(Mc.Data$group)
+mc.cox <- coxph(Surv(time, status) ~ Temperature * CO2, data = Mc.Data)
+mc.cox 
 
-mc <- coxme(Surv(lifespan, status) ~ Temperature*CO2 + (1|PLUG.ID), data = Mc.Data)
-## just print, no summary
-mc
+Pa.Data <- Data.Trt %>% filter(Species=="Pacuta")
+unique(Pa.Data$group)
+pa.cox <- coxph(Surv(time, status) ~ Temperature * CO2, data = Pa.Data)
+pa.cox
 
-#mc_ph <- coxph(Surv(lifespan, status) ~ Temperature*CO2 + frailty(PLUG.ID, 
-   # distribution = "gaussian", sparse = FALSE, method = "reml"), data = Mc.Data)
+#Capture statistical results to file
 
-cols <- c("lightblue", "blue", "salmon", "red3")
-MC.sur <- summary(Mc.km_fit, times = c(1:58))
-Mc.km_fit <- survfit(Surv(lifespan, status) ~ Treatment, data=Mc.Data)
-autoplot(Mc.km_fit)
+Mcap.info <- as.character("Montipora capitata")
+Mcap.Stats <- coxph(Surv(time, status) ~ Temperature * CO2, data = Mc.Data)
+Pacuta.info <- as.character("Pocillopora acuta")
+Pacuta.Stats <- coxph(Surv(time, status) ~ Temperature * CO2, data = Pa.Data)
 
-### Pocillopora acuta
-Pa.Data <- subset(Data.Trt.x, Species=="Pacuta")
-Pa.km <- with(Pa.Data, Surv(lifespan, status))
-Pa.km_fit <- survfit(Surv(lifespan, status) ~ Treatment, data=Pa.Data) #*Origin
-Pa.sur <- summary(Pa.km_fit, times = c(1:58))
-autoplot(Pa.km_fit)
+capture.output(Mcap.info, Mcap.Stats,  Pacuta.info, Pacuta.Stats, file="Output/Survivorship_Stat_Results.txt")
 
-pa <- coxme(Surv(lifespan, status) ~ Temperature*CO2 + (1|PLUG.ID), data = Pa.Data)
-pa
 
-jstable:::coxmeTable(pa)
-jstable:::coxme.display(pa, dec = 10)
-coxme:::print.coxme(pa)
-
-extract_coxme_table <- function (mod){
-    beta <- mod$coefficients$fixed
-    nvar <- length(beta)
-    nfrail <- nrow(mod$var) - nvar
-    se <- sqrt(diag(mod$var)[nfrail + 1:nvar])
-    z<- round(beta/se, 2)
-    p<- signif(1 - pchisq((beta/se)^2, 1), 2)
-    table=data.frame(cbind(beta,se,z,p))
-    return(table)
-}
-
-extract_coxme_table(pa)
-
-print(pa, digits=max(getOption("digits") - 10, 20),
-  signif.stars = getOption("show.signif.stars"), expand=FALSE)
-
-print(coef(summary(pa))[, "p"], digits = 16)
-
-summary(pa)$coefficients
-
-str(summary(pa))
-
-summary(pa)$coefficients[5]
 ```
+
 
 
 Plotting survivorship analysis. 
 ```{r}
 ## Montipora capitata
+#create survivorship curve
+mc <- survfit(Surv(time, status) ~ Temperature + CO2, data = Mc.Data)
+mc
 
 splots <- list()
 
-splots[[1]] <- ggsurvplot(Mc.km_fit, data=Mc.Data, size = 1,  # change line size
+splots[[1]] <- ggsurvplot(mc, data=Mc.Data, size = 1,  # change line size
+           fun="pct", #plot survival probability in percent
            linetype = "strata", # change line type by groups
            break.time.by = 7, # break time axis
            palette = c("lightblue", "blue", "salmon", "red3"), # custom color palette
            conf.int = TRUE, # Add confidence interval
            legend.title = "", # remove legend title
-           title = "Montipora capitata",
            xlab = "Timepoint",
            font.title = c(14, "bold.italic", "black"), #title italicized
            font.tickslab = c(8, "black"),
-           legend.labs = c("ATAC", "ATHC","HTAC", "HTHC"), pval = TRUE, # Add p-value and change legend labels
+           legend.labs = c("ATAC", "ATHC","HTAC", "HTHC"), # Assign legend labels
            legend=c(0.115, 0.5))
   
 splots[[1]]$plot <- splots[[1]]$plot +
@@ -158,18 +112,24 @@ splots[[1]]$plot <- splots[[1]]$plot +
 
 
 ## Pocillopora acuta
-splots[[2]] <- ggsurvplot(Pa.km_fit, data=Pa.Data, size = 1,  # change line size
+
+pa <- survfit(Surv(time, status) ~ Temperature + CO2, data = Pa.Data)
+pa
+
+splots[[2]] <- ggsurvplot(pa, data=Pa.Data, size = 1,  # change line size
+           fun="pct", #plot survival probability in percent
            linetype = "strata", # change line type by groups
            break.time.by = 7, # break time axis
            palette = c("lightblue", "blue", "salmon", "red3"), # custom color palette
            conf.int = TRUE, # Add confidence interval
            legend.title = "", # remove legend title
-           title = "Pocillopora acuta",
            xlab = "Timepoint",
            font.title = c(14, "bold.italic", "black"), #title italicized
            font.tickslab = c(8, "black"),
-           legend.labs = c("ATAC", "ATHC","HTAC", "HTHC"), pval = TRUE, # Add p-value and change legend labels
+           legend.labs = c("ATAC", "ATHC","HTAC", "HTHC"),  #  Assign legend labels
            legend = "none")
+
+
 
 splots[[2]]$plot <- splots[[2]]$plot +
   scale_x_continuous(breaks = sort(c(1,2,8,15,29,43,57,85,112)), labels = c("Day 1", "Day 2", "1 week", "2 week", "4 week", "6 week", "8 week", "12 week", "16 week")) + 
@@ -178,9 +138,10 @@ splots[[2]]$plot <- splots[[2]]$plot +
   # theme(axis.text.x = element_text(vjust = grid::unit(c(-2,0,0,0,0,0,0,0,0)), "points"))
 
 surv <- arrange_ggsurvplots(splots, print = FALSE, ncol = 2, nrow = 1)
-ggsave("Output/Final_Figures/All_survivorship.pdf", surv, width = 12, height = 6)
+surv 
+ggsave("Output/Survivorship.pdf", surv, width = 11, height = 6)
+ggsave("Output/Survivorship.png", surv, width = 11, height = 6)
 
-# ggsave("Output/All_survivorship.png", surv, width = 6, height = 10)
 ```
 
 

@@ -1,0 +1,22 @@
+[1] "Montipora capitata"
+Call:
+coxph(formula = Surv(time, status) ~ Temperature * CO2, data = Mc.Data)
+
+                           coef exp(coef) se(coef)     z     p
+TemperatureHigh         1.07538   2.93112  0.83678 1.285 0.199
+CO2High                 0.26267   1.30040  0.91291 0.288 0.774
+TemperatureHigh:CO2High 0.03644   1.03711  1.08481 0.034 0.973
+
+Likelihood ratio test=5  on 3 df, p=0.1716
+n= 90, number of events= 17 
+[1] "Pocillopora acuta"
+Call:
+coxph(formula = Surv(time, status) ~ Temperature * CO2, data = Pa.Data)
+
+                           coef exp(coef) se(coef)      z      p
+TemperatureHigh          0.9266    2.5260   0.4237  2.187 0.0288
+CO2High                 -1.7174    0.1795   0.7907 -2.172 0.0299
+TemperatureHigh:CO2High  2.0893    8.0795   0.8446  2.474 0.0134
+
+Likelihood ratio test=40.1  on 3 df, p=1.013e-08
+n= 95, number of events= 57 
