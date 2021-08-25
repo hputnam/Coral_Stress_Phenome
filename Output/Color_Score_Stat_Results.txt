@@ -1,0 +1,30 @@
+[1] "Montipora capitata"
+Analysis of Deviance Table (Type III Wald chisquare tests)
+
+Response: ((Bleaching.Score + 500)^2)
+                               Chisq Df Pr(>Chisq)    
+(Intercept)               32722.5466  1  < 2.2e-16 ***
+Temperature                   0.0061  1     0.9379    
+CO2                           0.0050  1     0.9434    
+Timepoint                     7.9909 14     0.8898    
+Temperature:CO2               0.2587  1     0.6110    
+Temperature:Timepoint       234.8437 14  < 2.2e-16 ***
+CO2:Timepoint                 8.3607 14     0.8697    
+Temperature:CO2:Timepoint    60.4475 14  9.791e-08 ***
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+[1] "Pocillopora acuta"
+Analysis of Deviance Table (Type III Wald chisquare tests)
+
+Response: ((Bleaching.Score + 100)^2)
+                             Chisq Df Pr(>Chisq)    
+(Intercept)               994.1555  1  < 2.2e-16 ***
+Temperature                 0.0566  1     0.8120    
+CO2                         0.5767  1     0.4476    
+Timepoint                  57.4160 10  1.113e-08 ***
+Temperature:CO2             1.5180  1     0.2179    
+Temperature:Timepoint     410.7205 10  < 2.2e-16 ***
+CO2:Timepoint              56.7100 10  1.511e-08 ***
+Temperature:CO2:Timepoint  71.9475 10  1.863e-11 ***
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
