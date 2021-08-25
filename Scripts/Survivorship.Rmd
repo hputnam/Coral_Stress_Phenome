@@ -10,132 +10,119 @@ html_document: default
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-### Loading in required libraries. 
+Loading in required libraries for Survivorship Analysis and Plotting. 
 ```{r}
-#library(tidyr)
 library(tidyverse)
-#library(reshape)
-#library(stringr)
 library(survival)
-#library(ranger)
-#library(ggplot2)
-#library(dplyr)
+library(ggplot2)
 library(ggfortify)
-#library(gridExtra)
 library(survminer)
-#library(graphics)
-#library(grid)
 library(coxme)
-#library(jstable)
+library(ggpubr)
 ```
 
-Loading dataframes. 
+Loading dataframes and calculating time to death and alive or dead status 
 ```{r}
 Data <- read.csv("Data/coral_survivorship_QC.csv", header=T, sep=",", na.string="NA", stringsAsFactors = F) #read in data file
 Sample.Info <- read.csv("Data/Master_Fragment_Sheet_Drive.csv", header=T, sep=",", na.string="NA") %>%
-  select(PLUG.ID, Temperature, CO2, Timepoint)
-Sample.Info$group <-paste0(Sample.Info$Temperature, " Temperature"," x ",Sample.Info$CO2, " CO2") 
+  select(PLUG.ID, Temperature, CO2, Timepoint) #read in sample info with necessary columns
+Sample.Info$group <-paste0(Sample.Info$Temperature, " Temperature"," x ",Sample.Info$CO2, " CO2") #generate a treatment group column
 
-Data.Trt <- left_join(Sample.Info, Data, by = "PLUG.ID")
-Data.Trt <- Data.Trt %>% filter(Acclimation.End== "alive")
+Data.Trt <- left_join(Sample.Info, Data, by = "PLUG.ID") #join sample info and data
+Data.Trt <- Data.Trt %>% filter(Acclimation.End== "alive") #remove those that died in the acclimation period
 
-Data.Trt$sampled <- rowSums(Data.Trt[,14:126] == "sampled", na.rm = TRUE)
-Data.Trt <- Data.Trt %>% filter(sampled!= 1)
+Data.Trt$sampled <- rowSums(Data.Trt[,14:126] == "sampled", na.rm = TRUE) #identified rows where we sampled the corals to remove them from the dataset
+Data.Trt <- Data.Trt %>% filter(sampled!= 1) #filter sampled corals from the dataset
 
-Data.Trt <- Data.Trt %>% select(PLUG.ID, group, Temperature, CO2, Timepoint, Species, Day.0:Day.112)
+Data.Trt <- Data.Trt %>% select(PLUG.ID, group, Temperature, CO2, Timepoint, Species, Day.0:Day.112) #select the factors and survivorship data from the df
 
-#Data.Trt$group <- paste0(Data.Trt$Temperature, "_",Data.Trt$CO2) 
-#Data.Trt$time.group <- paste0(Data.Trt$Timepoint, "_",Data.Trt$Temperature, "_",Data.Trt$CO2) 
-
-Data.Trt$time <- rowSums(Data.Trt[,7:119] == "alive", na.rm = TRUE)
-#less than 113 = dead
-Data.Trt$status <- as.numeric(as.factor(Data.Trt$Day.112))
+Data.Trt$time <- rowSums(Data.Trt[,7:119] == "alive", na.rm = TRUE) #sum the number of days a sample was alive
+#as a sanity check then ever coral with a "time" value of less than 113 died within the experiemnt and should have a status of dead 
+Data.Trt$status <- as.numeric(as.factor(Data.Trt$Day.112)) #set the alive = 1 or dead = 0 status
 
 ```
 
-
-
-
-Survivorship analysis. 
+Survivorship analysis 
 ```{r}
 ### Montipora capitata
-Mc.Data <- Data.Trt %>% filter(Species=="Mcapitata")
-unique(Mc.Data$group)
-mc.cox <- coxph(Surv(time, status) ~ Temperature * CO2, data = Mc.Data)
-mc.cox 
+Mc.Data <- Data.Trt %>% filter(Species=="Mcapitata") #split to Montipora data only
+unique(Mc.Data$group) #check for 4 treatment groups
+mc.cox <- coxph(Surv(time, status) ~ Temperature * CO2, data = Mc.Data) #run Cox proportional hazards regression mode 
+mc.cox #view output
 
-Pa.Data <- Data.Trt %>% filter(Species=="Pacuta")
-unique(Pa.Data$group)
-pa.cox <- coxph(Surv(time, status) ~ Temperature * CO2, data = Pa.Data)
-pa.cox
+Pa.Data <- Data.Trt %>% filter(Species=="Pacuta") #split to Pocillopora data only
+unique(Pa.Data$group) #check for 4 treatment groups
+pa.cox <- coxph(Surv(time, status) ~ Temperature * CO2, data = Pa.Data) #run Cox proportional hazards regression mode 
+pa.cox #view output
 
 #Capture statistical results to file
 
-Mcap.info <- as.character("Montipora capitata")
-Mcap.Stats <- coxph(Surv(time, status) ~ Temperature * CO2, data = Mc.Data)
-Pacuta.info <- as.character("Pocillopora acuta")
-Pacuta.Stats <- coxph(Surv(time, status) ~ Temperature * CO2, data = Pa.Data)
+Mcap.info <- as.character("Montipora capitata") #set name above the stats output
+Mcap.Stats <- coxph(Surv(time, status) ~ Temperature * CO2, data = Mc.Data) # assign to output object
+Pacuta.info <- as.character("Pocillopora acuta") #set name above the stats output
+Pacuta.Stats <- coxph(Surv(time, status) ~ Temperature * CO2, data = Pa.Data)  #assign to output object
 
+#write stats output to a text file
 capture.output(Mcap.info, Mcap.Stats,  Pacuta.info, Pacuta.Stats, file="Output/Survivorship_Stat_Results.txt")
-
 
 ```
 
-
-
-Plotting survivorship analysis. 
+Plotting survivorship curves
 ```{r}
 ## Montipora capitata
-#create survivorship curve
-mc <- survfit(Surv(time, status) ~ Temperature + CO2, data = Mc.Data)
+
+mc <- survfit(Surv(time, status) ~ Temperature + CO2, data = Mc.Data) #generate survivorship curve
 mc
 
-splots <- list()
+splots <- list() #make a list of the plots for multipanel graphic
 
-splots[[1]] <- ggsurvplot(mc, data=Mc.Data, size = 1,  # change line size
+splots[[1]] <- ggsurvplot(mc, data=Mc.Data, 
+           size = 1,  # change line size
            fun="pct", #plot survival probability in percent
-           linetype = "strata", # change line type by groups
+           linetype = "strata", # line type by groups
            break.time.by = 7, # break time axis
-           palette = c("lightblue", "blue", "salmon", "red3"), # custom color palette
+           palette = c("lightblue", "blue", "salmon", "red3"), # custom colors
            conf.int = TRUE, # Add confidence interval
            legend.title = "", # remove legend title
-           xlab = "Timepoint",
+           xlab = "Timepoint", # label x axis
            font.title = c(14, "bold.italic", "black"), #title italicized
-           font.tickslab = c(8, "black"),
+           font.tickslab = c(8, "black"), # size and color font ticks
            legend.labs = c("ATAC", "ATHC","HTAC", "HTHC"), # Assign legend labels
-           legend=c(0.115, 0.5))
-  
+           legend=c(0.115, 0.5)) # legend position
+
+# set x axis label breaks and labels  
 splots[[1]]$plot <- splots[[1]]$plot +
-  scale_x_continuous(breaks = sort(c(1,2,8,15,29,43,57,85,112)), labels = c("Day 1", "Day 2", "1 week", "2 week", "4 week", "6 week", "8 week", "12 week", "16 week")) + 
-  geom_vline(xintercept = 61, linetype = "dotted") + 
-  theme(axis.text.x = element_text(angle = 60, vjust = 1.2, hjust = 1.3))
+  scale_x_continuous(breaks = sort(c(1,2,8,15,29,43,57,85,112)), labels = c("Day 1", "Day 2", "1 week", "2 week", "4 week", "6 week", "8 week", "12 week", "16 week")) +
+  geom_vline(xintercept = 61, linetype = "dotted") +  # add a line break for end of treatments
+  theme(axis.text.x = element_text(angle = 60, vjust = 1.2, hjust = 1.3)) # set x axis label angle
 
 
 ## Pocillopora acuta
 
-pa <- survfit(Surv(time, status) ~ Temperature + CO2, data = Pa.Data)
+pa <- survfit(Surv(time, status) ~ Temperature + CO2, data = Pa.Data) #generate survivorship curve
 pa
 
-splots[[2]] <- ggsurvplot(pa, data=Pa.Data, size = 1,  # change line size
+splots[[2]] <- ggsurvplot(pa, data=Pa.Data, 
+           size = 1,  # change line size
            fun="pct", #plot survival probability in percent
-           linetype = "strata", # change line type by groups
+           linetype = "strata", # line type by groups
            break.time.by = 7, # break time axis
-           palette = c("lightblue", "blue", "salmon", "red3"), # custom color palette
+           palette = c("lightblue", "blue", "salmon", "red3"), # custom colors
            conf.int = TRUE, # Add confidence interval
            legend.title = "", # remove legend title
-           xlab = "Timepoint",
+           xlab = "Timepoint", # label x axis
            font.title = c(14, "bold.italic", "black"), #title italicized
-           font.tickslab = c(8, "black"),
+           font.tickslab = c(8, "black"), # size and color font ticks
            legend.labs = c("ATAC", "ATHC","HTAC", "HTHC"),  #  Assign legend labels
-           legend = "none")
+           legend = "none") # legend position
 
 
-
+# set x axis label breaks and labels  
 splots[[2]]$plot <- splots[[2]]$plot +
-  scale_x_continuous(breaks = sort(c(1,2,8,15,29,43,57,85,112)), labels = c("Day 1", "Day 2", "1 week", "2 week", "4 week", "6 week", "8 week", "12 week", "16 week")) + 
-  geom_vline(xintercept = 61, linetype = "dotted") + 
-  theme(axis.text.x = element_text(angle = 60, vjust = 1.2, hjust = 1.3)) 
-  # theme(axis.text.x = element_text(vjust = grid::unit(c(-2,0,0,0,0,0,0,0,0)), "points"))
+  scale_x_continuous(breaks = sort(c(1,2,8,15,29,43,57,85,112)), labels = c("Day 1", "Day 2", "1 week", "2 week", "4 week", "6 week", "8 week", "12 week", "16 week")) +
+  geom_vline(xintercept = 61, linetype = "dotted") + # add a line break for end of treatments
+  theme(axis.text.x = element_text(angle = 60, vjust = 1.2, hjust = 1.3)) # set x axis label angle 
+
 
 surv <- arrange_ggsurvplots(splots, print = FALSE, ncol = 2, nrow = 1)
 surv 
