@@ -17,7 +17,6 @@ library(survival)
 library(ggplot2)
 library(ggfortify)
 library(survminer)
-library(coxme)
 library(ggpubr)
 ```
 
@@ -44,6 +43,7 @@ Data.Trt$status <- as.numeric(as.factor(Data.Trt$Day.112)) #set the alive = 1 or
 
 Survivorship analysis 
 ```{r}
+# Cox proportional hazards regression model
 ### Montipora capitata
 Mc.Data <- Data.Trt %>% filter(Species=="Mcapitata") #split to Montipora data only
 unique(Mc.Data$group) #check for 4 treatment groups

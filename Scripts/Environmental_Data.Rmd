@@ -1,0 +1,261 @@
+---
+title: "Environmental_Data"
+author: "EL Strand"
+date: "8/27/2021"
+output:
+  html_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+Required packages for the below analyses.
+```{r}
+
+library(tidyverse)
+library(Rmisc)
+library(scales)
+library(ggplot2)
+library(lubridate)
+library(patchwork) # To display 2 charts together
+library(plotrix)
+
+```
+
+
+
+### TEMPERATURE LOGGER DATA ###  
+Reading in and cleaning hobo logger data. 
+```{r}
+tankIDs <- read.csv('Data/Tank_to_Treatment.csv')
+tankIDs$Tank <- as.character(tankIDs$Tank)
+  
+#bind all hobo logger data sets together
+Hobo.data <-
+  list.files(path = 'Data/Temp_Hobo_Loggers', pattern = ".csv", full.names = TRUE) %>% # list files in directory following a particular pattern
+  set_names(.) %>% # get the column names
+  map_dfr(read.table, .id = "file.ID", header=FALSE, skip=1, sep=",") %>% # join all files together in one data frame by file ID
+  group_by(file.ID) %>% # for each file do the following
+  select(-V1) %>% dplyr::rename(Date.Time = V2, Temperature = V3)
+
+Hobo.data$Date.Time <- mdy_hm(Hobo.data$Date.Time, quiet=FALSE, tz="UTC", truncated=0) #format date and time 
+
+file.name <- c("Data/Temp_Hobo_Loggers/20190117_Tank1.csv", 
+               "Data/Temp_Hobo_Loggers/20190117_Tank2.csv",
+               "Data/Temp_Hobo_Loggers/20190117_Tank3.csv",
+               "Data/Temp_Hobo_Loggers/20190117_Tank4.csv",
+               "Data/Temp_Hobo_Loggers/20190117_Tank5.csv",
+               "Data/Temp_Hobo_Loggers/20190117_Tank6.csv",
+               "Data/Temp_Hobo_Loggers/20190117_Tank7.csv",
+               "Data/Temp_Hobo_Loggers/20190117_Tank8.csv",
+               "Data/Temp_Hobo_Loggers/20190117_Tank9.csv",
+               "Data/Temp_Hobo_Loggers/20190117_Tank10.csv",
+               "Data/Temp_Hobo_Loggers/20190117_Tank11.csv",
+               "Data/Temp_Hobo_Loggers/20190117_Tank12.csv")
+tank.ID <- c("1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12")
+Hobo.data$Tank <- tank.ID[match(Hobo.data$file.ID, file.name)] #adding a tank number column based on the file.ID column 
+Hobo.data$Tank <- as.character(Hobo.data$Tank) 
+
+Hobo.data <- left_join(Hobo.data, tankIDs) %>% select(-Tank.Name) #adding treatment info to each tank
+
+## Filtering for when hobo loggers were out of the tanks 
+Hobo.data.filtered <- Hobo.data %>% na.omit() %>% 
+  filter(!(Date.Time > as.POSIXct("2018-09-04 23:50:00", tz="UTC") & Date.Time < as.POSIXct("2018-09-06 00:00:00", tz="UTC"))) %>%
+  filter(!(Date.Time > as.POSIXct("2018-09-07 23:50:00", tz="UTC") & Date.Time < as.POSIXct("2018-09-09 00:00:00", tz="UTC"))) %>%
+  filter(!(Tank == "6" & Date.Time > as.POSIXct("2018-09-13 14:50:00", tz="UTC") & Date.Time < as.POSIXct("2018-09-13 17:00:00", tz="UTC"))) %>%
+  filter(!(Tank == "8" & Date.Time > as.POSIXct("2018-09-14 10:50:00", tz="UTC") & Date.Time < as.POSIXct("2018-09-14 14:00:00", tz="UTC"))) %>%
+  filter(!(Date.Time > as.POSIXct("2018-09-18 8:50:00", tz="UTC") & Date.Time < as.POSIXct("2018-09-18 17:00:00", tz="UTC"))) %>%
+  filter(!(Tank == "11" & Date.Time > as.POSIXct("2018-09-27 08:40:00", tz="UTC") & Date.Time < as.POSIXct("2018-09-27 09:40:00", tz="UTC"))) %>%
+  filter(!(Tank == "12" & Date.Time > as.POSIXct("2018-09-27 10:10:00", tz="UTC") & Date.Time < as.POSIXct("2018-09-27 10:40:00", tz="UTC"))) %>%
+  filter(!(Tank == "6" & Date.Time > as.POSIXct("2018-09-27 10:40:00", tz="UTC") & Date.Time < as.POSIXct("2018-09-27 11:20:00", tz="UTC"))) %>%
+  filter(!(Tank == "5" & Date.Time > as.POSIXct("2018-09-27 11:30:00", tz="UTC") & Date.Time < as.POSIXct("2018-09-27 12:20:00", tz="UTC"))) %>%
+  filter(!(Tank == "4" & Date.Time > as.POSIXct("2018-09-28 08:50:00", tz="UTC") & Date.Time < as.POSIXct("2018-09-28 09:40:00", tz="UTC"))) %>%
+  filter(!(Tank == "10" & Date.Time > as.POSIXct("2018-09-28 09:30:00", tz="UTC") & Date.Time < as.POSIXct("2018-09-28 12:40:00", tz="UTC"))) %>%
+  filter(!(Tank == "9" & Date.Time > as.POSIXct("2018-09-28 10:10:00", tz="UTC") & Date.Time < as.POSIXct("2018-09-28 11:10:00", tz="UTC"))) %>%
+  filter(!(Tank == "3" & Date.Time > as.POSIXct("2018-09-28 10:30:00", tz="UTC") & Date.Time < as.POSIXct("2018-09-28 14:50:00", tz="UTC"))) %>%
+  filter(!(Tank == "7" & Date.Time > as.POSIXct("2018-09-28 11:50:00", tz="UTC") & Date.Time < as.POSIXct("2018-09-28 12:40:00", tz="UTC"))) %>%
+  filter(!(Tank == "8" & Date.Time > as.POSIXct("2018-09-28 11:20:00", tz="UTC") & Date.Time < as.POSIXct("2018-09-28 12:30:00", tz="UTC"))) %>%
+  filter(!(Tank == "1" & Date.Time > as.POSIXct("2018-09-28 12:30:00", tz="UTC") & Date.Time < as.POSIXct("2018-09-28 13:30:00", tz="UTC"))) %>%
+  filter(!(Tank == "2" & Date.Time > as.POSIXct("2018-09-28 13:20:00", tz="UTC") & Date.Time < as.POSIXct("2018-09-28 14:30:00", tz="UTC"))) %>%
+  filter(!(Date.Time > as.POSIXct("2018-09-29 10:40:00", tz="UTC") & Date.Time < as.POSIXct("2018-09-29 11:40:00", tz="UTC"))) %>%
+  filter(!(Date.Time > as.POSIXct("2018-10-08 09:30:00", tz="UTC") & Date.Time < as.POSIXct("2018-10-08 10:10:00", tz="UTC"))) %>%
+  filter(!(Tank == "6" & Date.Time > as.POSIXct("2018-10-08 10:10:00", tz="UTC") & Date.Time < as.POSIXct("2018-10-08 11:20:00", tz="UTC"))) %>%
+  filter(!(Tank == "12" & Date.Time > as.POSIXct("2018-10-08 10:50:00", tz="UTC") & Date.Time < as.POSIXct("2018-10-08 11:50:00", tz="UTC"))) %>%
+  filter(!(Tank == "5" & Date.Time > as.POSIXct("2018-10-08 11:40:00", tz="UTC") & Date.Time < as.POSIXct("2018-10-08 13:10:00", tz="UTC"))) %>%
+  filter(!(Tank == "11" & Date.Time > as.POSIXct("2018-10-08 14:00:00", tz="UTC") & Date.Time < as.POSIXct("2018-10-08 14:50:00", tz="UTC"))) %>%
+  filter(!(Tank == "4" & Date.Time > as.POSIXct("2018-10-08 14:40:00", tz="UTC") & Date.Time < as.POSIXct("2018-10-08 16:10:00", tz="UTC"))) %>%
+  filter(!(Tank == "10" & Date.Time > as.POSIXct("2018-10-08 15:20:00", tz="UTC") & Date.Time < as.POSIXct("2018-10-08 17:10:00", tz="UTC"))) %>%
+  filter(!(Tank == "1" & Date.Time > as.POSIXct("2018-10-09 09:30:00", tz="UTC") & Date.Time < as.POSIXct("2018-10-09 10:20:00", tz="UTC"))) %>%
+  filter(!(Tank == "7" & Date.Time > as.POSIXct("2018-10-09 10:10:00", tz="UTC") & Date.Time < as.POSIXct("2018-10-09 11:10:00", tz="UTC"))) %>%
+  filter(!(Tank == "8" & Date.Time > as.POSIXct("2018-10-09 10:40:00", tz="UTC") & Date.Time < as.POSIXct("2018-10-09 11:40:00", tz="UTC"))) %>%
+  filter(!(Tank == "2" & Date.Time > as.POSIXct("2018-10-09 11:20:00", tz="UTC") & Date.Time < as.POSIXct("2018-10-09 12:10:00", tz="UTC"))) %>%
+  filter(!(Tank == "9" & Date.Time > as.POSIXct("2018-10-09 11:50:00", tz="UTC") & Date.Time < as.POSIXct("2018-10-09 12:20:00", tz="UTC"))) %>%
+  filter(!(Tank == "3" & Date.Time > as.POSIXct("2018-10-09 23:20:00", tz="UTC") & Date.Time < as.POSIXct("2018-10-09 14:50:00", tz="UTC"))) %>%
+  filter(!(Date.Time > as.POSIXct("2018-10-09 23:20:00", tz="UTC") & Date.Time < as.POSIXct("2018-10-10 11:00:00", tz="UTC"))) %>%
+  filter(!(Tank == "4" & Date.Time > as.POSIXct("2018-10-11 23:20:00", tz="UTC") & Date.Time < as.POSIXct("2018-10-12 02:50:00", tz="UTC"))) %>%
+  filter(!(Date.Time > as.POSIXct("2018-10-16 10:50:00", tz="UTC") & Date.Time < as.POSIXct("2018-10-09 12:50:00", tz="UTC"))) %>%
+  filter(!(Tank == "6" & Date.Time > as.POSIXct("2018-10-21 10:20:00", tz="UTC") & Date.Time < as.POSIXct("2018-10-21 11:50:00", tz="UTC"))) %>%
+  filter(!(Tank == "4" & Date.Time > as.POSIXct("2018-10-21 10:40:00", tz="UTC") & Date.Time < as.POSIXct("2018-10-21 11:50:00", tz="UTC"))) %>%
+  filter(!(Tank == "8" & Date.Time > as.POSIXct("2018-10-21 11:10:00", tz="UTC") & Date.Time < as.POSIXct("2018-10-21 12:20:00", tz="UTC"))) %>%
+  filter(!(Tank == "12" & Date.Time > as.POSIXct("2018-10-21 11:40:00", tz="UTC") & Date.Time < as.POSIXct("2018-10-21 12:50:00", tz="UTC"))) %>%
+  filter(!(Tank == "1" & Date.Time > as.POSIXct("2018-10-21 12:10:00", tz="UTC") & Date.Time < as.POSIXct("2018-10-21 13:50:00", tz="UTC"))) %>%
+  filter(!(Tank == "11" & Date.Time > as.POSIXct("2018-10-21 12:40:00", tz="UTC") & Date.Time < as.POSIXct("2018-10-21 14:30:00", tz="UTC"))) %>%
+  filter(!(Tank == "5" & Date.Time > as.POSIXct("2018-10-21 13:50:00", tz="UTC") & Date.Time < as.POSIXct("2018-10-21 15:10:00", tz="UTC"))) %>%
+  filter(!(Tank == "3" & Date.Time > as.POSIXct("2018-10-21 14:10:00", tz="UTC") & Date.Time < as.POSIXct("2018-10-21 50:00:00", tz="UTC"))) %>%
+  filter(!(Tank == "9" & Date.Time > as.POSIXct("2018-10-21 14:30:00", tz="UTC") & Date.Time < as.POSIXct("2018-10-21 15:20:00", tz="UTC"))) %>%
+  filter(!(Tank == "10" & Date.Time > as.POSIXct("2018-10-21 15:00:00", tz="UTC") & Date.Time < as.POSIXct("2018-10-21 15:50:00", tz="UTC"))) %>%
+  filter(!(Tank == "7" & Date.Time > as.POSIXct("2018-10-21 15:40:00", tz="UTC") & Date.Time < as.POSIXct("2018-10-21 16:30:00", tz="UTC"))) %>%
+  filter(!(Tank == "2" & Date.Time > as.POSIXct("2018-10-21 15:50:00", tz="UTC") & Date.Time < as.POSIXct("2018-10-21 17:10:00", tz="UTC"))) %>%
+  filter(!(Tank == "12" & Date.Time > as.POSIXct("2018-10-21 09:30:00", tz="UTC") & Date.Time < as.POSIXct("2018-10-21 10:50:00", tz="UTC"))) %>%
+  filter(!(Tank == "11" & Date.Time > as.POSIXct("2018-10-21 10:50:00", tz="UTC") & Date.Time < as.POSIXct("2018-10-21 11:50:00", tz="UTC"))) %>%
+  filter(!(Tank == "10" & Date.Time > as.POSIXct("2018-10-21 12:50:00", tz="UTC") & Date.Time < as.POSIXct("2018-10-21 14:10:00", tz="UTC"))) %>%
+  filter(!(Date.Time > as.POSIXct("2018-11-01 00:00:00", tz="UTC") & Date.Time < as.POSIXct("2018-11-02 11:10:00", tz="UTC"))) %>%
+  filter(!(Date.Time > as.POSIXct("2018-11-08 08:40:00", tz="UTC") & Date.Time < as.POSIXct("2018-11-08 12:20:00", tz="UTC"))) %>%
+  filter(!(Date.Time > as.POSIXct("2018-11-08 12:20:00", tz="UTC") & Date.Time < as.POSIXct("2018-11-08 13:10:00", tz="UTC"))) %>%
+  filter(!(Tank == "12" & Date.Time > as.POSIXct("2018-11-09 10:10:00", tz="UTC") & Date.Time < as.POSIXct("2018-11-09 10:50:00", tz="UTC"))) %>%
+  filter(!(Tank == "5" & Date.Time > as.POSIXct("2018-11-09 10:10:00", tz="UTC") & Date.Time < as.POSIXct("2018-11-09 10:50:00", tz="UTC"))) %>%
+  filter(!(Tank == "9" & Date.Time > as.POSIXct("2018-11-09 10:10:00", tz="UTC") & Date.Time < as.POSIXct("2018-11-09 11:20:00", tz="UTC"))) %>%
+  filter(!(Date.Time > as.POSIXct("2018-11-28 12:00:00", tz="UTC") & Date.Time < as.POSIXct("2018-11-28 14:00:00", tz="UTC"))) %>%
+  filter(!(Date.Time > as.POSIXct("2018-12-05 09:00:00", tz="UTC") & Date.Time < as.POSIXct("2018-12-05 10:40:00", tz="UTC"))) %>%
+  filter(!(Date.Time > as.POSIXct("2018-12-12 11:20:00", tz="UTC") & Date.Time < as.POSIXct("2018-12-12 12:10:00", tz="UTC"))) %>%
+  filter(!(Date.Time > as.POSIXct("2018-12-19 10:10:00", tz="UTC") & Date.Time < as.POSIXct("2018-12-19 11:10:00", tz="UTC"))) %>%
+  filter(!(Date.Time > as.POSIXct("2018-12-26 12:20:00", tz="UTC") & Date.Time < as.POSIXct("2018-12-26 13:10:00", tz="UTC"))) %>%
+  filter(!(Date.Time == as.POSIXct("2018-11-19 09:40:00", tz="UTC"))) %>% # abnormally low temp in ATAC -2C than the 10 min after and before 
+  filter(!(Date.Time > as.POSIXct("2018-11-19 09:50:00", tz="UTC") & Date.Time < as.POSIXct("2018-11-19 11:00:00", tz="UTC"))) %>% # HTHC low; heaters broke?
+  filter(!(Date.Time > as.POSIXct("2018-11-07 16:00:00", tz="UTC") & Date.Time < as.POSIXct("2018-11-07 16:40:00", tz="UTC"))) %>% # HTHC were low; heaters broken? We had a lot of trouble with outlets. If I had to put my hand in the tank I would've turned them off briefly
+  filter(!(Date.Time == as.POSIXct("2018-11-08 12:20:00", tz="UTC"))) %>%
+  filter(!(Date.Time > as.POSIXct("2018-10-20 23:50:00", tz="UTC") & Date.Time < as.POSIXct("2018-10-21 10:30:00", tz="UTC")))
+
+Hobo.filtered.means <- summarySE(Hobo.data.filtered, measurevar = "Temperature", groupvars=c("Date.Time", "Treatment")) #N, mean(Temperature), sd, se, ci
+
+```
+
+#Extracting Treatment dates
+```{r}
+Expt.hobo <- Hobo.data.filtered %>% filter((Date.Time > as.POSIXct("2018-09-22 06:50:00", tz="UTC") & Date.Time < as.POSIXct("2018-11-17 08:00:00", tz="UTC"))) %>% na.omit()
+Expt.hobo$Date <- as.Date(Expt.hobo$Date.Time)
+Expt.hobo$Time <- format(Expt.hobo$Date.Time, "%H %M %S")
+
+Hobo.treatment <- summarySE(Expt.hobo, measurevar = "Temperature", groupvars=c("Treatment")) #N, mean(Temperature), sd, se, ci
+
+write_csv(file = "Output/HOBO-Temperature-Treatment.csv", Hobo.treatment)
+
+```
+
+
+Visualizing data. 
+```{r}
+colors <- c("lightblue", "blue", "salmon", "red3")
+
+Hobo.cleaned <- ggplot(data = Hobo.filtered.means, aes(x = Date.Time, y = Temperature, colour = Treatment)) +
+  #geom_point(size=0.2) +
+  scale_color_manual(values = colors) +
+  labs(x = "Date",
+       y = "Temperature (°C)") +
+  geom_line(aes(group=Treatment)) +
+  theme_bw() + theme(panel.border = element_blank(), panel.grid.major = element_blank(),
+                     panel.grid.minor = element_blank(), axis.line = element_line(colour = "black")) +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1)) +
+  scale_x_datetime(date_breaks = "7 days", labels = date_format("%b %d")) +
+  geom_vline(aes(xintercept = as.integer(as.POSIXct("2018-09-22 07:00:00"))), col = "black", linetype="dotted") +
+  geom_vline(aes(xintercept = as.integer(as.POSIXct("2018-11-17 07:00:00"))), col = "black", linetype="dotted") +
+  theme(legend.position=c(0.9, 0.8), legend.background = element_blank()) 
+
+Hobo.cleaned 
+
+ggsave(filename = "Output/Experimental_Temperature_Logged.pdf", Hobo.cleaned, device = "pdf", width = 11, height = 8)
+ggsave(filename = "Output/Experimental_Temperature_Logged.png", Hobo.cleaned, device = "png", width = 11, height = 8)
+```
+
+### FLOW RATES ### 
+
+Reading in flow rate and tank to treatment data files. 
+```{r}
+Flow_tank_info <-read.csv('Data/Tank_to_Treatment.csv', header=T, sep=",") %>% select(-Tank.Name)
+Flow_Data <- read.csv('Data/Flow_rate.csv', header=T, sep=",") %>% select(-Trial, -Rate)
+Flow_Data <- subset(Flow_Data, Final_Rate=="Yes") # subsetting to only the final rates 
+Flow_Data$Tank <- as.character(Flow_Data$Tank) # changing Tank values to character instead of numeric
+Flow_Data <- merge(Flow_Data, Flow_tank_info, by="Tank") #Merging the two datafiles by Tank and ordering by specific Tank name (based on treatments)
+Flow_Data$ml.sec <- Flow_Data$Volume.ml/Flow_Data$Time.sec #calculate rate in ml/sec
+
+Flow.means <- summarySE(Flow_Data, measurevar = "ml.sec", groupvars=c("Date", "Treatment")) #N, mean, sd, se, ci
+
+```
+
+Visualizing flow rate data. 
+```{r}
+treatment_colors <- c("blue", "lightblue", "salmon", "red3")
+tank_colors <- c("blue", "red3", "lightblue", "lightblue", "red3", "lightblue", "salmon", "red3", "blue", "salmon", "blue", "salmon")
+
+## BY TREATMENT
+ggplot(Flow_Data, aes(x=Treatment, y=ml.sec, fill=Treatment)) + 
+  geom_boxplot() +
+  scale_fill_manual(values = treatment_colors) +
+  geom_jitter(color="black", size=0.4, alpha=0.9) + 
+  theme_classic() + 
+  theme(legend.position="none", plot.title = element_text(size=11)) + 
+  xlab("Treatment") + 
+  ylab("Flow Rates (mL/sec)")
+
+## BY TREATMENT AND TANK
+ggplot(Flow_Data, aes(x=Tank, y=ml.sec, fill=Tank)) + 
+  geom_boxplot() +
+  scale_fill_manual(values = tank_colors) +
+  scale_x_discrete(limits=c("1","6","8", "3", "11", "12", "4", "7", "9", "2", "5", "10")) + 
+  geom_jitter(color="black", size=0.4, alpha=0.9) + 
+  theme_classic() + 
+  theme(legend.position="none", plot.title = element_text(size=11)) + 
+  xlab("Tank Number") + 
+  ylab("Flow Rates (mL/sec)")
+```
+
+Statistical analysis of Flow Rate. 
+```{r}
+tank.lm <- lm(ml.sec ~ Tank, data=Flow_Data)
+tank.anova <- aov(ml.sec ~ Tank, data=Flow_Data)
+summary(tank.lm)
+summary(tank.anova)
+
+hist(residuals(tank.anova))
+boxplot(residuals(tank.anova))
+
+trt.lm <- lm(ml.sec ~ Treatment, data=Flow_Data)
+trt.anova <- aov(ml.sec ~ Treatment, data=Flow_Data)
+summary(trt.lm)
+summary(trt.anova)
+
+hist(residuals(trt.anova))
+boxplot(residuals(trt.anova))
+
+```
+
+# Light
+
+```{r}
+# load data 
+LightData <-read.csv('Data/BlueTank_Light_Data.csv', header=T, sep=",")
+LightData$Tank <- as.numeric(as.character(LightData$Tank))
+tankIDs$Tank <- as.numeric(tankIDs$Tank)
+LightData <- left_join(LightData, tankIDs, by="Tank") 
+licor <- LightData %>% filter(Instrument=="LICOR-193") 
+Light.means <- summarySE(licor, measurevar = "PAR", groupvars=c("Date", "Tank")) #N, mean, sd, se, ci
+Light.means <- left_join(Light.means, tankIDs, by="Tank") 
+
+## BY TREATMENT
+ggplot(Light.means, aes(x=Treatment, y=PAR, fill=Treatment)) + 
+  geom_boxplot() +
+  scale_fill_manual(values = treatment_colors) +
+  geom_jitter(color="black", size=0.4, alpha=0.9) + 
+  theme_classic() + 
+  theme(legend.position="none", plot.title = element_text(size=11)) + 
+  xlab("Treatment") + 
+  ylab("PAR (µmol m-2 sec-1)")
+
+TRT.model <- lm(log10(PAR) ~ Treatment,data=Light.means)
+hist(residuals(TRT.model))
+boxplot(residuals(TRT.model))
+summary(TRT.model)
+
+```
