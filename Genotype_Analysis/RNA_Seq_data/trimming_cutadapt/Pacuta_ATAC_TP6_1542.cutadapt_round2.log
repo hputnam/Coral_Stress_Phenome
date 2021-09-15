@@ -1,0 +1,86 @@
+This is cutadapt 2.9 with Python 3.5.2
+Command line parameters: -G G{20} -e 0.0 -n 10 --minimum-length 25 --cores 4 -o Pacuta_ATAC_TP6_1542_R1_TrimmingRound2.fastq.gz -p Pacuta_ATAC_TP6_1542_R2_TrimmingRound2.fastq.gz Pacuta_ATAC_TP6_1542_R1_TrimmingRound1.fastq.gz Pacuta_ATAC_TP6_1542_R2_TrimmingRound1.fastq.gz
+Processing reads on 4 cores in paired-end mode ...
+Finished in 378.59 s (27 us/read; 2.22 M reads/minute).
+
+=== Summary ===
+
+Total read pairs processed:         14,008,980
+  Read 1 with adapter:                       0 (0.0%)
+  Read 2 with adapter:                 196,150 (1.4%)
+Pairs written (passing filters):    14,008,970 (100.0%)
+
+Total basepairs processed: 3,924,946,084 bp
+  Read 1: 1,960,220,742 bp
+  Read 2: 1,964,725,342 bp
+Total written (filtered):  3,924,295,932 bp (100.0%)
+  Read 1: 1,960,219,509 bp
+  Read 2: 1,964,076,423 bp
+
+=== Second read: Adapter 1 ===
+
+Sequence: GGGGGGGGGGGGGGGGGGGG; Type: regular 5'; Length: 20; Trimmed: 196165 times
+
+No. of allowed errors:
+0-20 bp: 0
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	152609	218890.3	0	152609
+4	34803	54722.6	0	34803
+5	6631	13680.6	0	6631
+6	1290	3420.2	0	1290
+7	405	855.0	0	405
+8	172	213.8	0	172
+9	89	53.4	0	89
+10	39	13.4	0	39
+11	29	3.3	0	29
+12	11	0.8	0	11
+13	8	0.2	0	8
+14	11	0.1	0	11
+15	3	0.0	0	3
+16	6	0.0	0	6
+17	2	0.0	0	2
+19	1	0.0	0	1
+20	3	0.0	0	3
+26	1	0.0	0	1
+27	1	0.0	0	1
+28	1	0.0	0	1
+29	1	0.0	0	1
+30	1	0.0	0	1
+40	1	0.0	0	1
+41	1	0.0	0	1
+42	1	0.0	0	1
+43	1	0.0	0	1
+45	1	0.0	0	1
+50	1	0.0	0	1
+52	1	0.0	0	1
+53	1	0.0	0	1
+55	1	0.0	0	1
+60	1	0.0	0	1
+66	3	0.0	0	3
+78	1	0.0	0	1
+79	1	0.0	0	1
+81	1	0.0	0	1
+82	2	0.0	0	2
+83	1	0.0	0	1
+84	1	0.0	0	1
+87	3	0.0	0	3
+88	1	0.0	0	1
+95	1	0.0	0	1
+96	2	0.0	0	2
+98	1	0.0	0	1
+105	1	0.0	0	1
+106	3	0.0	0	3
+108	1	0.0	0	1
+109	2	0.0	0	2
+110	2	0.0	0	2
+113	1	0.0	0	1
+114	1	0.0	0	1
+116	1	0.0	0	1
+118	1	0.0	0	1
+120	1	0.0	0	1
+121	2	0.0	0	2
+133	1	0.0	0	1
+135	2	0.0	0	2
+141	1	0.0	0	1

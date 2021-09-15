@@ -1,0 +1,58 @@
+20:51:05.684 INFO  NativeLibraryLoader - Loading libgkl_compression.so from jar:file:/home/timothy/programs/gatk-4.2.0.0/gatk-package-4.2.0.0-local.jar!/com/intel/gkl/native/libgkl_compression.so
+Jun 12, 2021 8:51:05 PM shaded.cloud_nio.com.google.auth.oauth2.ComputeEngineCredentials runningOnComputeEngine
+INFO: Failed to detect whether we are running on Google Compute Engine.
+20:51:05.808 INFO  IndexFeatureFile - ------------------------------------------------------------
+20:51:05.809 INFO  IndexFeatureFile - The Genome Analysis Toolkit (GATK) v4.2.0.0
+20:51:05.809 INFO  IndexFeatureFile - For support and documentation go to https://software.broadinstitute.org/gatk/
+20:51:05.809 INFO  IndexFeatureFile - Executing as timothy@coral on Linux v5.4.0-72-generic amd64
+20:51:05.809 INFO  IndexFeatureFile - Java runtime: OpenJDK 64-Bit Server VM v11.0.11+9-Ubuntu-0ubuntu2.20.04
+20:51:05.809 INFO  IndexFeatureFile - Start Date/Time: June 12, 2021 at 8:51:05 PM EDT
+20:51:05.809 INFO  IndexFeatureFile - ------------------------------------------------------------
+20:51:05.809 INFO  IndexFeatureFile - ------------------------------------------------------------
+20:51:05.810 INFO  IndexFeatureFile - HTSJDK Version: 2.24.0
+20:51:05.810 INFO  IndexFeatureFile - Picard Version: 2.25.0
+20:51:05.810 INFO  IndexFeatureFile - Built for Spark Version: 2.4.5
+20:51:05.810 INFO  IndexFeatureFile - HTSJDK Defaults.COMPRESSION_LEVEL : 2
+20:51:05.810 INFO  IndexFeatureFile - HTSJDK Defaults.USE_ASYNC_IO_READ_FOR_SAMTOOLS : false
+20:51:05.810 INFO  IndexFeatureFile - HTSJDK Defaults.USE_ASYNC_IO_WRITE_FOR_SAMTOOLS : true
+20:51:05.810 INFO  IndexFeatureFile - HTSJDK Defaults.USE_ASYNC_IO_WRITE_FOR_TRIBBLE : false
+20:51:05.810 INFO  IndexFeatureFile - Deflater: IntelDeflater
+20:51:05.810 INFO  IndexFeatureFile - Inflater: IntelInflater
+20:51:05.810 INFO  IndexFeatureFile - GCS max retries/reopens: 20
+20:51:05.810 INFO  IndexFeatureFile - Requester pays: disabled
+20:51:05.810 INFO  IndexFeatureFile - Initializing engine
+20:51:05.810 INFO  IndexFeatureFile - Done initializing engine
+20:51:05.884 INFO  FeatureManager - Using codec VCFCodec to read file file:///scratch/timothy/projects/0017_Montipora_capitata_HiRise_Assembly/03_Analysis/2021_04_21/RNAseq_short_variant_analysis/filtering/GVCFall_SNPs_VarScores_filterPASSED.vcf
+20:51:05.930 INFO  ProgressMeter - Starting traversal
+20:51:05.930 INFO  ProgressMeter -        Current Locus  Elapsed Minutes     Records Processed   Records/Minute
+20:51:15.948 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_1___length_48529999:36493503              0.2                484000        2899361.0
+20:51:25.967 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_2___length_53177999:19706344              0.3                936000        2802954.7
+20:51:35.973 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_3___length_47342999:3515970              0.5               1391000        2778018.2
+20:51:45.983 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_3___length_47342999:44053946              0.7               1861000        2787806.2
+20:51:55.987 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_4___length_47716837:35489453              0.8               2329000        2791673.3
+20:52:05.987 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_5___length_62411161:22488223              1.0               2801000        2798341.6
+20:52:16.001 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_5___length_62411161:60233834              1.2               3282000        2810332.5
+20:52:26.014 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_6___length_38979999:33297085              1.3               3755000        2813331.2
+20:52:36.021 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_8___length_68683312:3408708              1.5               4207000        2801833.7
+20:52:46.021 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_8___length_68683312:41989713              1.7               4677000        2803648.7
+20:52:56.031 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_9___length_36520733:8232475              1.8               5153000        2808148.9
+20:53:06.037 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_10___length_69151359:5345945              2.0               5629000        2811992.6
+20:53:16.041 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_10___length_69151359:46437965              2.2               6117000        2820822.2
+20:53:26.043 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_11___length_67098902:13692170              2.3               6588000        2821171.6
+20:53:36.061 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_11___length_67098902:52858677              2.5               7067000        2824352.2
+20:53:46.067 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_12___length_43329812:22816693              2.7               7543000        2826205.1
+20:53:56.086 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_13___length_39528174:13250120              2.8               8011000        2824819.6
+20:54:06.095 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_14___length_35226620:10727792              3.0               8487000        2826409.1
+20:54:16.111 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_39___length_391235:165242              3.2               8966000        2828673.7
+20:54:26.117 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_580___length_46272:19669              3.3               9462000        2835948.4
+20:54:28.595 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_1642___length_5182:4666              3.4               9584962        2837676.6
+20:54:28.595 INFO  ProgressMeter - Traversal complete. Processed 9584962 total records in 3.4 minutes.
+20:54:28.680 INFO  IndexFeatureFile - Successfully wrote index to /scratch/timothy/projects/0017_Montipora_capitata_HiRise_Assembly/03_Analysis/2021_04_21/RNAseq_short_variant_analysis/filtering/GVCFall_SNPs_VarScores_filterPASSED.vcf.idx
+20:54:28.680 INFO  IndexFeatureFile - Shutting down engine
+[June 12, 2021 at 8:54:28 PM EDT] org.broadinstitute.hellbender.tools.IndexFeatureFile done. Elapsed time: 3.38 minutes.
+Runtime.totalMemory()=5859442688
+Tool returned:
+/scratch/timothy/projects/0017_Montipora_capitata_HiRise_Assembly/03_Analysis/2021_04_21/RNAseq_short_variant_analysis/filtering/GVCFall_SNPs_VarScores_filterPASSED.vcf.idx
+Using GATK jar /home/timothy/programs/gatk-4.2.0.0/gatk-package-4.2.0.0-local.jar
+Running:
+    java -Dsamjdk.use_async_io_read_samtools=false -Dsamjdk.use_async_io_write_samtools=true -Dsamjdk.use_async_io_write_tribble=false -Dsamjdk.compression_level=2 -jar /home/timothy/programs/gatk-4.2.0.0/gatk-package-4.2.0.0-local.jar IndexFeatureFile --input GVCFall_SNPs_VarScores_filterPASSED.vcf

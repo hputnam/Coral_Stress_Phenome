@@ -1,0 +1,88 @@
+This is cutadapt 2.9 with Python 3.5.2
+Command line parameters: -G G{20} -e 0.0 -n 10 --minimum-length 25 --cores 4 -o Mcapitata_HTHC_TP3_1128_R1_TrimmingRound2.fastq.gz -p Mcapitata_HTHC_TP3_1128_R2_TrimmingRound2.fastq.gz Mcapitata_HTHC_TP3_1128_R1_TrimmingRound1.fastq.gz Mcapitata_HTHC_TP3_1128_R2_TrimmingRound1.fastq.gz
+Processing reads on 4 cores in paired-end mode ...
+Finished in 367.12 s (27 us/read; 2.24 M reads/minute).
+
+=== Summary ===
+
+Total read pairs processed:         13,684,056
+  Read 1 with adapter:                       0 (0.0%)
+  Read 2 with adapter:                 199,444 (1.5%)
+Pairs written (passing filters):    13,684,045 (100.0%)
+
+Total basepairs processed: 3,737,666,672 bp
+  Read 1: 1,865,554,439 bp
+  Read 2: 1,872,112,233 bp
+Total written (filtered):  3,737,006,932 bp (100.0%)
+  Read 1: 1,865,552,838 bp
+  Read 2: 1,871,454,094 bp
+
+=== Second read: Adapter 1 ===
+
+Sequence: GGGGGGGGGGGGGGGGGGGG; Type: regular 5'; Length: 20; Trimmed: 199462 times
+
+No. of allowed errors:
+0-20 bp: 0
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	155546	213813.4	0	155546
+4	35655	53453.3	0	35655
+5	6768	13363.3	0	6768
+6	1013	3340.8	0	1013
+7	253	835.2	0	253
+8	85	208.8	0	85
+9	38	52.2	0	38
+10	14	13.1	0	14
+11	8	3.3	0	8
+12	9	0.8	0	9
+13	4	0.2	0	4
+14	2	0.1	0	2
+15	2	0.0	0	2
+17	1	0.0	0	1
+18	1	0.0	0	1
+20	1	0.0	0	1
+21	1	0.0	0	1
+31	1	0.0	0	1
+35	1	0.0	0	1
+39	1	0.0	0	1
+41	1	0.0	0	1
+43	1	0.0	0	1
+44	1	0.0	0	1
+46	1	0.0	0	1
+49	1	0.0	0	1
+50	1	0.0	0	1
+51	1	0.0	0	1
+55	1	0.0	0	1
+60	3	0.0	0	3
+62	1	0.0	0	1
+64	2	0.0	0	2
+72	1	0.0	0	1
+75	1	0.0	0	1
+78	2	0.0	0	2
+81	1	0.0	0	1
+83	2	0.0	0	2
+84	1	0.0	0	1
+87	2	0.0	0	2
+88	1	0.0	0	1
+89	2	0.0	0	2
+90	1	0.0	0	1
+92	1	0.0	0	1
+95	1	0.0	0	1
+96	1	0.0	0	1
+102	3	0.0	0	3
+104	1	0.0	0	1
+105	5	0.0	0	5
+106	2	0.0	0	2
+109	1	0.0	0	1
+111	1	0.0	0	1
+114	2	0.0	0	2
+124	1	0.0	0	1
+126	1	0.0	0	1
+127	1	0.0	0	1
+132	2	0.0	0	2
+134	2	0.0	0	2
+138	1	0.0	0	1
+140	1	0.0	0	1
+144	1	0.0	0	1
+146	2	0.0	0	2

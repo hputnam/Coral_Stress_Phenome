@@ -1,0 +1,6 @@
+HIMB	#b35806
+Lilipuna.Fringe	#f1a340
+Reef.11.13	#fee0b6
+Reef.18	#d8daeb
+Reef.35.36	#998ec3
+Reef.42.43	#542788

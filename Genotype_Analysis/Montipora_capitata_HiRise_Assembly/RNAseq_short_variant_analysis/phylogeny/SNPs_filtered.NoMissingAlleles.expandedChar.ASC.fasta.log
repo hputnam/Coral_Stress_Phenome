@@ -1,0 +1,153 @@
+IQ-TREE multicore version 1.6.12 for Linux 64-bit built Aug 15 2019
+Developed by Bui Quang Minh, Nguyen Lam Tung, Olga Chernomor,
+Heiko Schmidt, Dominik Schrempf, Michael Woodhams.
+
+Host:    coral (AVX512, FMA3, 376 GB RAM)
+Command: iqtree -nt AUTO -ntmax 24 -st DNA -m GTR+ASC -bb 2000 -quiet -s SNPs_filtered.NoMissingAlleles.expandedChar.ASC.fasta
+Seed:    965278 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Sun Jun 13 16:57:44 2021
+Kernel:  AVX+FMA - auto-detect threads (96 CPU cores detected)
+
+Reading alignment file SNPs_filtered.NoMissingAlleles.expandedChar.ASC.fasta ... Fasta format detected
+Alignment most likely contains DNA/RNA sequences
+Alignment has 132 sequences with 28382 columns, 23290 distinct patterns
+25541 parsimony-informative, 1165 singleton sites, 1676 constant sites
+                          Gap/Ambiguity  Composition  p-value
+   1  Mcapitata_ATAC_TP10_1095    0.00%    passed     50.09%
+   2  Mcapitata_ATAC_TP10_1561    0.00%    passed     93.42%
+   3  Mcapitata_ATAC_TP10_1631    0.00%    passed     92.47%
+   4  Mcapitata_ATAC_TP11_1076    0.00%    passed     73.19%
+   5  Mcapitata_ATAC_TP11_1644    0.00%    passed     77.65%
+   6  Mcapitata_ATAC_TP11_2302    0.00%    passed     95.35%
+   7  Mcapitata_ATAC_TP12_1120    0.00%    passed     94.77%
+   8  Mcapitata_ATAC_TP12_1452    0.00%    passed     84.05%
+   9  Mcapitata_ATAC_TP12_2403    0.00%    passed     36.20%
+  10  Mcapitata_ATAC_TP1_1037     0.00%    passed     85.99%
+  11  Mcapitata_ATAC_TP1_1600     0.00%    passed     55.13%
+  12  Mcapitata_ATAC_TP1_1652     0.00%    passed     98.66%
+  13  Mcapitata_ATAC_TP3_1101     0.00%    passed     98.75%
+  14  Mcapitata_ATAC_TP3_1548     0.00%    passed     52.12%
+  15  Mcapitata_ATAC_TP3_1628     0.00%    passed     78.83%
+  16  Mcapitata_ATAC_TP4_1108     0.00%    passed     86.13%
+  17  Mcapitata_ATAC_TP4_1609     0.00%    passed     97.98%
+  18  Mcapitata_ATAC_TP4_1651     0.00%    passed     60.14%
+  19  Mcapitata_ATAC_TP5_1196     0.00%    passed     89.74%
+  20  Mcapitata_ATAC_TP5_1610     0.00%    passed     46.35%
+  21  Mcapitata_ATAC_TP5_1776     0.00%    passed     95.67%
+  22  Mcapitata_ATAC_TP6_1114     0.00%    passed     61.05%
+  23  Mcapitata_ATAC_TP6_1611     0.00%    passed     40.80%
+  24  Mcapitata_ATAC_TP6_2402     0.00%    passed     34.28%
+  25  Mcapitata_ATAC_TP7_1058     0.00%    passed     47.42%
+  26  Mcapitata_ATAC_TP7_1455     0.00%    passed     80.78%
+  27  Mcapitata_ATAC_TP7_1499     0.00%    passed     32.26%
+  28  Mcapitata_ATAC_TP8_1083     0.00%    passed     17.66%
+  29  Mcapitata_ATAC_TP8_1436     0.00%    passed     88.86%
+  30  Mcapitata_ATAC_TP8_1779     0.00%    passed     57.20%
+  31  Mcapitata_ATAC_TP9_1121     0.00%    passed     77.42%
+  32  Mcapitata_ATAC_TP9_1420     0.00%    passed     72.99%
+  33  Mcapitata_ATAC_TP9_1580     0.00%    passed     77.58%
+  34  Mcapitata_ATHC_TP10_1204    0.00%    passed     76.13%
+  35  Mcapitata_ATHC_TP10_2554    0.00%    passed     22.38%
+  36  Mcapitata_ATHC_TP10_2737    0.00%    passed     80.33%
+  37  Mcapitata_ATHC_TP11_1237    0.00%    passed     92.25%
+  38  Mcapitata_ATHC_TP11_2188    0.00%    passed     78.24%
+  39  Mcapitata_ATHC_TP11_2756    0.00%    passed     24.03%
+  40  Mcapitata_ATHC_TP12_1154    0.00%    passed     37.97%
+  41  Mcapitata_ATHC_TP12_2736    0.00%    passed     54.13%
+  42  Mcapitata_ATHC_TP12_2990    0.00%    passed     92.52%
+  43  Mcapitata_ATHC_TP1_1218     0.00%    passed     80.17%
+  44  Mcapitata_ATHC_TP1_1826     0.00%    passed     88.84%
+  45  Mcapitata_ATHC_TP1_2068     0.00%    passed     92.55%
+  46  Mcapitata_ATHC_TP3_1544     0.00%    passed     91.33%
+  47  Mcapitata_ATHC_TP3_2731     0.00%    passed     90.32%
+  48  Mcapitata_ATHC_TP3_2866     0.00%    passed     31.93%
+  49  Mcapitata_ATHC_TP4_1221     0.00%    passed     99.08%
+  50  Mcapitata_ATHC_TP4_2561     0.00%    passed     72.93%
+  51  Mcapitata_ATHC_TP4_2734     0.00%    passed     59.52%
+  52  Mcapitata_ATHC_TP5_1229     0.00%    passed     59.99%
+  53  Mcapitata_ATHC_TP5_1706     0.00%    passed     87.13%
+  54  Mcapitata_ATHC_TP5_2986     0.00%    passed     91.05%
+  55  Mcapitata_ATHC_TP6_1212     0.00%    passed     91.76%
+  56  Mcapitata_ATHC_TP6_2016     0.00%    passed     86.70%
+  57  Mcapitata_ATHC_TP6_2555     0.00%    passed     93.55%
+  58  Mcapitata_ATHC_TP7_1223     0.00%    passed     78.43%
+  59  Mcapitata_ATHC_TP7_2860     0.00%    passed     70.25%
+  60  Mcapitata_ATHC_TP7_2875     0.00%    passed     83.93%
+  61  Mcapitata_ATHC_TP8_1260     0.00%    passed     42.26%
+  62  Mcapitata_ATHC_TP8_2735     0.00%    passed     92.22%
+  63  Mcapitata_ATHC_TP8_2753     0.00%    passed     25.12%
+  64  Mcapitata_ATHC_TP9_1148     0.00%    passed     84.55%
+  65  Mcapitata_ATHC_TP9_2862     0.00%    passed     95.74%
+  66  Mcapitata_ATHC_TP9_2995     0.00%    passed     51.13%
+  67  Mcapitata_HTAC_TP10_1315    0.00%    passed     91.21%
+  68  Mcapitata_HTAC_TP10_1478    0.00%    passed     94.01%
+  69  Mcapitata_HTAC_TP10_1754    0.00%    passed     17.88%
+  70  Mcapitata_HTAC_TP11_1248    0.00%    passed     97.11%
+  71  Mcapitata_HTAC_TP11_1562    0.00%    passed     49.53%
+  72  Mcapitata_HTAC_TP11_2380    0.00%    passed     97.91%
+  73  Mcapitata_HTAC_TP12_1632    0.00%    passed     91.18%
+  74  Mcapitata_HTAC_TP12_1729    0.00%    passed     42.50%
+  75  Mcapitata_HTAC_TP12_2007    0.00%    passed     85.73%
+  76  Mcapitata_HTAC_TP1_1579     0.00%    passed     52.70%
+  77  Mcapitata_HTAC_TP1_2153     0.00%    passed     60.45%
+  78  Mcapitata_HTAC_TP1_2183     0.00%    passed     59.32%
+  79  Mcapitata_HTAC_TP3_1289     0.00%    passed     46.73%
+  80  Mcapitata_HTAC_TP3_1751     0.00%    passed     93.70%
+  81  Mcapitata_HTAC_TP3_2021     0.00%    passed     99.63%
+  82  Mcapitata_HTAC_TP4_1269     0.00%    passed     59.71%
+  83  Mcapitata_HTAC_TP4_1481     0.00%    passed     48.02%
+  84  Mcapitata_HTAC_TP4_2000     0.00%    passed     90.33%
+  85  Mcapitata_HTAC_TP5_1321     0.00%    passed     56.63%
+  86  Mcapitata_HTAC_TP5_1583     0.00%    passed     98.52%
+  87  Mcapitata_HTAC_TP5_1997     0.00%    passed     96.19%
+  88  Mcapitata_HTAC_TP6_1496     0.00%    passed     43.46%
+  89  Mcapitata_HTAC_TP6_1588     0.00%    passed     42.69%
+  90  Mcapitata_HTAC_TP6_1705     0.00%    passed     34.44%
+  91  Mcapitata_HTAC_TP7_1278     0.00%    passed     90.63%
+  92  Mcapitata_HTAC_TP7_1645     0.00%    passed     94.60%
+  93  Mcapitata_HTAC_TP7_1722     0.00%    passed     87.62%
+  94  Mcapitata_HTAC_TP8_1235     0.00%    passed     80.54%
+  95  Mcapitata_HTAC_TP8_2386     0.00%    passed     69.38%
+  96  Mcapitata_HTAC_TP8_2410     0.00%    passed     52.04%
+  97  Mcapitata_HTAC_TP9_1306     0.00%    passed     51.11%
+  98  Mcapitata_HTAC_TP9_1467     0.00%    passed     95.57%
+  99  Mcapitata_HTAC_TP9_2412     0.00%    passed     62.25%
+ 100  Mcapitata_HTHC_TP10_1074    0.00%    passed     94.74%
+ 101  Mcapitata_HTHC_TP10_1332    0.00%    passed     58.80%
+ 102  Mcapitata_HTHC_TP10_1689    0.00%    passed     41.06%
+ 103  Mcapitata_HTHC_TP11_1178    0.00%    passed     76.48%
+ 104  Mcapitata_HTHC_TP11_1270    0.00%    passed     66.54%
+ 105  Mcapitata_HTHC_TP11_2511    0.00%    passed     68.84%
+ 106  Mcapitata_HTHC_TP12_1140    0.00%    passed     75.65%
+ 107  Mcapitata_HTHC_TP12_1274    0.00%    passed     65.72%
+ 108  Mcapitata_HTHC_TP12_2190    0.00%    passed     47.78%
+ 109  Mcapitata_HTHC_TP1_1145     0.00%    passed     81.30%
+ 110  Mcapitata_HTHC_TP1_1323     0.00%    passed     92.02%
+ 111  Mcapitata_HTHC_TP1_2081     0.00%    passed     31.08%
+ 112  Mcapitata_HTHC_TP3_1128     0.00%    passed     57.07%
+ 113  Mcapitata_HTHC_TP3_1277     0.00%    passed     92.70%
+ 114  Mcapitata_HTHC_TP3_2518     0.00%    passed     93.49%
+ 115  Mcapitata_HTHC_TP4_1124     0.00%    passed     87.84%
+ 116  Mcapitata_HTHC_TP4_1328     0.00%    passed     92.92%
+ 117  Mcapitata_HTHC_TP4_2204     0.00%    passed     97.95%
+ 118  Mcapitata_HTHC_TP5_1345     0.00%    passed     72.39%
+ 119  Mcapitata_HTHC_TP5_1449     0.00%    passed     55.74%
+ 120  Mcapitata_HTHC_TP5_1694     0.00%    passed     96.25%
+ 121  Mcapitata_HTHC_TP6_1164     0.00%    passed     45.46%
+ 122  Mcapitata_HTHC_TP6_1317     0.00%    passed     31.57%
+ 123  Mcapitata_HTHC_TP6_1604     0.00%    passed     85.05%
+ 124  Mcapitata_HTHC_TP7_1126     0.00%    passed     89.37%
+ 125  Mcapitata_HTHC_TP7_1250     0.00%    passed     47.12%
+ 126  Mcapitata_HTHC_TP7_2419     0.00%    passed     99.48%
+ 127  Mcapitata_HTHC_TP8_1082     0.00%    passed     79.42%
+ 128  Mcapitata_HTHC_TP8_1246     0.00%    passed     81.26%
+ 129  Mcapitata_HTHC_TP8_2067     0.00%    passed     62.31%
+ 130  Mcapitata_HTHC_TP9_1078     0.00%    passed     92.64%
+ 131  Mcapitata_HTHC_TP9_1331     0.00%    passed     99.48%
+ 132  Mcapitata_HTHC_TP9_2009     0.00%    passed     76.71%
+****  TOTAL                       0.00%  0 sequences failed composition chi2 test (p-value<5%; df=3)
+
+Create initial parsimony tree by phylogenetic likelihood library (PLL)... 0.512 seconds
+Generating 2000 samples for ultrafast bootstrap (seed: 965278)...
+ERROR: For your convenience alignment with variable sites printed to SNPs_filtered.NoMissingAlleles.expandedChar.ASC.fasta.varsites.phy
+ERROR: Invalid use of +ASC because of 1676 invariant sites in the alignment

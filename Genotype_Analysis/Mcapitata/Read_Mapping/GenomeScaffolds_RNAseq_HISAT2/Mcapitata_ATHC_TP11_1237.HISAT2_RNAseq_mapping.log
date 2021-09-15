@@ -1,0 +1,45 @@
+=====================================================================
+Slurm config version 0.1
+Starting at Wed 03 Feb 2021 08:13:58 PM EST
+Working directory is /scratch/timothy/projects/Coral_Stress_Phenome/results/2021-02-02/Mcapitata/Read_Mapping/GenomeScaffolds_RNAseq_HISAT2
+=====================================================================
+
+[Wed 03 Feb 2021 08:13:59 PM EST]      LOG: Running sample Mcapitata_ATHC_TP11_1237
+[Wed 03 Feb 2021 08:13:59 PM EST]      CMD: hisat2 -q --phred33 --dta --rf --very-sensitive -x Mcap.genome_assembly.fa -1 /scratch/timothy/TranscriptomeAnalysis_Mcapitata_Pacuta_TimeSeriesDE/RNA_Seq_data/trimming_cutadapt/Mcapitata_ATHC_TP11_1237_R1_TrimmingRound2.fastq.gz -2 /scratch/timothy/TranscriptomeAnalysis_Mcapitata_Pacuta_TimeSeriesDE/RNA_Seq_data/trimming_cutadapt/Mcapitata_ATHC_TP11_1237_R2_TrimmingRound2.fastq.gz --threads 20 2> Mcapitata_ATHC_TP11_1237.HISAT2_RNAseq_mapping.hisat2_mapping.stats | samtools sort -@ 20 -T Mcapitata_ATHC_TP11_1237.HISAT2_RNAseq_mapping.tmp -o Mcapitata_ATHC_TP11_1237.HISAT2_RNAseq_mapping.coordSorted.bam -
+[bam_sort_core] merging from 20 files and 20 in-memory blocks...
+[Wed 03 Feb 2021 08:27:13 PM EST]      CMD: samtools view -f12 Mcapitata_ATHC_TP11_1237.HISAT2_RNAseq_mapping.coordSorted.bam | repair.sh in=stdin.sam out=Mcapitata_ATHC_TP11_1237.HISAT2_RNAseq_mapping.coordSorted.unmapped_pairs_R1.fastq.gz out2=Mcapitata_ATHC_TP11_1237.HISAT2_RNAseq_mapping.coordSorted.unmapped_pairs_R2.fastq.gz outs=Mcapitata_ATHC_TP11_1237.HISAT2_RNAseq_mapping.coordSorted.unmapped_pairs_Single.fastq.gz
+java -ea -Xmx215002m -cp /home/timothy/programs/bbmap/current/ jgi.SplitPairsAndSingles rp in=stdin.sam out=Mcapitata_ATHC_TP11_1237.HISAT2_RNAseq_mapping.coordSorted.unmapped_pairs_R1.fastq.gz out2=Mcapitata_ATHC_TP11_1237.HISAT2_RNAseq_mapping.coordSorted.unmapped_pairs_R2.fastq.gz outs=Mcapitata_ATHC_TP11_1237.HISAT2_RNAseq_mapping.coordSorted.unmapped_pairs_Single.fastq.gz
+Executing jgi.SplitPairsAndSingles [rp, in=stdin.sam, out=Mcapitata_ATHC_TP11_1237.HISAT2_RNAseq_mapping.coordSorted.unmapped_pairs_R1.fastq.gz, out2=Mcapitata_ATHC_TP11_1237.HISAT2_RNAseq_mapping.coordSorted.unmapped_pairs_R2.fastq.gz, outs=Mcapitata_ATHC_TP11_1237.HISAT2_RNAseq_mapping.coordSorted.unmapped_pairs_Single.fastq.gz]
+
+Set INTERLEAVED to false
+Started output stream.
+
+Input:                  	3482144 reads 		441253719 bases.
+Result:                 	3482144 reads (100.00%) 	441253719 bases (100.00%)
+Pairs:                  	3482144 reads (100.00%) 	441253719 bases (100.00%)
+Singletons:             	0 reads (0.00%) 	0 bases (0.00%)
+
+Time:                         	56.562 seconds.
+Reads Processed:       3482k 	61.56k reads/sec
+Bases Processed:        441m 	7.80m bases/sec
+[Wed 03 Feb 2021 08:28:10 PM EST]      CMD: reformat.sh verifypaired=t in=Mcapitata_ATHC_TP11_1237.HISAT2_RNAseq_mapping.coordSorted.unmapped_pairs_R1.fastq.gz in2=Mcapitata_ATHC_TP11_1237.HISAT2_RNAseq_mapping.coordSorted.unmapped_pairs_R2.fastq.gz
+java -ea -Xms300m -cp /home/timothy/programs/bbmap/current/ jgi.ReformatReads verifypaired=t in=Mcapitata_ATHC_TP11_1237.HISAT2_RNAseq_mapping.coordSorted.unmapped_pairs_R1.fastq.gz in2=Mcapitata_ATHC_TP11_1237.HISAT2_RNAseq_mapping.coordSorted.unmapped_pairs_R2.fastq.gz
+Executing jgi.ReformatReads [verifypaired=t, in=Mcapitata_ATHC_TP11_1237.HISAT2_RNAseq_mapping.coordSorted.unmapped_pairs_R1.fastq.gz, in2=Mcapitata_ATHC_TP11_1237.HISAT2_RNAseq_mapping.coordSorted.unmapped_pairs_R2.fastq.gz]
+
+No output stream specified.  To write to stdout, please specify 'out=stdout.fq' or similar.
+Set INTERLEAVED to false
+Input is being processed as paired
+Input:                  	3482144 reads          	441253719 bases
+Output:                 	3482144 reads (100.00%) 	441253719 bases (100.00%)
+
+Time:                         	2.734 seconds.
+Reads Processed:       3482k 	1273.66k reads/sec
+Bases Processed:        441m 	161.40m bases/sec
+Names appear to be correctly paired.
+[Wed 03 Feb 2021 08:28:13 PM EST]      LOG: Done mapping!
+
+=====================================================================
+Started: at Wed 03 Feb 2021 08:13:58 PM EST
+Finished: at Wed 03 Feb 2021 08:28:13 PM EST
+ExitStatus: 0
+=====================================================================

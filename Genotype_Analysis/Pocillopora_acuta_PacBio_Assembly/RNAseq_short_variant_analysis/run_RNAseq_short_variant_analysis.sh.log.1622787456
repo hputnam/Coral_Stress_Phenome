@@ -1,0 +1,14 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Fri 04 Jun 2021 02:17:36 AM EDT
+Working directory is /scratch/timothy/projects/0020_Pocillopora_acuta_PacBio_Assembly/03_Analysis/2021_05_26/RNAseq_short_variant_analysis
+=====================================================================
+
+[Thu 10 Jun 2021 01:45:53 AM EDT]      LOG: Parallel finished with exit status: 0
+## Done running!
+
+=====================================================================
+Started: at Fri 04 Jun 2021 02:17:36 AM EDT
+Finished: at Thu 10 Jun 2021 01:45:53 AM EDT
+ExitStatus: 0
+=====================================================================

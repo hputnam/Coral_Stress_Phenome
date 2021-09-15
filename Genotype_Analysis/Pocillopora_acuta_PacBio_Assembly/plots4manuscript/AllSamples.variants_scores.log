@@ -1,0 +1,10 @@
+[1] "SNPs dimensions:"
+[1] 7838506      11
+[1] "INDELs dimensions:"
+[1] 1063367      11
+Warning message:
+Removed 134 rows containing non-finite values (stat_density). 
+Warning messages:
+1: Removed 134 rows containing non-finite values (stat_density). 
+2: Removed 66092 rows containing non-finite values (stat_density). 
+3: Removed 504 rows containing non-finite values (stat_density). 

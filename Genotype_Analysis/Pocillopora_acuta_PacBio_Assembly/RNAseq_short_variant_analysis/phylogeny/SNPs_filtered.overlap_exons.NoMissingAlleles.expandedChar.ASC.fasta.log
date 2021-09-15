@@ -1,0 +1,140 @@
+IQ-TREE multicore version 1.6.12 for Linux 64-bit built Aug 15 2019
+Developed by Bui Quang Minh, Nguyen Lam Tung, Olga Chernomor,
+Heiko Schmidt, Dominik Schrempf, Michael Woodhams.
+
+Host:    coral (AVX512, FMA3, 376 GB RAM)
+Command: iqtree -nt AUTO -ntmax 24 -s SNPs_filtered.overlap_exons.NoMissingAlleles.expandedChar.ASC.fasta -st DNA -m GTR+ASC -bb 2000 -quiet
+Seed:    812865 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Sun Jun 13 16:09:50 2021
+Kernel:  AVX+FMA - auto-detect threads (96 CPU cores detected)
+
+Reading alignment file SNPs_filtered.overlap_exons.NoMissingAlleles.expandedChar.ASC.fasta ... Fasta format detected
+Alignment most likely contains DNA/RNA sequences
+Alignment has 119 sequences with 6878 columns, 2030 distinct patterns
+3730 parsimony-informative, 483 singleton sites, 2665 constant sites
+                       Gap/Ambiguity  Composition  p-value
+   1  Pacuta_ATAC_TP10_1159    0.00%    passed     86.92%
+   2  Pacuta_ATAC_TP10_1559    0.00%    passed     92.03%
+   3  Pacuta_ATAC_TP10_1641    0.00%    passed     90.00%
+   4  Pacuta_ATAC_TP11_1103    0.00%    passed     87.09%
+   5  Pacuta_ATAC_TP11_1777    0.00%    passed     70.42%
+   6  Pacuta_ATAC_TP11_2306    0.00%    passed     89.64%
+   7  Pacuta_ATAC_TP1_1043     0.00%    passed     98.99%
+   8  Pacuta_ATAC_TP1_1775     0.00%    passed     82.64%
+   9  Pacuta_ATAC_TP1_2363     0.00%    passed     95.38%
+  10  Pacuta_ATAC_TP3_1041     0.00%    passed     79.80%
+  11  Pacuta_ATAC_TP3_1471     0.00%    passed     97.63%
+  12  Pacuta_ATAC_TP3_1637     0.00%    passed     86.71%
+  13  Pacuta_ATAC_TP4_1060     0.00%    passed     94.05%
+  14  Pacuta_ATAC_TP4_1762     0.00%    passed     86.25%
+  15  Pacuta_ATAC_TP4_2002     0.00%    passed     92.81%
+  16  Pacuta_ATAC_TP5_1059     0.00%    passed     64.74%
+  17  Pacuta_ATAC_TP5_1563     0.00%    passed     96.36%
+  18  Pacuta_ATAC_TP5_1757     0.00%    passed     90.63%
+  19  Pacuta_ATAC_TP6_1050     0.00%    passed     93.33%
+  20  Pacuta_ATAC_TP6_1468     0.00%    passed     85.42%
+  21  Pacuta_ATAC_TP6_1542     0.00%    passed     99.89%
+  22  Pacuta_ATAC_TP7_1047     0.00%    passed     93.34%
+  23  Pacuta_ATAC_TP7_1445     0.00%    passed     60.86%
+  24  Pacuta_ATAC_TP7_2413     0.00%    passed     84.94%
+  25  Pacuta_ATAC_TP8_1051     0.00%    passed     69.08%
+  26  Pacuta_ATAC_TP8_1755     0.00%    passed     82.85%
+  27  Pacuta_ATAC_TP8_2012     0.00%    passed     90.31%
+  28  Pacuta_ATAC_TP9_1141     0.00%    passed     86.21%
+  29  Pacuta_ATAC_TP9_1594     0.00%    passed     86.74%
+  30  Pacuta_ATAC_TP9_2357     0.00%    passed     84.28%
+  31  Pacuta_ATHC_TP10_1205    0.00%    passed     47.17%
+  32  Pacuta_ATHC_TP10_2197    0.00%    passed     91.07%
+  33  Pacuta_ATHC_TP10_2550    0.00%    passed     11.21%
+  34  Pacuta_ATHC_TP11_1147    0.00%    passed     89.89%
+  35  Pacuta_ATHC_TP11_2668    0.00%    passed     94.18%
+  36  Pacuta_ATHC_TP11_2879    0.00%    passed     95.44%
+  37  Pacuta_ATHC_TP1_1207     0.00%    passed     91.07%
+  38  Pacuta_ATHC_TP1_2743     0.00%    passed     98.54%
+  39  Pacuta_ATHC_TP1_2977     0.00%    passed     92.81%
+  40  Pacuta_ATHC_TP3_1219     0.00%    passed     94.27%
+  41  Pacuta_ATHC_TP3_2534     0.00%    passed     90.16%
+  42  Pacuta_ATHC_TP3_2750     0.00%    passed     99.46%
+  43  Pacuta_ATHC_TP4_1220     0.00%    passed     84.22%
+  44  Pacuta_ATHC_TP4_2733     0.00%    passed     71.96%
+  45  Pacuta_ATHC_TP4_2993     0.00%    passed     95.82%
+  46  Pacuta_ATHC_TP5_1296     0.00%    passed     92.51%
+  47  Pacuta_ATHC_TP5_2212     0.00%    passed     87.31%
+  48  Pacuta_ATHC_TP5_2877     0.00%    passed     90.18%
+  49  Pacuta_ATHC_TP6_1254     0.00%    passed     64.87%
+  50  Pacuta_ATHC_TP6_2870     0.00%    passed     85.98%
+  51  Pacuta_ATHC_TP6_2999     0.00%    passed     94.91%
+  52  Pacuta_ATHC_TP7_1281     0.00%    passed     93.64%
+  53  Pacuta_ATHC_TP7_2409     0.00%    passed     94.24%
+  54  Pacuta_ATHC_TP7_2878     0.00%    passed     83.72%
+  55  Pacuta_ATHC_TP8_1459     0.00%    passed     70.94%
+  56  Pacuta_ATHC_TP8_2564     0.00%    passed     95.62%
+  57  Pacuta_ATHC_TP8_2861     0.00%    passed     93.39%
+  58  Pacuta_ATHC_TP9_1451     0.00%    passed     86.15%
+  59  Pacuta_ATHC_TP9_2873     0.00%    passed     86.08%
+  60  Pacuta_ATHC_TP9_2979     0.00%    passed     91.69%
+  61  Pacuta_HTAC_TP10_1225    0.00%    passed     92.94%
+  62  Pacuta_HTAC_TP10_1536    0.00%    passed     90.50%
+  63  Pacuta_HTAC_TP10_2064    0.00%    passed     88.79%
+  64  Pacuta_HTAC_TP11_1582    0.00%    passed     91.08%
+  65  Pacuta_HTAC_TP11_1596    0.00%    passed     87.09%
+  66  Pacuta_HTAC_TP11_1647    0.00%    passed     91.37%
+  67  Pacuta_HTAC_TP1_1653     0.00%    passed     77.75%
+  68  Pacuta_HTAC_TP1_2005     0.00%    passed     90.70%
+  69  Pacuta_HTAC_TP1_2414     0.00%    passed     87.10%
+  70  Pacuta_HTAC_TP3_1617     0.00%    passed     93.58%
+  71  Pacuta_HTAC_TP3_1642     0.00%    passed     72.31%
+  72  Pacuta_HTAC_TP3_2026     0.00%    passed     92.96%
+  73  Pacuta_HTAC_TP4_1581     0.00%    passed     99.06%
+  74  Pacuta_HTAC_TP4_1701     0.00%    passed     94.39%
+  75  Pacuta_HTAC_TP4_1767     0.00%    passed     69.73%
+  76  Pacuta_HTAC_TP5_1303     0.00%    passed     92.47%
+  77  Pacuta_HTAC_TP5_1571     0.00%    passed     90.79%
+  78  Pacuta_HTAC_TP5_1707     0.00%    passed     87.71%
+  79  Pacuta_HTAC_TP6_1330     0.00%    passed     91.68%
+  80  Pacuta_HTAC_TP6_1466     0.00%    passed     89.71%
+  81  Pacuta_HTAC_TP6_1744     0.00%    passed     84.41%
+  82  Pacuta_HTAC_TP7_1487     0.00%    passed     94.66%
+  83  Pacuta_HTAC_TP7_1728     0.00%    passed     87.39%
+  84  Pacuta_HTAC_TP7_2072     0.00%    passed     61.94%
+  85  Pacuta_HTAC_TP8_1329     0.00%    passed     93.35%
+  86  Pacuta_HTAC_TP8_1765     0.00%    passed     88.67%
+  87  Pacuta_HTAC_TP8_2513     0.00%    passed     91.18%
+  88  Pacuta_HTAC_TP9_1302     0.00%    passed     83.98%
+  89  Pacuta_HTAC_TP9_1486     0.00%    passed     83.75%
+  90  Pacuta_HTAC_TP9_1696     0.00%    passed     88.22%
+  91  Pacuta_HTHC_TP10_1238    0.00%    passed     90.92%
+  92  Pacuta_HTHC_TP10_1732    0.00%    passed     96.03%
+  93  Pacuta_HTHC_TP10_2300    0.00%    passed     92.14%
+  94  Pacuta_HTHC_TP11_1416    0.00%    passed     90.33%
+  95  Pacuta_HTHC_TP11_2185    0.00%    failed      0.01%
+  96  Pacuta_HTHC_TP1_1239     0.00%    passed     93.74%
+  97  Pacuta_HTHC_TP1_1676     0.00%    passed     92.19%
+  98  Pacuta_HTHC_TP1_2210     0.00%    passed     74.26%
+  99  Pacuta_HTHC_TP3_1227     0.00%    passed     78.18%
+ 100  Pacuta_HTHC_TP3_1418     0.00%    passed     93.93%
+ 101  Pacuta_HTHC_TP3_2527     0.00%    passed     96.76%
+ 102  Pacuta_HTHC_TP4_1169     0.00%    passed     92.13%
+ 103  Pacuta_HTHC_TP4_1343     0.00%    passed     99.75%
+ 104  Pacuta_HTHC_TP4_2195     0.00%    passed     93.32%
+ 105  Pacuta_HTHC_TP5_1168     0.00%    passed     94.59%
+ 106  Pacuta_HTHC_TP5_1415     0.00%    passed     30.61%
+ 107  Pacuta_HTHC_TP5_2087     0.00%    passed     84.56%
+ 108  Pacuta_HTHC_TP6_1138     0.00%    passed     79.37%
+ 109  Pacuta_HTHC_TP6_1595     0.00%    passed     84.63%
+ 110  Pacuta_HTHC_TP6_1721     0.00%    passed     69.43%
+ 111  Pacuta_HTHC_TP7_1090     0.00%    passed     94.46%
+ 112  Pacuta_HTHC_TP7_1427     0.00%    passed     99.99%
+ 113  Pacuta_HTHC_TP7_1820     0.00%    passed     93.33%
+ 114  Pacuta_HTHC_TP8_1184     0.00%    passed     98.03%
+ 115  Pacuta_HTHC_TP8_1709     0.00%    passed     84.96%
+ 116  Pacuta_HTHC_TP8_2304     0.00%    passed     82.15%
+ 117  Pacuta_HTHC_TP9_1131     0.00%    passed     93.36%
+ 118  Pacuta_HTHC_TP9_2202     0.00%    passed     89.18%
+ 119  Pacuta_HTHC_TP9_2305     0.00%    passed     90.69%
+****  TOTAL                    0.00%  1 sequences failed composition chi2 test (p-value<5%; df=3)
+
+Create initial parsimony tree by phylogenetic likelihood library (PLL)... 0.036 seconds
+Generating 2000 samples for ultrafast bootstrap (seed: 812865)...
+ERROR: For your convenience alignment with variable sites printed to SNPs_filtered.overlap_exons.NoMissingAlleles.expandedChar.ASC.fasta.varsites.phy
+ERROR: Invalid use of +ASC because of 2665 invariant sites in the alignment

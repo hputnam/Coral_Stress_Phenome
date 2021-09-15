@@ -1,0 +1,21 @@
+IQ-TREE multicore version 1.6.12 for Linux 64-bit built Aug 15 2019
+Developed by Bui Quang Minh, Nguyen Lam Tung, Olga Chernomor,
+Heiko Schmidt, Dominik Schrempf, Michael Woodhams.
+
+Host:    coral (AVX512, FMA3, 376 GB RAM)
+Command: iqtree -rf_all -t SNPs_filtered.NoMissingAlleles.expandedChar.fasta.contree -rf all.contree
+Seed:    458068 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Sun Jun 13 19:29:28 2021
+Kernel:  AVX+FMA - 1 threads (96 CPU cores detected)
+
+HINT: Use -nt option to specify number of threads because your CPU has 96 cores!
+HINT: -nt AUTO will automatically determine the best number of threads to use.
+
+Reading tree(s) file SNPs_filtered.NoMissingAlleles.expandedChar.fasta.contree ...
+1 un-rooted tree(s) loaded
+Reading tree(s) file all.contree ...
+3 un-rooted tree(s) loaded
+Computing Robinson-Foulds distances between two sets of trees
+Using hash_map
+Robinson-Foulds distances printed to SNPs_filtered.NoMissingAlleles.expandedChar.fasta.contree.rfdist
+Date and Time: Sun Jun 13 19:29:28 2021

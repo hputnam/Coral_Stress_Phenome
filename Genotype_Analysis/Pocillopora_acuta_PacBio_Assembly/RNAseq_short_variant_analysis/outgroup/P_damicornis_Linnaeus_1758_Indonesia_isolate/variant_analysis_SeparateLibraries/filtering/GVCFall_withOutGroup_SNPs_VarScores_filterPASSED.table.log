@@ -1,0 +1,45 @@
+18:00:29.557 INFO  NativeLibraryLoader - Loading libgkl_compression.so from jar:file:/home/timothy/programs/gatk-4.2.0.0/gatk-package-4.2.0.0-local.jar!/com/intel/gkl/native/libgkl_compression.so
+Jun 13, 2021 6:00:29 PM shaded.cloud_nio.com.google.auth.oauth2.ComputeEngineCredentials runningOnComputeEngine
+INFO: Failed to detect whether we are running on Google Compute Engine.
+18:00:29.714 INFO  VariantsToTable - ------------------------------------------------------------
+18:00:29.715 INFO  VariantsToTable - The Genome Analysis Toolkit (GATK) v4.2.0.0
+18:00:29.715 INFO  VariantsToTable - For support and documentation go to https://software.broadinstitute.org/gatk/
+18:00:29.715 INFO  VariantsToTable - Executing as timothy@coral on Linux v5.4.0-72-generic amd64
+18:00:29.715 INFO  VariantsToTable - Java runtime: OpenJDK 64-Bit Server VM v11.0.11+9-Ubuntu-0ubuntu2.20.04
+18:00:29.715 INFO  VariantsToTable - Start Date/Time: June 13, 2021 at 6:00:29 PM EDT
+18:00:29.715 INFO  VariantsToTable - ------------------------------------------------------------
+18:00:29.715 INFO  VariantsToTable - ------------------------------------------------------------
+18:00:29.716 INFO  VariantsToTable - HTSJDK Version: 2.24.0
+18:00:29.716 INFO  VariantsToTable - Picard Version: 2.25.0
+18:00:29.716 INFO  VariantsToTable - Built for Spark Version: 2.4.5
+18:00:29.716 INFO  VariantsToTable - HTSJDK Defaults.COMPRESSION_LEVEL : 2
+18:00:29.716 INFO  VariantsToTable - HTSJDK Defaults.USE_ASYNC_IO_READ_FOR_SAMTOOLS : false
+18:00:29.716 INFO  VariantsToTable - HTSJDK Defaults.USE_ASYNC_IO_WRITE_FOR_SAMTOOLS : true
+18:00:29.716 INFO  VariantsToTable - HTSJDK Defaults.USE_ASYNC_IO_WRITE_FOR_TRIBBLE : false
+18:00:29.716 INFO  VariantsToTable - Deflater: IntelDeflater
+18:00:29.716 INFO  VariantsToTable - Inflater: IntelInflater
+18:00:29.716 INFO  VariantsToTable - GCS max retries/reopens: 20
+18:00:29.716 INFO  VariantsToTable - Requester pays: disabled
+18:00:29.716 INFO  VariantsToTable - Initializing engine
+18:00:29.853 INFO  FeatureManager - Using codec VCFCodec to read file file:///scratch/timothy/projects/0020_Pocillopora_acuta_PacBio_Assembly/03_Analysis/2021_05_26/RNAseq_short_variant_analysis/outgroup/P_damicornis_Linnaeus_1758_Indonesia_isolate/variant_analysis_SeparateLibraries/filtering/GVCFall_withOutGroup_SNPs_VarScores_filterPASSED.vcf
+18:00:29.955 INFO  VariantsToTable - Done initializing engine
+18:00:29.955 WARN  VariantsToTable - Allele-specific fields will only be split if splitting multi-allelic variants is specified (`--split-multi-allelic` or `-SMA`
+18:00:29.955 INFO  ProgressMeter - Starting traversal
+18:00:29.956 INFO  ProgressMeter -        Current Locus  Elapsed Minutes    Variants Processed  Variants/Minute
+18:00:39.959 INFO  ProgressMeter - Pocillopora_acuta_HIv1___Scaffold_000009F___length_2672951:1189754              0.2                481000        2885711.4
+18:00:49.971 INFO  ProgressMeter - Pocillopora_acuta_HIv1___Scaffold_000030F___length_1997862:279535              0.3               1048000        3141800.7
+18:00:59.979 INFO  ProgressMeter - Pocillopora_acuta_HIv1___Scaffold_000063F___length_1625206:1172012              0.5               1647000        3291476.5
+18:01:09.996 INFO  ProgressMeter - Pocillopora_acuta_HIv1___Scaffold_000070F___length_1363407:290899              0.7               2230000        3341658.3
+18:01:20.009 INFO  ProgressMeter - Pocillopora_acuta_HIv1___Scaffold_000149F___length_1101333:754037              0.8               2836000        3399596.4
+18:01:30.015 INFO  ProgressMeter - Pocillopora_acuta_HIv1___Scaffold_000229F___length_880673:835965              1.0               3449000        3445611.8
+18:01:40.017 INFO  ProgressMeter - Pocillopora_acuta_HIv1___Scaffold_000314F___length_703606:626301              1.2               4049000        3467549.7
+18:01:50.027 INFO  ProgressMeter - Pocillopora_acuta_HIv1___Scaffold_000531F___length_492662:104246              1.3               4651000        3485200.4
+18:02:00.036 INFO  ProgressMeter - Pocillopora_acuta_HIv1___Scaffold_001228F___length_171493:134154              1.5               5272000        3511584.3
+18:02:01.294 INFO  ProgressMeter - Pocillopora_acuta_HIv1___Scaffold_001864F___length_27309:26603              1.5               5350277        3514600.9
+18:02:01.295 INFO  ProgressMeter - Traversal complete. Processed 5350277 total variants in 1.5 minutes.
+18:02:01.295 INFO  VariantsToTable - Shutting down engine
+[June 13, 2021 at 6:02:01 PM EDT] org.broadinstitute.hellbender.tools.walkers.variantutils.VariantsToTable done. Elapsed time: 1.53 minutes.
+Runtime.totalMemory()=4085252096
+Using GATK jar /home/timothy/programs/gatk-4.2.0.0/gatk-package-4.2.0.0-local.jar
+Running:
+    java -Dsamjdk.use_async_io_read_samtools=false -Dsamjdk.use_async_io_write_samtools=true -Dsamjdk.use_async_io_write_tribble=false -Dsamjdk.compression_level=2 -jar /home/timothy/programs/gatk-4.2.0.0/gatk-package-4.2.0.0-local.jar VariantsToTable --reference Pocillopora_acuta_HIv1.assembly.purged.fasta --variant GVCFall_withOutGroup_SNPs_VarScores_filterPASSED.vcf --output GVCFall_withOutGroup_SNPs_VarScores_filterPASSED.table -F CHROM -F POS -F QUAL -F QD -F DP -F MQ -F FS -F SOR -F MQRankSum -F ReadPosRankSum

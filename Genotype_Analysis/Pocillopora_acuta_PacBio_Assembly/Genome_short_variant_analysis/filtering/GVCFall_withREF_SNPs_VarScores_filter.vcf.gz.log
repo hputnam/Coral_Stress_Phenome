@@ -1,0 +1,166 @@
+11:50:12.912 INFO  NativeLibraryLoader - Loading libgkl_compression.so from jar:file:/home/timothy/programs/gatk-4.2.0.0/gatk-package-4.2.0.0-local.jar!/com/intel/gkl/native/libgkl_compression.so
+Jul 11, 2021 11:50:13 AM shaded.cloud_nio.com.google.auth.oauth2.ComputeEngineCredentials runningOnComputeEngine
+INFO: Failed to detect whether we are running on Google Compute Engine.
+11:50:13.043 INFO  VariantFiltration - ------------------------------------------------------------
+11:50:13.043 INFO  VariantFiltration - The Genome Analysis Toolkit (GATK) v4.2.0.0
+11:50:13.043 INFO  VariantFiltration - For support and documentation go to https://software.broadinstitute.org/gatk/
+11:50:13.043 INFO  VariantFiltration - Executing as timothy@coral on Linux v5.4.0-72-generic amd64
+11:50:13.043 INFO  VariantFiltration - Java runtime: OpenJDK 64-Bit Server VM v11.0.11+9-Ubuntu-0ubuntu2.20.04
+11:50:13.043 INFO  VariantFiltration - Start Date/Time: July 11, 2021 at 11:50:12 AM EDT
+11:50:13.043 INFO  VariantFiltration - ------------------------------------------------------------
+11:50:13.043 INFO  VariantFiltration - ------------------------------------------------------------
+11:50:13.044 INFO  VariantFiltration - HTSJDK Version: 2.24.0
+11:50:13.044 INFO  VariantFiltration - Picard Version: 2.25.0
+11:50:13.044 INFO  VariantFiltration - Built for Spark Version: 2.4.5
+11:50:13.044 INFO  VariantFiltration - HTSJDK Defaults.COMPRESSION_LEVEL : 2
+11:50:13.044 INFO  VariantFiltration - HTSJDK Defaults.USE_ASYNC_IO_READ_FOR_SAMTOOLS : false
+11:50:13.044 INFO  VariantFiltration - HTSJDK Defaults.USE_ASYNC_IO_WRITE_FOR_SAMTOOLS : true
+11:50:13.044 INFO  VariantFiltration - HTSJDK Defaults.USE_ASYNC_IO_WRITE_FOR_TRIBBLE : false
+11:50:13.044 INFO  VariantFiltration - Deflater: IntelDeflater
+11:50:13.044 INFO  VariantFiltration - Inflater: IntelInflater
+11:50:13.044 INFO  VariantFiltration - GCS max retries/reopens: 20
+11:50:13.044 INFO  VariantFiltration - Requester pays: disabled
+11:50:13.044 INFO  VariantFiltration - Initializing engine
+11:50:13.185 INFO  FeatureManager - Using codec VCFCodec to read file file:///scratch/timothy/projects/0022_Coral_Genotype_Analysis/03_Analysis/2021-06-21/Pocillopora_acuta_PacBio_Assembly/Genome_short_variant_analysis/filtering/GVCFall_withREF_SNPs.vcf.gz
+11:50:13.282 INFO  VariantFiltration - Done initializing engine
+11:50:13.396 INFO  ProgressMeter - Starting traversal
+11:50:13.396 INFO  ProgressMeter -        Current Locus  Elapsed Minutes    Variants Processed  Variants/Minute
+11:50:14.694 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+11:50:17.027 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+11:50:17.048 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+11:50:21.319 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+11:50:23.419 INFO  ProgressMeter - Pocillopora_acuta_HIv1___Scaffold_000003F___length_3310154:1481332              0.2                329000        1969470.2
+11:50:29.651 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+11:50:33.428 INFO  ProgressMeter - Pocillopora_acuta_HIv1___Scaffold_000005F___length_2913003:226593              0.3                719000        2153554.3
+11:50:34.521 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+11:50:36.040 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+11:50:36.421 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+11:50:42.548 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+11:50:42.548 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+11:50:43.452 INFO  ProgressMeter - Pocillopora_acuta_HIv1___Scaffold_000011F___length_2586769:937072              0.5               1110000        2215863.7
+11:50:46.799 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+11:50:49.037 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+11:50:53.477 INFO  ProgressMeter - Pocillopora_acuta_HIv1___Scaffold_000017F___length_2344199:1660753              0.7               1495000        2237968.1
+11:50:54.182 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+11:50:54.183 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+11:50:56.433 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+11:50:57.948 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+11:51:03.495 INFO  ProgressMeter - Pocillopora_acuta_HIv1___Scaffold_000031F___length_2151340:748843              0.8               1903000        2279087.4
+11:51:06.628 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+11:51:08.760 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+11:51:13.334 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+11:51:13.500 INFO  ProgressMeter - Pocillopora_acuta_HIv1___Scaffold_000033F___length_1976463:1838227              1.0               2306000        2302048.2
+11:51:13.941 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+11:51:19.668 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+11:51:23.250 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+11:51:23.501 INFO  ProgressMeter - Pocillopora_acuta_HIv1___Scaffold_000044F___length_1822362:819433              1.2               2699000        2309963.6
+11:51:28.425 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+11:51:28.876 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+11:51:31.171 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+11:51:33.509 INFO  ProgressMeter - Pocillopora_acuta_HIv1___Scaffold_000052F___length_1749787:1392526              1.3               3116000        2333703.6
+11:51:37.447 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+11:51:37.649 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+11:51:42.602 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+11:51:43.515 INFO  ProgressMeter - Pocillopora_acuta_HIv1___Scaffold_000062F___length_1593303:1020350              1.5               3503000        2332249.6
+11:51:44.917 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+11:51:47.583 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+11:51:48.526 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+11:51:50.244 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+11:51:50.610 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+11:51:50.928 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+11:51:51.533 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+11:51:53.525 INFO  ProgressMeter - Pocillopora_acuta_HIv1___Scaffold_000083F___length_1495163:75268              1.7               3903000        2338783.0
+11:51:55.680 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+11:52:00.219 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+11:52:00.324 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+11:52:00.894 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+11:52:03.530 INFO  ProgressMeter - Pocillopora_acuta_HIv1___Scaffold_000041F___length_1444133:1097434              1.8               4301000        2343145.6
+11:52:08.015 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+11:52:08.903 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+11:52:11.534 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+11:52:12.539 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+11:52:12.539 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+11:52:13.539 INFO  ProgressMeter - Pocillopora_acuta_HIv1___Scaffold_000085F___length_1359006:975686              2.0               4695000        2344705.9
+11:52:13.736 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+11:52:20.894 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+11:52:20.894 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+11:52:23.561 INFO  ProgressMeter - Pocillopora_acuta_HIv1___Scaffold_000104F___length_1271314:44448              2.2               5093000        2347635.7
+11:52:25.540 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+11:52:25.541 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+11:52:28.179 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+11:52:29.469 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+11:52:32.906 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+11:52:33.571 INFO  ProgressMeter - Pocillopora_acuta_HIv1___Scaffold_000140F___length_1176676:603572              2.3               5496000        2352488.0
+11:52:37.846 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+11:52:40.462 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+11:52:41.644 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+11:52:43.582 INFO  ProgressMeter - Pocillopora_acuta_HIv1___Scaffold_000149F___length_1101333:989183              2.5               5905000        2359074.7
+11:52:44.093 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+11:52:45.860 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+11:52:46.351 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+11:52:46.351 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+11:52:46.351 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+11:52:53.588 INFO  ProgressMeter - Pocillopora_acuta_HIv1___Scaffold_000174F___length_1022310:867028              2.7               6311000        2363788.5
+11:52:54.537 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+11:53:01.842 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+11:53:03.463 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+11:53:03.598 INFO  ProgressMeter - Pocillopora_acuta_HIv1___Scaffold_000191F___length_971184:855601              2.8               6713000        2366482.2
+11:53:04.461 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+11:53:07.691 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+11:53:09.937 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+11:53:13.095 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+11:53:13.490 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+11:53:13.490 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+11:53:13.613 INFO  ProgressMeter - Pocillopora_acuta_HIv1___Scaffold_000115F___length_901292:769324              3.0               7125000        2372140.3
+11:53:15.990 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+11:53:19.460 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+11:53:23.397 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+11:53:23.624 INFO  ProgressMeter - Pocillopora_acuta_HIv1___Scaffold_000247F___length_833791:353713              3.2               7529000        2374729.3
+11:53:26.344 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+11:53:26.650 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+11:53:28.489 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+11:53:28.489 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+11:53:28.489 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+11:53:29.774 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+11:53:33.634 INFO  ProgressMeter - Pocillopora_acuta_HIv1___Scaffold_000172F___length_786143:419976              3.3               7934000        2377370.9
+11:53:34.493 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+11:53:35.496 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+11:53:39.227 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+11:53:41.117 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+11:53:43.651 INFO  ProgressMeter - Pocillopora_acuta_HIv1___Scaffold_000301F___length_732247:694462              3.5               8343000        2380834.6
+11:53:51.713 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+11:53:51.713 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+11:53:51.713 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+11:53:53.656 INFO  ProgressMeter - Pocillopora_acuta_HIv1___Scaffold_000368F___length_655425:390353              3.7               8749000        2383274.3
+11:53:54.796 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+11:53:54.796 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+11:53:57.549 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+11:54:01.606 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+11:54:03.629 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+11:54:03.672 INFO  ProgressMeter - Pocillopora_acuta_HIv1___Scaffold_000413F___length_607148:454472              3.8               9159000        2386440.6
+11:54:05.730 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+11:54:13.691 INFO  ProgressMeter - Pocillopora_acuta_HIv1___Scaffold_000471F___length_545138:488558              4.0               9569000        2389313.1
+11:54:14.855 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+11:54:16.183 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+11:54:16.183 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+11:54:16.183 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+11:54:16.183 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+11:54:19.205 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+11:54:23.707 INFO  ProgressMeter - Pocillopora_acuta_HIv1___Scaffold_000568F___length_460925:69663              4.2               9975000        2391025.6
+11:54:33.467 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+11:54:33.723 INFO  ProgressMeter - Pocillopora_acuta_HIv1___Scaffold_000640F___length_350060:103092              4.3              10390000        2394680.5
+11:54:43.746 INFO  ProgressMeter - Pocillopora_acuta_HIv1___Scaffold_000090F___length_275397:69122              4.5              10796000        2396005.2
+11:54:47.938 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+11:54:48.799 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+11:54:52.496 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+11:54:53.225 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+11:54:53.762 INFO  ProgressMeter - Pocillopora_acuta_HIv1___Scaffold_001334F___length_144950:128319              4.7              11209000        2398793.0
+11:54:55.268 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+11:54:56.559 INFO  ProgressMeter - Pocillopora_acuta_HIv1___Scaffold_001878F___length_25435:20862              4.7              11326453        2399985.8
+11:54:56.559 INFO  ProgressMeter - Traversal complete. Processed 11326453 total variants in 4.7 minutes.
+11:54:56.585 INFO  VariantFiltration - Shutting down engine
+[July 11, 2021 at 11:54:56 AM EDT] org.broadinstitute.hellbender.tools.walkers.filters.VariantFiltration done. Elapsed time: 4.73 minutes.
+Runtime.totalMemory()=4320133120
+Using GATK jar /home/timothy/programs/gatk-4.2.0.0/gatk-package-4.2.0.0-local.jar
+Running:
+    java -Dsamjdk.use_async_io_read_samtools=false -Dsamjdk.use_async_io_write_samtools=true -Dsamjdk.use_async_io_write_tribble=false -Dsamjdk.compression_level=2 -jar /home/timothy/programs/gatk-4.2.0.0/gatk-package-4.2.0.0-local.jar VariantFiltration --reference Pocillopora_acuta_HIv1.assembly.purged.fasta --variant GVCFall_withREF_SNPs.vcf.gz --output GVCFall_withREF_SNPs_VarScores_filter.vcf.gz --filter-name VarScores_filter_QD --filter-expression QD < 20.000 --filter-name VarScores_filter_MQ --filter-expression MQ < 50.000 --filter-name VarScores_filter_FS --filter-expression FS > 5.000 --filter-name VarScores_filter_SOR --filter-expression SOR > 2.500

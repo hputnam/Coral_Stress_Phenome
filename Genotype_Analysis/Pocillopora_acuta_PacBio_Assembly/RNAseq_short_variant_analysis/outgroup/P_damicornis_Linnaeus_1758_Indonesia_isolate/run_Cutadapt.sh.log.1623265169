@@ -1,0 +1,18 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Wed 09 Jun 2021 02:59:29 PM EDT
+Working directory is /scratch/timothy/projects/0020_Pocillopora_acuta_PacBio_Assembly/03_Analysis/2021_05_26/RNAseq_short_variant_analysis/outgroup/P_damicornis_Linnaeus_1758_Indonesia_isolate
+=====================================================================
+
+[Wed 09 Jun 2021 02:59:30 PM EDT]      CMD: cutadapt -q 10 --minimum-length 25 --cores 24 -a GATCGGAAGAGCGGTTCAGCAGGAATGCCGAG -A AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGTA -o trimmed/SRR988672_R1_Trimmed.fastq.gz -p trimmed/SRR988672_R2_Trimmed.fastq.gz fastq/SRR988672_R1.fastq.gz fastq/SRR988672_R2.fastq.gz > fastq/SRR988672.cutadapt.log 2>&1
+[Wed 09 Jun 2021 03:02:13 PM EDT]      CMD: cutadapt -q 10 --minimum-length 25 --cores 24 -a GATCGGAAGAGCGGTTCAGCAGGAATGCCGAG -A AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGTA -o trimmed/SRR988671_R1_Trimmed.fastq.gz -p trimmed/SRR988671_R2_Trimmed.fastq.gz fastq/SRR988671_R1.fastq.gz fastq/SRR988671_R2.fastq.gz > fastq/SRR988671.cutadapt.log 2>&1
+[Wed 09 Jun 2021 03:03:45 PM EDT]      CMD: cutadapt -q 10 --minimum-length 25 --cores 24 -a GATCGGAAGAGCGGTTCAGCAGGAATGCCGAG -A AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGTA -o trimmed/SRR988670_R1_Trimmed.fastq.gz -p trimmed/SRR988670_R2_Trimmed.fastq.gz fastq/SRR988670_R1.fastq.gz fastq/SRR988670_R2.fastq.gz > fastq/SRR988670.cutadapt.log 2>&1
+[Wed 09 Jun 2021 03:05:24 PM EDT]      CMD: cutadapt -q 10 --minimum-length 25 --cores 24 -a GATCGGAAGAGCGGTTCAGCAGGAATGCCGAG -A AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGTA -o trimmed/SRR988551_R1_Trimmed.fastq.gz -p trimmed/SRR988551_R2_Trimmed.fastq.gz fastq/SRR988551_R1.fastq.gz fastq/SRR988551_R2.fastq.gz > fastq/SRR988551.cutadapt.log 2>&1
+[Wed 09 Jun 2021 03:07:28 PM EDT]      CMD: cutadapt -q 10 --minimum-length 25 --cores 24 -a GATCGGAAGAGCGGTTCAGCAGGAATGCCGAG -A AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGTA -o trimmed/SRR414925_R1_Trimmed.fastq.gz -p trimmed/SRR414925_R2_Trimmed.fastq.gz fastq/SRR414925_R1.fastq.gz fastq/SRR414925_R2.fastq.gz > fastq/SRR414925.cutadapt.log 2>&1
+[Wed 09 Jun 2021 03:10:00 PM EDT]      CMD: cutadapt -q 10 --minimum-length 25 --cores 24 -a GATCGGAAGAGCGGTTCAGCAGGAATGCCGAG -A AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGTA -o trimmed/SRR414924_R1_Trimmed.fastq.gz -p trimmed/SRR414924_R2_Trimmed.fastq.gz fastq/SRR414924_R1.fastq.gz fastq/SRR414924_R2.fastq.gz > fastq/SRR414924.cutadapt.log 2>&1
+
+=====================================================================
+Started: at Wed 09 Jun 2021 02:59:29 PM EDT
+Finished: at Wed 09 Jun 2021 03:12:09 PM EDT
+ExitStatus: 0
+=====================================================================

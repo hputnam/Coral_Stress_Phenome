@@ -1,0 +1,14 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Fri 04 Jun 2021 07:17:55 PM EDT
+Working directory is /scratch/timothy/projects/0017_Montipora_capitata_HiRise_Assembly/03_Analysis/2021_04_21/RNAseq_short_variant_analysis
+=====================================================================
+
+[Sun 06 Jun 2021 04:18:36 AM EDT]      LOG: Parallel finished with exit status: 0
+## Done running!
+
+=====================================================================
+Started: at Fri 04 Jun 2021 07:17:55 PM EDT
+Finished: at Sun 06 Jun 2021 04:18:36 AM EDT
+ExitStatus: 0
+=====================================================================

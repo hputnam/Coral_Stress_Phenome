@@ -1,0 +1,39 @@
+01:16:23.546 INFO  NativeLibraryLoader - Loading libgkl_compression.so from jar:file:/home/timothy/programs/gatk-4.2.0.0/gatk-package-4.2.0.0-local.jar!/com/intel/gkl/native/libgkl_compression.so
+Jul 01, 2021 1:16:23 AM shaded.cloud_nio.com.google.auth.oauth2.ComputeEngineCredentials runningOnComputeEngine
+INFO: Failed to detect whether we are running on Google Compute Engine.
+01:16:23.755 INFO  IndexFeatureFile - ------------------------------------------------------------
+01:16:23.756 INFO  IndexFeatureFile - The Genome Analysis Toolkit (GATK) v4.2.0.0
+01:16:23.756 INFO  IndexFeatureFile - For support and documentation go to https://software.broadinstitute.org/gatk/
+01:16:23.756 INFO  IndexFeatureFile - Executing as timothy@coral on Linux v5.4.0-72-generic amd64
+01:16:23.756 INFO  IndexFeatureFile - Java runtime: OpenJDK 64-Bit Server VM v11.0.11+9-Ubuntu-0ubuntu2.20.04
+01:16:23.756 INFO  IndexFeatureFile - Start Date/Time: July 1, 2021 at 1:16:23 AM EDT
+01:16:23.756 INFO  IndexFeatureFile - ------------------------------------------------------------
+01:16:23.756 INFO  IndexFeatureFile - ------------------------------------------------------------
+01:16:23.757 INFO  IndexFeatureFile - HTSJDK Version: 2.24.0
+01:16:23.757 INFO  IndexFeatureFile - Picard Version: 2.25.0
+01:16:23.757 INFO  IndexFeatureFile - Built for Spark Version: 2.4.5
+01:16:23.757 INFO  IndexFeatureFile - HTSJDK Defaults.COMPRESSION_LEVEL : 2
+01:16:23.757 INFO  IndexFeatureFile - HTSJDK Defaults.USE_ASYNC_IO_READ_FOR_SAMTOOLS : false
+01:16:23.757 INFO  IndexFeatureFile - HTSJDK Defaults.USE_ASYNC_IO_WRITE_FOR_SAMTOOLS : true
+01:16:23.757 INFO  IndexFeatureFile - HTSJDK Defaults.USE_ASYNC_IO_WRITE_FOR_TRIBBLE : false
+01:16:23.757 INFO  IndexFeatureFile - Deflater: IntelDeflater
+01:16:23.757 INFO  IndexFeatureFile - Inflater: IntelInflater
+01:16:23.757 INFO  IndexFeatureFile - GCS max retries/reopens: 20
+01:16:23.757 INFO  IndexFeatureFile - Requester pays: disabled
+01:16:23.757 INFO  IndexFeatureFile - Initializing engine
+01:16:23.757 INFO  IndexFeatureFile - Done initializing engine
+01:16:23.852 INFO  FeatureManager - Using codec VCFCodec to read file file:///scratch/timothy/projects/0022_Coral_Genotype_Analysis/03_Analysis/2021-06-21/Pocillopora_acuta_PacBio_Assembly/RNAseq_short_variant_analysis_CorrectPloidy/filtering/GVCFall_INDELs_VarScores_filterPASSED.vcf
+01:16:23.877 INFO  ProgressMeter - Starting traversal
+01:16:23.877 INFO  ProgressMeter -        Current Locus  Elapsed Minutes     Records Processed   Records/Minute
+01:16:33.885 INFO  ProgressMeter - Pocillopora_acuta_HIv1___Scaffold_000172F___length_786143:472857              0.2                420000        2518237.2
+01:16:37.707 INFO  ProgressMeter - Pocillopora_acuta_HIv1___Scaffold_001672F___length_64522:33708              0.2                591467        2566202.9
+01:16:37.707 INFO  ProgressMeter - Traversal complete. Processed 591467 total records in 0.2 minutes.
+01:16:37.767 INFO  IndexFeatureFile - Successfully wrote index to /scratch/timothy/projects/0022_Coral_Genotype_Analysis/03_Analysis/2021-06-21/Pocillopora_acuta_PacBio_Assembly/RNAseq_short_variant_analysis_CorrectPloidy/filtering/GVCFall_INDELs_VarScores_filterPASSED.vcf.idx
+01:16:37.767 INFO  IndexFeatureFile - Shutting down engine
+[July 1, 2021 at 1:16:37 AM EDT] org.broadinstitute.hellbender.tools.IndexFeatureFile done. Elapsed time: 0.24 minutes.
+Runtime.totalMemory()=3682598912
+Tool returned:
+/scratch/timothy/projects/0022_Coral_Genotype_Analysis/03_Analysis/2021-06-21/Pocillopora_acuta_PacBio_Assembly/RNAseq_short_variant_analysis_CorrectPloidy/filtering/GVCFall_INDELs_VarScores_filterPASSED.vcf.idx
+Using GATK jar /home/timothy/programs/gatk-4.2.0.0/gatk-package-4.2.0.0-local.jar
+Running:
+    java -Dsamjdk.use_async_io_read_samtools=false -Dsamjdk.use_async_io_write_samtools=true -Dsamjdk.use_async_io_write_tribble=false -Dsamjdk.compression_level=2 -jar /home/timothy/programs/gatk-4.2.0.0/gatk-package-4.2.0.0-local.jar IndexFeatureFile --input GVCFall_INDELs_VarScores_filterPASSED.vcf

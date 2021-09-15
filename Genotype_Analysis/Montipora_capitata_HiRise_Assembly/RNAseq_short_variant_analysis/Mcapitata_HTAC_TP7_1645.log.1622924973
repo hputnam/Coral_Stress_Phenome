@@ -1,0 +1,234 @@
+[Sat 05 Jun 2021 04:29:33 PM EDT]      LOG: Step 1 - StarAlign
+[Sat 05 Jun 2021 04:29:33 PM EDT]      CMD: STAR 			--genomeDir ../databases/STAR 			--runThreadN 8 			--readFilesIn /scratch/timothy/TranscriptomeAnalysis_Mcapitata_Pacuta_TimeSeriesDE/RNA_Seq_data/trimming_cutadapt/Mcapitata_HTAC_TP7_1645_R1_TrimmingRound2.fastq.gz /scratch/timothy/TranscriptomeAnalysis_Mcapitata_Pacuta_TimeSeriesDE/RNA_Seq_data/trimming_cutadapt/Mcapitata_HTAC_TP7_1645_R2_TrimmingRound2.fastq.gz 			--readFilesCommand "gunzip -c" 			--sjdbOverhang 149 			--outSAMtype BAM SortedByCoordinate 			--twopassMode Basic 			--outFileNamePrefix Mcapitata_HTAC_TP7_1645.STAR.
+Jun 05 16:29:33 ..... started STAR run
+Jun 05 16:29:33 ..... loading genome
+Jun 05 16:29:41 ..... started 1st pass mapping
+Jun 05 17:50:27 ..... finished 1st pass mapping
+Jun 05 17:50:28 ..... inserting junctions into the genome indices
+Jun 05 17:54:39 ..... started mapping
+Jun 05 19:42:19 ..... finished mapping
+Jun 05 19:42:21 ..... started sorting BAM
+Jun 05 19:43:41 ..... finished successfully
+[Sat 05 Jun 2021 07:43:44 PM EDT]      CMD: touch Mcapitata_HTAC_TP7_1645.STAR.done
+
+
+
+
+
+
+[Sat 05 Jun 2021 07:43:44 PM EDT]      LOG: Step 2.1 - FastqToSam
+[Sat 05 Jun 2021 07:43:44 PM EDT]      CMD: gatk FastqToSam 				--FASTQ /scratch/timothy/TranscriptomeAnalysis_Mcapitata_Pacuta_TimeSeriesDE/RNA_Seq_data/trimming_cutadapt/Mcapitata_HTAC_TP7_1645_R1_TrimmingRound2.fastq.gz 				--FASTQ2 /scratch/timothy/TranscriptomeAnalysis_Mcapitata_Pacuta_TimeSeriesDE/RNA_Seq_data/trimming_cutadapt/Mcapitata_HTAC_TP7_1645_R2_TrimmingRound2.fastq.gz 				--OUTPUT Mcapitata_HTAC_TP7_1645.FastqToSam.unmapped.bam 				--SAMPLE_NAME Mcapitata_HTAC_TP7_1645
+Using GATK jar /home/timothy/programs/gatk-4.2.0.0/gatk-package-4.2.0.0-local.jar
+Running:
+    java -Dsamjdk.use_async_io_read_samtools=false -Dsamjdk.use_async_io_write_samtools=true -Dsamjdk.use_async_io_write_tribble=false -Dsamjdk.compression_level=2 -jar /home/timothy/programs/gatk-4.2.0.0/gatk-package-4.2.0.0-local.jar FastqToSam --FASTQ /scratch/timothy/TranscriptomeAnalysis_Mcapitata_Pacuta_TimeSeriesDE/RNA_Seq_data/trimming_cutadapt/Mcapitata_HTAC_TP7_1645_R1_TrimmingRound2.fastq.gz --FASTQ2 /scratch/timothy/TranscriptomeAnalysis_Mcapitata_Pacuta_TimeSeriesDE/RNA_Seq_data/trimming_cutadapt/Mcapitata_HTAC_TP7_1645_R2_TrimmingRound2.fastq.gz --OUTPUT Mcapitata_HTAC_TP7_1645.FastqToSam.unmapped.bam --SAMPLE_NAME Mcapitata_HTAC_TP7_1645
+19:43:47.909 INFO  NativeLibraryLoader - Loading libgkl_compression.so from jar:file:/home/timothy/programs/gatk-4.2.0.0/gatk-package-4.2.0.0-local.jar!/com/intel/gkl/native/libgkl_compression.so
+[Sat Jun 05 19:43:47 EDT 2021] FastqToSam --FASTQ /scratch/timothy/TranscriptomeAnalysis_Mcapitata_Pacuta_TimeSeriesDE/RNA_Seq_data/trimming_cutadapt/Mcapitata_HTAC_TP7_1645_R1_TrimmingRound2.fastq.gz --FASTQ2 /scratch/timothy/TranscriptomeAnalysis_Mcapitata_Pacuta_TimeSeriesDE/RNA_Seq_data/trimming_cutadapt/Mcapitata_HTAC_TP7_1645_R2_TrimmingRound2.fastq.gz --OUTPUT Mcapitata_HTAC_TP7_1645.FastqToSam.unmapped.bam --SAMPLE_NAME Mcapitata_HTAC_TP7_1645 --USE_SEQUENTIAL_FASTQS false --READ_GROUP_NAME A --SORT_ORDER queryname --MIN_Q 0 --MAX_Q 93 --STRIP_UNPAIRED_MATE_NUMBER false --ALLOW_AND_IGNORE_EMPTY_LINES false --VERBOSITY INFO --QUIET false --VALIDATION_STRINGENCY STRICT --COMPRESSION_LEVEL 2 --MAX_RECORDS_IN_RAM 500000 --CREATE_INDEX false --CREATE_MD5_FILE false --GA4GH_CLIENT_SECRETS client_secrets.json --help false --version false --showHidden false --USE_JDK_DEFLATER false --USE_JDK_INFLATER false
+Jun 05, 2021 7:43:48 PM shaded.cloud_nio.com.google.auth.oauth2.ComputeEngineCredentials runningOnComputeEngine
+INFO: Failed to detect whether we are running on Google Compute Engine.
+[Sat Jun 05 19:43:48 EDT 2021] Executing as timothy@coral on Linux 5.4.0-72-generic amd64; OpenJDK 64-Bit Server VM 11.0.11+9-Ubuntu-0ubuntu2.20.04; Deflater: Intel; Inflater: Intel; Provider GCS is available; Picard version: Version:4.2.0.0
+INFO	2021-06-05 19:43:48	FastqToSam	Auto-detected quality format as: Standard.
+INFO	2021-06-05 19:44:02	FastqToSam	Processed     1,000,000 records.  Elapsed time: 00:00:14s.  Time for last 1,000,000:   13s.  Last read position: */*
+INFO	2021-06-05 19:44:18	FastqToSam	Processed     2,000,000 records.  Elapsed time: 00:00:30s.  Time for last 1,000,000:   16s.  Last read position: */*
+INFO	2021-06-05 19:44:33	FastqToSam	Processed     3,000,000 records.  Elapsed time: 00:00:45s.  Time for last 1,000,000:   14s.  Last read position: */*
+INFO	2021-06-05 19:44:49	FastqToSam	Processed     4,000,000 records.  Elapsed time: 00:01:00s.  Time for last 1,000,000:   15s.  Last read position: */*
+INFO	2021-06-05 19:45:04	FastqToSam	Processed     5,000,000 records.  Elapsed time: 00:01:15s.  Time for last 1,000,000:   14s.  Last read position: */*
+INFO	2021-06-05 19:45:21	FastqToSam	Processed     6,000,000 records.  Elapsed time: 00:01:32s.  Time for last 1,000,000:   16s.  Last read position: */*
+INFO	2021-06-05 19:45:36	FastqToSam	Processed     7,000,000 records.  Elapsed time: 00:01:48s.  Time for last 1,000,000:   15s.  Last read position: */*
+INFO	2021-06-05 19:45:51	FastqToSam	Processed     8,000,000 records.  Elapsed time: 00:02:03s.  Time for last 1,000,000:   14s.  Last read position: */*
+INFO	2021-06-05 19:46:08	FastqToSam	Processed     9,000,000 records.  Elapsed time: 00:02:19s.  Time for last 1,000,000:   16s.  Last read position: */*
+INFO	2021-06-05 19:46:23	FastqToSam	Processed    10,000,000 records.  Elapsed time: 00:02:34s.  Time for last 1,000,000:   15s.  Last read position: */*
+INFO	2021-06-05 19:46:42	FastqToSam	Processed    11,000,000 records.  Elapsed time: 00:02:54s.  Time for last 1,000,000:   19s.  Last read position: */*
+INFO	2021-06-05 19:47:02	FastqToSam	Processed    12,000,000 records.  Elapsed time: 00:03:14s.  Time for last 1,000,000:   19s.  Last read position: */*
+INFO	2021-06-05 19:47:22	FastqToSam	Processed    13,000,000 records.  Elapsed time: 00:03:33s.  Time for last 1,000,000:   19s.  Last read position: */*
+INFO	2021-06-05 19:47:41	FastqToSam	Processed    14,000,000 records.  Elapsed time: 00:03:53s.  Time for last 1,000,000:   19s.  Last read position: */*
+INFO	2021-06-05 19:48:01	FastqToSam	Processed    15,000,000 records.  Elapsed time: 00:04:12s.  Time for last 1,000,000:   19s.  Last read position: */*
+INFO	2021-06-05 19:48:21	FastqToSam	Processed    16,000,000 records.  Elapsed time: 00:04:32s.  Time for last 1,000,000:   19s.  Last read position: */*
+INFO	2021-06-05 19:48:40	FastqToSam	Processed    17,000,000 records.  Elapsed time: 00:04:51s.  Time for last 1,000,000:   19s.  Last read position: */*
+INFO	2021-06-05 19:48:59	FastqToSam	Processed    18,000,000 records.  Elapsed time: 00:05:10s.  Time for last 1,000,000:   19s.  Last read position: */*
+INFO	2021-06-05 19:49:18	FastqToSam	Processed    19,000,000 records.  Elapsed time: 00:05:30s.  Time for last 1,000,000:   19s.  Last read position: */*
+INFO	2021-06-05 19:49:36	FastqToSam	Processed    20,000,000 records.  Elapsed time: 00:05:47s.  Time for last 1,000,000:   17s.  Last read position: */*
+INFO	2021-06-05 19:49:53	FastqToSam	Processed    21,000,000 records.  Elapsed time: 00:06:05s.  Time for last 1,000,000:   17s.  Last read position: */*
+INFO	2021-06-05 19:50:11	FastqToSam	Processed    22,000,000 records.  Elapsed time: 00:06:22s.  Time for last 1,000,000:   17s.  Last read position: */*
+INFO	2021-06-05 19:50:29	FastqToSam	Processed    23,000,000 records.  Elapsed time: 00:06:40s.  Time for last 1,000,000:   17s.  Last read position: */*
+INFO	2021-06-05 19:50:47	FastqToSam	Processed    24,000,000 records.  Elapsed time: 00:06:58s.  Time for last 1,000,000:   18s.  Last read position: */*
+INFO	2021-06-05 19:51:05	FastqToSam	Processed    25,000,000 records.  Elapsed time: 00:07:17s.  Time for last 1,000,000:   18s.  Last read position: */*
+INFO	2021-06-05 19:51:25	FastqToSam	Processed    26,000,000 records.  Elapsed time: 00:07:36s.  Time for last 1,000,000:   19s.  Last read position: */*
+INFO	2021-06-05 19:51:42	FastqToSam	Processed    27,000,000 records.  Elapsed time: 00:07:54s.  Time for last 1,000,000:   17s.  Last read position: */*
+INFO	2021-06-05 19:51:59	FastqToSam	Processed    28,000,000 records.  Elapsed time: 00:08:11s.  Time for last 1,000,000:   17s.  Last read position: */*
+INFO	2021-06-05 19:52:18	FastqToSam	Processed    29,000,000 records.  Elapsed time: 00:08:29s.  Time for last 1,000,000:   18s.  Last read position: */*
+INFO	2021-06-05 19:52:36	FastqToSam	Processed    30,000,000 records.  Elapsed time: 00:08:47s.  Time for last 1,000,000:   18s.  Last read position: */*
+INFO	2021-06-05 19:52:53	FastqToSam	Processed    31,000,000 records.  Elapsed time: 00:09:05s.  Time for last 1,000,000:   17s.  Last read position: */*
+INFO	2021-06-05 19:53:11	FastqToSam	Processed    32,000,000 records.  Elapsed time: 00:09:22s.  Time for last 1,000,000:   17s.  Last read position: */*
+INFO	2021-06-05 19:53:29	FastqToSam	Processed    33,000,000 records.  Elapsed time: 00:09:40s.  Time for last 1,000,000:   18s.  Last read position: */*
+INFO	2021-06-05 19:53:45	FastqToSam	Processed    34,000,000 records.  Elapsed time: 00:09:57s.  Time for last 1,000,000:   16s.  Last read position: */*
+INFO	2021-06-05 19:54:00	FastqToSam	Processed    35,000,000 records.  Elapsed time: 00:10:11s.  Time for last 1,000,000:   14s.  Last read position: */*
+INFO	2021-06-05 19:54:14	FastqToSam	Processed    36,000,000 records.  Elapsed time: 00:10:26s.  Time for last 1,000,000:   14s.  Last read position: */*
+INFO	2021-06-05 19:54:30	FastqToSam	Processed    37,000,000 records.  Elapsed time: 00:10:41s.  Time for last 1,000,000:   15s.  Last read position: */*
+INFO	2021-06-05 19:54:45	FastqToSam	Processed    38,000,000 records.  Elapsed time: 00:10:56s.  Time for last 1,000,000:   14s.  Last read position: */*
+INFO	2021-06-05 19:55:01	FastqToSam	Processed    39,000,000 records.  Elapsed time: 00:11:12s.  Time for last 1,000,000:   16s.  Last read position: */*
+INFO	2021-06-05 19:55:17	FastqToSam	Processed    40,000,000 records.  Elapsed time: 00:11:29s.  Time for last 1,000,000:   16s.  Last read position: */*
+INFO	2021-06-05 19:55:33	FastqToSam	Processed    41,000,000 records.  Elapsed time: 00:11:44s.  Time for last 1,000,000:   15s.  Last read position: */*
+INFO	2021-06-05 19:55:48	FastqToSam	Processed    42,000,000 records.  Elapsed time: 00:11:59s.  Time for last 1,000,000:   15s.  Last read position: */*
+INFO	2021-06-05 19:56:04	FastqToSam	Processed    43,000,000 records.  Elapsed time: 00:12:15s.  Time for last 1,000,000:   15s.  Last read position: */*
+INFO	2021-06-05 19:56:19	FastqToSam	Processed    44,000,000 records.  Elapsed time: 00:12:31s.  Time for last 1,000,000:   15s.  Last read position: */*
+INFO	2021-06-05 19:56:26	FastqToSam	Processed 22233689 fastq reads
+[Sat Jun 05 19:59:24 EDT 2021] picard.sam.FastqToSam done. Elapsed time: 15.61 minutes.
+Runtime.totalMemory()=281018368
+Tool returned:
+0
+[Sat 05 Jun 2021 07:59:24 PM EDT]      CMD: touch Mcapitata_HTAC_TP7_1645.FastqToSam.done
+[Sat 05 Jun 2021 07:59:24 PM EDT]      LOG: Step 2.2 - collect_RG
+[Sat 05 Jun 2021 07:59:24 PM EDT]      CMD: samtools view Mcapitata_HTAC_TP7_1645.FastqToSam.unmapped.bam 				| rgsam collect --format sam --qnformat illumina-1.8 -s Mcapitata_HTAC_TP7_1645 -o Mcapitata_HTAC_TP7_1645.collect_RG.txt
+Info: reading from stdin
+[Sat 05 Jun 2021 08:02:40 PM EDT]      CMD: samtools view -h Mcapitata_HTAC_TP7_1645.FastqToSam.unmapped.bam 				| rgsam tag --qnformat illumina-1.8 -r Mcapitata_HTAC_TP7_1645.collect_RG.txt 				| samtools view -b - 				> Mcapitata_HTAC_TP7_1645.FastqToSam.unmapped.rg.bam
+Info: reading from stdin
+Info: writing to stdout
+[Sat 05 Jun 2021 08:18:44 PM EDT]      CMD: touch Mcapitata_HTAC_TP7_1645.collect_RG.done
+[Sat 05 Jun 2021 08:18:44 PM EDT]      LOG: Step 2.3 - MergeBamAlignment
+[Sat 05 Jun 2021 08:18:44 PM EDT]      CMD: gatk MergeBamAlignment 					--REFERENCE_SEQUENCE Montipora_capitata_HIv1.assembly.fasta 					--UNMAPPED_BAM Mcapitata_HTAC_TP7_1645.FastqToSam.unmapped.rg.bam 					--ALIGNED_BAM Mcapitata_HTAC_TP7_1645.STAR.Aligned.sortedByCoord.out.bam 					--OUTPUT Mcapitata_HTAC_TP7_1645.MergeBamAlignment.merged.bam 					--INCLUDE_SECONDARY_ALIGNMENTS false 					--VALIDATION_STRINGENCY SILENT
+Using GATK jar /home/timothy/programs/gatk-4.2.0.0/gatk-package-4.2.0.0-local.jar
+Running:
+    java -Dsamjdk.use_async_io_read_samtools=false -Dsamjdk.use_async_io_write_samtools=true -Dsamjdk.use_async_io_write_tribble=false -Dsamjdk.compression_level=2 -jar /home/timothy/programs/gatk-4.2.0.0/gatk-package-4.2.0.0-local.jar MergeBamAlignment --REFERENCE_SEQUENCE Montipora_capitata_HIv1.assembly.fasta --UNMAPPED_BAM Mcapitata_HTAC_TP7_1645.FastqToSam.unmapped.rg.bam --ALIGNED_BAM Mcapitata_HTAC_TP7_1645.STAR.Aligned.sortedByCoord.out.bam --OUTPUT Mcapitata_HTAC_TP7_1645.MergeBamAlignment.merged.bam --INCLUDE_SECONDARY_ALIGNMENTS false --VALIDATION_STRINGENCY SILENT
+20:18:46.980 INFO  NativeLibraryLoader - Loading libgkl_compression.so from jar:file:/home/timothy/programs/gatk-4.2.0.0/gatk-package-4.2.0.0-local.jar!/com/intel/gkl/native/libgkl_compression.so
+[Sat Jun 05 20:18:47 EDT 2021] MergeBamAlignment --UNMAPPED_BAM Mcapitata_HTAC_TP7_1645.FastqToSam.unmapped.rg.bam --ALIGNED_BAM Mcapitata_HTAC_TP7_1645.STAR.Aligned.sortedByCoord.out.bam --OUTPUT Mcapitata_HTAC_TP7_1645.MergeBamAlignment.merged.bam --INCLUDE_SECONDARY_ALIGNMENTS false --VALIDATION_STRINGENCY SILENT --REFERENCE_SEQUENCE Montipora_capitata_HIv1.assembly.fasta --ADD_PG_TAG_TO_READS true --PAIRED_RUN true --CLIP_ADAPTERS true --IS_BISULFITE_SEQUENCE false --ALIGNED_READS_ONLY false --MAX_INSERTIONS_OR_DELETIONS 1 --ATTRIBUTES_TO_REVERSE OQ --ATTRIBUTES_TO_REVERSE U2 --ATTRIBUTES_TO_REVERSE_COMPLEMENT E2 --ATTRIBUTES_TO_REVERSE_COMPLEMENT SQ --READ1_TRIM 0 --READ2_TRIM 0 --ALIGNER_PROPER_PAIR_FLAGS false --SORT_ORDER coordinate --PRIMARY_ALIGNMENT_STRATEGY BestMapq --CLIP_OVERLAPPING_READS true --HARD_CLIP_OVERLAPPING_READS false --ADD_MATE_CIGAR true --UNMAP_CONTAMINANT_READS false --MIN_UNCLIPPED_BASES 32 --MATCHING_DICTIONARY_TAGS M5 --MATCHING_DICTIONARY_TAGS LN --UNMAPPED_READ_STRATEGY DO_NOT_CHANGE --VERBOSITY INFO --QUIET false --COMPRESSION_LEVEL 2 --MAX_RECORDS_IN_RAM 500000 --CREATE_INDEX false --CREATE_MD5_FILE false --GA4GH_CLIENT_SECRETS client_secrets.json --help false --version false --showHidden false --USE_JDK_DEFLATER false --USE_JDK_INFLATER false
+Jun 05, 2021 8:18:47 PM shaded.cloud_nio.com.google.auth.oauth2.ComputeEngineCredentials runningOnComputeEngine
+INFO: Failed to detect whether we are running on Google Compute Engine.
+[Sat Jun 05 20:18:47 EDT 2021] Executing as timothy@coral on Linux 5.4.0-72-generic amd64; OpenJDK 64-Bit Server VM 11.0.11+9-Ubuntu-0ubuntu2.20.04; Deflater: Intel; Inflater: Intel; Provider GCS is available; Picard version: Version:4.2.0.0
+INFO	2021-06-05 20:18:47	SamAlignmentMerger	Processing SAM file(s): [Mcapitata_HTAC_TP7_1645.STAR.Aligned.sortedByCoord.out.bam]
+[Sat Jun 05 20:18:47 EDT 2021] picard.sam.MergeBamAlignment done. Elapsed time: 0.01 minutes.
+Runtime.totalMemory()=2155872256
+To get help, see http://broadinstitute.github.io/picard/index.html#GettingHelp
+htsjdk.samtools.SAMException: Could not find dictionary next to reference file file:///scratch/timothy/projects/0017_Montipora_capitata_HiRise_Assembly/03_Analysis/2021_04_21/RNAseq_short_variant_analysis/Montipora_capitata_HIv1.assembly.fasta
+	at htsjdk.variant.utils.SAMSequenceDictionaryExtractor$TYPE$1.extractDictionary(SAMSequenceDictionaryExtractor.java:58)
+	at htsjdk.variant.utils.SAMSequenceDictionaryExtractor.extractDictionary(SAMSequenceDictionaryExtractor.java:170)
+	at picard.sam.SamAlignmentMerger.getDictionaryForMergedBam(SamAlignmentMerger.java:192)
+	at picard.sam.AbstractAlignmentMerger.mergeAlignment(AbstractAlignmentMerger.java:384)
+	at picard.sam.SamAlignmentMerger.mergeAlignment(SamAlignmentMerger.java:181)
+	at picard.sam.MergeBamAlignment.doWork(MergeBamAlignment.java:368)
+	at picard.cmdline.CommandLineProgram.instanceMain(CommandLineProgram.java:308)
+	at org.broadinstitute.hellbender.cmdline.PicardCommandLineProgramExecutor.instanceMain(PicardCommandLineProgramExecutor.java:37)
+	at org.broadinstitute.hellbender.Main.runCommandLineProgram(Main.java:160)
+	at org.broadinstitute.hellbender.Main.mainEntry(Main.java:203)
+	at org.broadinstitute.hellbender.Main.main(Main.java:289)
+
+
+
+
+
+
+[Sat 05 Jun 2021 08:18:47 PM EDT]      LOG: Step 3 - MarkDuplicates
+[Sat 05 Jun 2021 08:18:47 PM EDT]      CMD: gatk MarkDuplicates 					--INPUT Mcapitata_HTAC_TP7_1645.MergeBamAlignment.merged.bam 					--OUTPUT Mcapitata_HTAC_TP7_1645.MarkDuplicates.dedupped.bam 					--CREATE_INDEX true 					--VALIDATION_STRINGENCY SILENT 					--METRICS_FILE Mcapitata_HTAC_TP7_1645.MarkDuplicates.metrics
+Using GATK jar /home/timothy/programs/gatk-4.2.0.0/gatk-package-4.2.0.0-local.jar
+Running:
+    java -Dsamjdk.use_async_io_read_samtools=false -Dsamjdk.use_async_io_write_samtools=true -Dsamjdk.use_async_io_write_tribble=false -Dsamjdk.compression_level=2 -jar /home/timothy/programs/gatk-4.2.0.0/gatk-package-4.2.0.0-local.jar MarkDuplicates --INPUT Mcapitata_HTAC_TP7_1645.MergeBamAlignment.merged.bam --OUTPUT Mcapitata_HTAC_TP7_1645.MarkDuplicates.dedupped.bam --CREATE_INDEX true --VALIDATION_STRINGENCY SILENT --METRICS_FILE Mcapitata_HTAC_TP7_1645.MarkDuplicates.metrics
+20:18:50.355 INFO  NativeLibraryLoader - Loading libgkl_compression.so from jar:file:/home/timothy/programs/gatk-4.2.0.0/gatk-package-4.2.0.0-local.jar!/com/intel/gkl/native/libgkl_compression.so
+[Sat Jun 05 20:18:50 EDT 2021] MarkDuplicates --INPUT Mcapitata_HTAC_TP7_1645.MergeBamAlignment.merged.bam --OUTPUT Mcapitata_HTAC_TP7_1645.MarkDuplicates.dedupped.bam --METRICS_FILE Mcapitata_HTAC_TP7_1645.MarkDuplicates.metrics --VALIDATION_STRINGENCY SILENT --CREATE_INDEX true --MAX_SEQUENCES_FOR_DISK_READ_ENDS_MAP 50000 --MAX_FILE_HANDLES_FOR_READ_ENDS_MAP 8000 --SORTING_COLLECTION_SIZE_RATIO 0.25 --TAG_DUPLICATE_SET_MEMBERS false --REMOVE_SEQUENCING_DUPLICATES false --TAGGING_POLICY DontTag --CLEAR_DT true --DUPLEX_UMI false --ADD_PG_TAG_TO_READS true --REMOVE_DUPLICATES false --ASSUME_SORTED false --DUPLICATE_SCORING_STRATEGY SUM_OF_BASE_QUALITIES --PROGRAM_RECORD_ID MarkDuplicates --PROGRAM_GROUP_NAME MarkDuplicates --READ_NAME_REGEX <optimized capture of last three ':' separated fields as numeric values> --OPTICAL_DUPLICATE_PIXEL_DISTANCE 100 --MAX_OPTICAL_DUPLICATE_SET_SIZE 300000 --VERBOSITY INFO --QUIET false --COMPRESSION_LEVEL 2 --MAX_RECORDS_IN_RAM 500000 --CREATE_MD5_FILE false --GA4GH_CLIENT_SECRETS client_secrets.json --help false --version false --showHidden false --USE_JDK_DEFLATER false --USE_JDK_INFLATER false
+Jun 05, 2021 8:18:50 PM shaded.cloud_nio.com.google.auth.oauth2.ComputeEngineCredentials runningOnComputeEngine
+INFO: Failed to detect whether we are running on Google Compute Engine.
+[Sat Jun 05 20:18:50 EDT 2021] Executing as timothy@coral on Linux 5.4.0-72-generic amd64; OpenJDK 64-Bit Server VM 11.0.11+9-Ubuntu-0ubuntu2.20.04; Deflater: Intel; Inflater: Intel; Provider GCS is available; Picard version: Version:4.2.0.0
+[Sat Jun 05 20:18:50 EDT 2021] picard.sam.markduplicates.MarkDuplicates done. Elapsed time: 0.00 minutes.
+Runtime.totalMemory()=2155872256
+To get help, see http://broadinstitute.github.io/picard/index.html#GettingHelp
+htsjdk.samtools.SAMException: Cannot read non-existent file: file:///scratch/timothy/projects/0017_Montipora_capitata_HiRise_Assembly/03_Analysis/2021_04_21/RNAseq_short_variant_analysis/Mcapitata_HTAC_TP7_1645.MergeBamAlignment.merged.bam
+	at htsjdk.samtools.util.IOUtil.assertFileIsReadable(IOUtil.java:498)
+	at htsjdk.samtools.util.IOUtil.assertFileIsReadable(IOUtil.java:485)
+	at htsjdk.samtools.util.IOUtil.assertInputIsValid(IOUtil.java:461)
+	at htsjdk.samtools.util.IOUtil.assertInputsAreValid(IOUtil.java:537)
+	at picard.sam.markduplicates.MarkDuplicates.doWork(MarkDuplicates.java:249)
+	at picard.cmdline.CommandLineProgram.instanceMain(CommandLineProgram.java:308)
+	at org.broadinstitute.hellbender.cmdline.PicardCommandLineProgramExecutor.instanceMain(PicardCommandLineProgramExecutor.java:37)
+	at org.broadinstitute.hellbender.Main.runCommandLineProgram(Main.java:160)
+	at org.broadinstitute.hellbender.Main.mainEntry(Main.java:203)
+	at org.broadinstitute.hellbender.Main.main(Main.java:289)
+
+
+
+
+
+
+[Sat 05 Jun 2021 08:18:50 PM EDT]      LOG: Step 4 - SplitNCigarReads
+[Sat 05 Jun 2021 08:18:50 PM EDT]      CMD: gatk SplitNCigarReads 					-R Montipora_capitata_HIv1.assembly.fasta 					-I Mcapitata_HTAC_TP7_1645.MarkDuplicates.dedupped.bam 					-O Mcapitata_HTAC_TP7_1645.SplitNCigarReads.split.bam
+Using GATK jar /home/timothy/programs/gatk-4.2.0.0/gatk-package-4.2.0.0-local.jar
+Running:
+    java -Dsamjdk.use_async_io_read_samtools=false -Dsamjdk.use_async_io_write_samtools=true -Dsamjdk.use_async_io_write_tribble=false -Dsamjdk.compression_level=2 -jar /home/timothy/programs/gatk-4.2.0.0/gatk-package-4.2.0.0-local.jar SplitNCigarReads -R Montipora_capitata_HIv1.assembly.fasta -I Mcapitata_HTAC_TP7_1645.MarkDuplicates.dedupped.bam -O Mcapitata_HTAC_TP7_1645.SplitNCigarReads.split.bam
+20:18:54.083 INFO  NativeLibraryLoader - Loading libgkl_compression.so from jar:file:/home/timothy/programs/gatk-4.2.0.0/gatk-package-4.2.0.0-local.jar!/com/intel/gkl/native/libgkl_compression.so
+Jun 05, 2021 8:18:54 PM shaded.cloud_nio.com.google.auth.oauth2.ComputeEngineCredentials runningOnComputeEngine
+INFO: Failed to detect whether we are running on Google Compute Engine.
+20:18:54.347 INFO  SplitNCigarReads - ------------------------------------------------------------
+20:18:54.347 INFO  SplitNCigarReads - The Genome Analysis Toolkit (GATK) v4.2.0.0
+20:18:54.347 INFO  SplitNCigarReads - For support and documentation go to https://software.broadinstitute.org/gatk/
+20:18:54.348 INFO  SplitNCigarReads - Executing as timothy@coral on Linux v5.4.0-72-generic amd64
+20:18:54.348 INFO  SplitNCigarReads - Java runtime: OpenJDK 64-Bit Server VM v11.0.11+9-Ubuntu-0ubuntu2.20.04
+20:18:54.348 INFO  SplitNCigarReads - Start Date/Time: June 5, 2021 at 8:18:54 PM EDT
+20:18:54.348 INFO  SplitNCigarReads - ------------------------------------------------------------
+20:18:54.348 INFO  SplitNCigarReads - ------------------------------------------------------------
+20:18:54.349 INFO  SplitNCigarReads - HTSJDK Version: 2.24.0
+20:18:54.349 INFO  SplitNCigarReads - Picard Version: 2.25.0
+20:18:54.349 INFO  SplitNCigarReads - Built for Spark Version: 2.4.5
+20:18:54.349 INFO  SplitNCigarReads - HTSJDK Defaults.COMPRESSION_LEVEL : 2
+20:18:54.349 INFO  SplitNCigarReads - HTSJDK Defaults.USE_ASYNC_IO_READ_FOR_SAMTOOLS : false
+20:18:54.349 INFO  SplitNCigarReads - HTSJDK Defaults.USE_ASYNC_IO_WRITE_FOR_SAMTOOLS : true
+20:18:54.350 INFO  SplitNCigarReads - HTSJDK Defaults.USE_ASYNC_IO_WRITE_FOR_TRIBBLE : false
+20:18:54.350 INFO  SplitNCigarReads - Deflater: IntelDeflater
+20:18:54.350 INFO  SplitNCigarReads - Inflater: IntelInflater
+20:18:54.350 INFO  SplitNCigarReads - GCS max retries/reopens: 20
+20:18:54.350 INFO  SplitNCigarReads - Requester pays: disabled
+20:18:54.350 INFO  SplitNCigarReads - Initializing engine
+20:18:54.354 INFO  SplitNCigarReads - Shutting down engine
+[June 5, 2021 at 8:18:54 PM EDT] org.broadinstitute.hellbender.tools.walkers.rnaseq.SplitNCigarReads done. Elapsed time: 0.01 minutes.
+Runtime.totalMemory()=2155872256
+***********************************************************************
+
+A USER ERROR has occurred: Fasta index file file:///scratch/timothy/projects/0017_Montipora_capitata_HiRise_Assembly/03_Analysis/2021_04_21/RNAseq_short_variant_analysis/Montipora_capitata_HIv1.assembly.fasta.fai for reference file:///scratch/timothy/projects/0017_Montipora_capitata_HiRise_Assembly/03_Analysis/2021_04_21/RNAseq_short_variant_analysis/Montipora_capitata_HIv1.assembly.fasta does not exist. Please see http://gatkforums.broadinstitute.org/discussion/1601/how-can-i-prepare-a-fasta-file-to-use-as-reference for help creating it.
+
+***********************************************************************
+Set the system property GATK_STACKTRACE_ON_USER_EXCEPTION (--java-options '-DGATK_STACKTRACE_ON_USER_EXCEPTION=true') to print the stack trace.
+
+
+
+
+
+
+[Sat 05 Jun 2021 08:18:54 PM EDT]      LOG: Step 5 - HaplotypeCaller
+[Sat 05 Jun 2021 08:18:54 PM EDT]      CMD: gatk HaplotypeCaller 			--reference Montipora_capitata_HIv1.assembly.fasta 			--input Mcapitata_HTAC_TP7_1645.SplitNCigarReads.split.bam 			--output Mcapitata_HTAC_TP7_1645.HaplotypeCaller.g.vcf.gz 			-dont-use-soft-clipped-bases 			-ERC GVCF
+Using GATK jar /home/timothy/programs/gatk-4.2.0.0/gatk-package-4.2.0.0-local.jar
+Running:
+    java -Dsamjdk.use_async_io_read_samtools=false -Dsamjdk.use_async_io_write_samtools=true -Dsamjdk.use_async_io_write_tribble=false -Dsamjdk.compression_level=2 -jar /home/timothy/programs/gatk-4.2.0.0/gatk-package-4.2.0.0-local.jar HaplotypeCaller --reference Montipora_capitata_HIv1.assembly.fasta --input Mcapitata_HTAC_TP7_1645.SplitNCigarReads.split.bam --output Mcapitata_HTAC_TP7_1645.HaplotypeCaller.g.vcf.gz -dont-use-soft-clipped-bases -ERC GVCF
+20:18:58.601 INFO  NativeLibraryLoader - Loading libgkl_compression.so from jar:file:/home/timothy/programs/gatk-4.2.0.0/gatk-package-4.2.0.0-local.jar!/com/intel/gkl/native/libgkl_compression.so
+Jun 05, 2021 8:18:58 PM shaded.cloud_nio.com.google.auth.oauth2.ComputeEngineCredentials runningOnComputeEngine
+INFO: Failed to detect whether we are running on Google Compute Engine.
+20:18:58.779 INFO  HaplotypeCaller - ------------------------------------------------------------
+20:18:58.779 INFO  HaplotypeCaller - The Genome Analysis Toolkit (GATK) v4.2.0.0
+20:18:58.779 INFO  HaplotypeCaller - For support and documentation go to https://software.broadinstitute.org/gatk/
+20:18:58.780 INFO  HaplotypeCaller - Executing as timothy@coral on Linux v5.4.0-72-generic amd64
+20:18:58.780 INFO  HaplotypeCaller - Java runtime: OpenJDK 64-Bit Server VM v11.0.11+9-Ubuntu-0ubuntu2.20.04
+20:18:58.780 INFO  HaplotypeCaller - Start Date/Time: June 5, 2021 at 8:18:58 PM EDT
+20:18:58.780 INFO  HaplotypeCaller - ------------------------------------------------------------
+20:18:58.780 INFO  HaplotypeCaller - ------------------------------------------------------------
+20:18:58.781 INFO  HaplotypeCaller - HTSJDK Version: 2.24.0
+20:18:58.781 INFO  HaplotypeCaller - Picard Version: 2.25.0
+20:18:58.781 INFO  HaplotypeCaller - Built for Spark Version: 2.4.5
+20:18:58.781 INFO  HaplotypeCaller - HTSJDK Defaults.COMPRESSION_LEVEL : 2
+20:18:58.781 INFO  HaplotypeCaller - HTSJDK Defaults.USE_ASYNC_IO_READ_FOR_SAMTOOLS : false
+20:18:58.781 INFO  HaplotypeCaller - HTSJDK Defaults.USE_ASYNC_IO_WRITE_FOR_SAMTOOLS : true
+20:18:58.781 INFO  HaplotypeCaller - HTSJDK Defaults.USE_ASYNC_IO_WRITE_FOR_TRIBBLE : false
+20:18:58.781 INFO  HaplotypeCaller - Deflater: IntelDeflater
+20:18:58.781 INFO  HaplotypeCaller - Inflater: IntelInflater
+20:18:58.781 INFO  HaplotypeCaller - GCS max retries/reopens: 20
+20:18:58.781 INFO  HaplotypeCaller - Requester pays: disabled
+20:18:58.781 INFO  HaplotypeCaller - Initializing engine
+20:18:58.784 INFO  HaplotypeCaller - Shutting down engine
+[June 5, 2021 at 8:18:58 PM EDT] org.broadinstitute.hellbender.tools.walkers.haplotypecaller.HaplotypeCaller done. Elapsed time: 0.00 minutes.
+Runtime.totalMemory()=2155872256
+***********************************************************************
+
+A USER ERROR has occurred: Fasta index file file:///scratch/timothy/projects/0017_Montipora_capitata_HiRise_Assembly/03_Analysis/2021_04_21/RNAseq_short_variant_analysis/Montipora_capitata_HIv1.assembly.fasta.fai for reference file:///scratch/timothy/projects/0017_Montipora_capitata_HiRise_Assembly/03_Analysis/2021_04_21/RNAseq_short_variant_analysis/Montipora_capitata_HIv1.assembly.fasta does not exist. Please see http://gatkforums.broadinstitute.org/discussion/1601/how-can-i-prepare-a-fasta-file-to-use-as-reference for help creating it.
+
+***********************************************************************
+Set the system property GATK_STACKTRACE_ON_USER_EXCEPTION (--java-options '-DGATK_STACKTRACE_ON_USER_EXCEPTION=true') to print the stack trace.
+
+
+
+
+
+

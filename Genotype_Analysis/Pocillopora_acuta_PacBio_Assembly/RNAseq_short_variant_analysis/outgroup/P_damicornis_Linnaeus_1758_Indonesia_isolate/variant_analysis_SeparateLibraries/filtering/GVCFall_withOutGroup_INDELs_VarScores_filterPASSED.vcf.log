@@ -1,0 +1,39 @@
+17:58:39.233 INFO  NativeLibraryLoader - Loading libgkl_compression.so from jar:file:/home/timothy/programs/gatk-4.2.0.0/gatk-package-4.2.0.0-local.jar!/com/intel/gkl/native/libgkl_compression.so
+Jun 13, 2021 5:58:39 PM shaded.cloud_nio.com.google.auth.oauth2.ComputeEngineCredentials runningOnComputeEngine
+INFO: Failed to detect whether we are running on Google Compute Engine.
+17:58:39.390 INFO  IndexFeatureFile - ------------------------------------------------------------
+17:58:39.390 INFO  IndexFeatureFile - The Genome Analysis Toolkit (GATK) v4.2.0.0
+17:58:39.390 INFO  IndexFeatureFile - For support and documentation go to https://software.broadinstitute.org/gatk/
+17:58:39.390 INFO  IndexFeatureFile - Executing as timothy@coral on Linux v5.4.0-72-generic amd64
+17:58:39.390 INFO  IndexFeatureFile - Java runtime: OpenJDK 64-Bit Server VM v11.0.11+9-Ubuntu-0ubuntu2.20.04
+17:58:39.391 INFO  IndexFeatureFile - Start Date/Time: June 13, 2021 at 5:58:39 PM EDT
+17:58:39.391 INFO  IndexFeatureFile - ------------------------------------------------------------
+17:58:39.391 INFO  IndexFeatureFile - ------------------------------------------------------------
+17:58:39.391 INFO  IndexFeatureFile - HTSJDK Version: 2.24.0
+17:58:39.391 INFO  IndexFeatureFile - Picard Version: 2.25.0
+17:58:39.391 INFO  IndexFeatureFile - Built for Spark Version: 2.4.5
+17:58:39.391 INFO  IndexFeatureFile - HTSJDK Defaults.COMPRESSION_LEVEL : 2
+17:58:39.391 INFO  IndexFeatureFile - HTSJDK Defaults.USE_ASYNC_IO_READ_FOR_SAMTOOLS : false
+17:58:39.391 INFO  IndexFeatureFile - HTSJDK Defaults.USE_ASYNC_IO_WRITE_FOR_SAMTOOLS : true
+17:58:39.391 INFO  IndexFeatureFile - HTSJDK Defaults.USE_ASYNC_IO_WRITE_FOR_TRIBBLE : false
+17:58:39.391 INFO  IndexFeatureFile - Deflater: IntelDeflater
+17:58:39.391 INFO  IndexFeatureFile - Inflater: IntelInflater
+17:58:39.391 INFO  IndexFeatureFile - GCS max retries/reopens: 20
+17:58:39.392 INFO  IndexFeatureFile - Requester pays: disabled
+17:58:39.392 INFO  IndexFeatureFile - Initializing engine
+17:58:39.392 INFO  IndexFeatureFile - Done initializing engine
+17:58:39.485 INFO  FeatureManager - Using codec VCFCodec to read file file:///scratch/timothy/projects/0020_Pocillopora_acuta_PacBio_Assembly/03_Analysis/2021_05_26/RNAseq_short_variant_analysis/outgroup/P_damicornis_Linnaeus_1758_Indonesia_isolate/variant_analysis_SeparateLibraries/filtering/GVCFall_withOutGroup_INDELs_VarScores_filterPASSED.vcf
+17:58:39.518 INFO  ProgressMeter - Starting traversal
+17:58:39.518 INFO  ProgressMeter -        Current Locus  Elapsed Minutes     Records Processed   Records/Minute
+17:58:49.521 INFO  ProgressMeter - Pocillopora_acuta_HIv1___Scaffold_000442F___length_578630:53955              0.2                496000        2975404.9
+17:58:51.241 INFO  ProgressMeter - Pocillopora_acuta_HIv1___Scaffold_001676F___length_67418:48924              0.2                595585        3048289.7
+17:58:51.241 INFO  ProgressMeter - Traversal complete. Processed 595585 total records in 0.2 minutes.
+17:58:51.296 INFO  IndexFeatureFile - Successfully wrote index to /scratch/timothy/projects/0020_Pocillopora_acuta_PacBio_Assembly/03_Analysis/2021_05_26/RNAseq_short_variant_analysis/outgroup/P_damicornis_Linnaeus_1758_Indonesia_isolate/variant_analysis_SeparateLibraries/filtering/GVCFall_withOutGroup_INDELs_VarScores_filterPASSED.vcf.idx
+17:58:51.296 INFO  IndexFeatureFile - Shutting down engine
+[June 13, 2021 at 5:58:51 PM EDT] org.broadinstitute.hellbender.tools.IndexFeatureFile done. Elapsed time: 0.20 minutes.
+Runtime.totalMemory()=3921674240
+Tool returned:
+/scratch/timothy/projects/0020_Pocillopora_acuta_PacBio_Assembly/03_Analysis/2021_05_26/RNAseq_short_variant_analysis/outgroup/P_damicornis_Linnaeus_1758_Indonesia_isolate/variant_analysis_SeparateLibraries/filtering/GVCFall_withOutGroup_INDELs_VarScores_filterPASSED.vcf.idx
+Using GATK jar /home/timothy/programs/gatk-4.2.0.0/gatk-package-4.2.0.0-local.jar
+Running:
+    java -Dsamjdk.use_async_io_read_samtools=false -Dsamjdk.use_async_io_write_samtools=true -Dsamjdk.use_async_io_write_tribble=false -Dsamjdk.compression_level=2 -jar /home/timothy/programs/gatk-4.2.0.0/gatk-package-4.2.0.0-local.jar IndexFeatureFile --input GVCFall_withOutGroup_INDELs_VarScores_filterPASSED.vcf

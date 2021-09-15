@@ -1,0 +1,42 @@
+Using GATK jar /home/timothy/programs/gatk-4.2.0.0/gatk-package-4.2.0.0-local.jar
+Running:
+    java -Dsamjdk.use_async_io_read_samtools=false -Dsamjdk.use_async_io_write_samtools=true -Dsamjdk.use_async_io_write_tribble=false -Dsamjdk.compression_level=2 -jar /home/timothy/programs/gatk-4.2.0.0/gatk-package-4.2.0.0-local.jar VariantsToTable --reference Montipora_capitata_HIv1.assembly.fasta --variant SNPs_filtered.overlap_exons.vcf --output SNPs_filtered.overlap_exons.table -F CHROM -F POS -GF GT
+17:28:17.060 INFO  NativeLibraryLoader - Loading libgkl_compression.so from jar:file:/home/timothy/programs/gatk-4.2.0.0/gatk-package-4.2.0.0-local.jar!/com/intel/gkl/native/libgkl_compression.so
+Jun 13, 2021 5:28:17 PM shaded.cloud_nio.com.google.auth.oauth2.ComputeEngineCredentials runningOnComputeEngine
+INFO: Failed to detect whether we are running on Google Compute Engine.
+17:28:17.209 INFO  VariantsToTable - ------------------------------------------------------------
+17:28:17.209 INFO  VariantsToTable - The Genome Analysis Toolkit (GATK) v4.2.0.0
+17:28:17.209 INFO  VariantsToTable - For support and documentation go to https://software.broadinstitute.org/gatk/
+17:28:17.209 INFO  VariantsToTable - Executing as timothy@coral on Linux v5.4.0-72-generic amd64
+17:28:17.209 INFO  VariantsToTable - Java runtime: OpenJDK 64-Bit Server VM v11.0.11+9-Ubuntu-0ubuntu2.20.04
+17:28:17.209 INFO  VariantsToTable - Start Date/Time: June 13, 2021 at 5:28:17 PM EDT
+17:28:17.209 INFO  VariantsToTable - ------------------------------------------------------------
+17:28:17.209 INFO  VariantsToTable - ------------------------------------------------------------
+17:28:17.210 INFO  VariantsToTable - HTSJDK Version: 2.24.0
+17:28:17.210 INFO  VariantsToTable - Picard Version: 2.25.0
+17:28:17.210 INFO  VariantsToTable - Built for Spark Version: 2.4.5
+17:28:17.210 INFO  VariantsToTable - HTSJDK Defaults.COMPRESSION_LEVEL : 2
+17:28:17.210 INFO  VariantsToTable - HTSJDK Defaults.USE_ASYNC_IO_READ_FOR_SAMTOOLS : false
+17:28:17.210 INFO  VariantsToTable - HTSJDK Defaults.USE_ASYNC_IO_WRITE_FOR_SAMTOOLS : true
+17:28:17.210 INFO  VariantsToTable - HTSJDK Defaults.USE_ASYNC_IO_WRITE_FOR_TRIBBLE : false
+17:28:17.210 INFO  VariantsToTable - Deflater: IntelDeflater
+17:28:17.210 INFO  VariantsToTable - Inflater: IntelInflater
+17:28:17.210 INFO  VariantsToTable - GCS max retries/reopens: 20
+17:28:17.210 INFO  VariantsToTable - Requester pays: disabled
+17:28:17.210 INFO  VariantsToTable - Initializing engine
+17:28:17.355 INFO  FeatureManager - Using codec VCFCodec to read file file:///scratch/timothy/projects/0017_Montipora_capitata_HiRise_Assembly/03_Analysis/2021_04_21/RNAseq_short_variant_analysis/phylogeny/SNPs_filtered.overlap_exons.vcf
+17:28:17.510 INFO  VariantsToTable - Done initializing engine
+17:28:17.514 WARN  VariantsToTable - Allele-specific fields will only be split if splitting multi-allelic variants is specified (`--split-multi-allelic` or `-SMA`
+17:28:17.515 INFO  ProgressMeter - Starting traversal
+17:28:17.515 INFO  ProgressMeter -        Current Locus  Elapsed Minutes    Variants Processed  Variants/Minute
+17:28:27.642 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_3___length_47342999:804676              0.2                 66000         391149.7
+17:28:37.717 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_5___length_62411161:40607013              0.3                144000         427680.4
+17:28:47.826 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_8___length_68683312:42670625              0.5                224000         443418.0
+17:28:57.897 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_10___length_69151359:54561731              0.7                304000         451686.4
+17:29:07.948 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_13___length_39528174:295404              0.8                384000         456843.7
+17:29:17.983 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_204___length_119206:70009              1.0                466000         462401.0
+17:29:20.343 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_1360___length_15201:12070              1.0                485809         463949.3
+17:29:20.343 INFO  ProgressMeter - Traversal complete. Processed 485809 total variants in 1.0 minutes.
+17:29:20.343 INFO  VariantsToTable - Shutting down engine
+[June 13, 2021 at 5:29:20 PM EDT] org.broadinstitute.hellbender.tools.walkers.variantutils.VariantsToTable done. Elapsed time: 1.06 minutes.
+Runtime.totalMemory()=4525654016

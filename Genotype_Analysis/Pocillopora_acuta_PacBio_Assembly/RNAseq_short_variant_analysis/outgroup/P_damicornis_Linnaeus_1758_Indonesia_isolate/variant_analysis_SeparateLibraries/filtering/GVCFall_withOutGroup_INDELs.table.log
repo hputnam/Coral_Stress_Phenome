@@ -1,0 +1,38 @@
+Using GATK jar /home/timothy/programs/gatk-4.2.0.0/gatk-package-4.2.0.0-local.jar
+Running:
+    java -Dsamjdk.use_async_io_read_samtools=false -Dsamjdk.use_async_io_write_samtools=true -Dsamjdk.use_async_io_write_tribble=false -Dsamjdk.compression_level=2 -jar /home/timothy/programs/gatk-4.2.0.0/gatk-package-4.2.0.0-local.jar VariantsToTable --reference Pocillopora_acuta_HIv1.assembly.purged.fasta --variant GVCFall_withOutGroup_INDELs.vcf.gz --output GVCFall_withOutGroup_INDELs.table -F CHROM -F POS -F QUAL -F QD -F DP -F MQ -F FS -F SOR -F MQRankSum -F ReadPosRankSum
+17:01:37.360 INFO  NativeLibraryLoader - Loading libgkl_compression.so from jar:file:/home/timothy/programs/gatk-4.2.0.0/gatk-package-4.2.0.0-local.jar!/com/intel/gkl/native/libgkl_compression.so
+Jun 13, 2021 5:01:37 PM shaded.cloud_nio.com.google.auth.oauth2.ComputeEngineCredentials runningOnComputeEngine
+INFO: Failed to detect whether we are running on Google Compute Engine.
+17:01:37.531 INFO  VariantsToTable - ------------------------------------------------------------
+17:01:37.532 INFO  VariantsToTable - The Genome Analysis Toolkit (GATK) v4.2.0.0
+17:01:37.532 INFO  VariantsToTable - For support and documentation go to https://software.broadinstitute.org/gatk/
+17:01:37.532 INFO  VariantsToTable - Executing as timothy@coral on Linux v5.4.0-72-generic amd64
+17:01:37.532 INFO  VariantsToTable - Java runtime: OpenJDK 64-Bit Server VM v11.0.11+9-Ubuntu-0ubuntu2.20.04
+17:01:37.532 INFO  VariantsToTable - Start Date/Time: June 13, 2021 at 5:01:37 PM EDT
+17:01:37.532 INFO  VariantsToTable - ------------------------------------------------------------
+17:01:37.532 INFO  VariantsToTable - ------------------------------------------------------------
+17:01:37.533 INFO  VariantsToTable - HTSJDK Version: 2.24.0
+17:01:37.533 INFO  VariantsToTable - Picard Version: 2.25.0
+17:01:37.533 INFO  VariantsToTable - Built for Spark Version: 2.4.5
+17:01:37.533 INFO  VariantsToTable - HTSJDK Defaults.COMPRESSION_LEVEL : 2
+17:01:37.533 INFO  VariantsToTable - HTSJDK Defaults.USE_ASYNC_IO_READ_FOR_SAMTOOLS : false
+17:01:37.533 INFO  VariantsToTable - HTSJDK Defaults.USE_ASYNC_IO_WRITE_FOR_SAMTOOLS : true
+17:01:37.533 INFO  VariantsToTable - HTSJDK Defaults.USE_ASYNC_IO_WRITE_FOR_TRIBBLE : false
+17:01:37.533 INFO  VariantsToTable - Deflater: IntelDeflater
+17:01:37.533 INFO  VariantsToTable - Inflater: IntelInflater
+17:01:37.533 INFO  VariantsToTable - GCS max retries/reopens: 20
+17:01:37.533 INFO  VariantsToTable - Requester pays: disabled
+17:01:37.533 INFO  VariantsToTable - Initializing engine
+17:01:37.676 INFO  FeatureManager - Using codec VCFCodec to read file file:///scratch/timothy/projects/0020_Pocillopora_acuta_PacBio_Assembly/03_Analysis/2021_05_26/RNAseq_short_variant_analysis/outgroup/P_damicornis_Linnaeus_1758_Indonesia_isolate/variant_analysis_SeparateLibraries/filtering/GVCFall_withOutGroup_INDELs.vcf.gz
+17:01:37.818 INFO  VariantsToTable - Done initializing engine
+17:01:37.819 WARN  VariantsToTable - Allele-specific fields will only be split if splitting multi-allelic variants is specified (`--split-multi-allelic` or `-SMA`
+17:01:37.819 INFO  ProgressMeter - Starting traversal
+17:01:37.819 INFO  ProgressMeter -        Current Locus  Elapsed Minutes    Variants Processed  Variants/Minute
+17:01:47.837 INFO  ProgressMeter - Pocillopora_acuta_HIv1___Scaffold_000088F___length_1443323:236780              0.2                429000        2570401.4
+17:01:57.842 INFO  ProgressMeter - Pocillopora_acuta_HIv1___Scaffold_000487F___length_529700:466710              0.3                922000        2762960.7
+17:02:00.991 INFO  ProgressMeter - Pocillopora_acuta_HIv1___Scaffold_001829F___length_31435:17088              0.4               1079342        2794895.3
+17:02:00.992 INFO  ProgressMeter - Traversal complete. Processed 1079342 total variants in 0.4 minutes.
+17:02:00.992 INFO  VariantsToTable - Shutting down engine
+[June 13, 2021 at 5:02:00 PM EDT] org.broadinstitute.hellbender.tools.walkers.variantutils.VariantsToTable done. Elapsed time: 0.39 minutes.
+Runtime.totalMemory()=3808428032

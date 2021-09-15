@@ -1,0 +1,392 @@
+20:02:13.894 INFO  NativeLibraryLoader - Loading libgkl_compression.so from jar:file:/home/timothy/programs/gatk-4.2.0.0/gatk-package-4.2.0.0-local.jar!/com/intel/gkl/native/libgkl_compression.so
+Jun 12, 2021 8:02:14 PM shaded.cloud_nio.com.google.auth.oauth2.ComputeEngineCredentials runningOnComputeEngine
+INFO: Failed to detect whether we are running on Google Compute Engine.
+20:02:14.056 INFO  VariantFiltration - ------------------------------------------------------------
+20:02:14.056 INFO  VariantFiltration - The Genome Analysis Toolkit (GATK) v4.2.0.0
+20:02:14.057 INFO  VariantFiltration - For support and documentation go to https://software.broadinstitute.org/gatk/
+20:02:14.057 INFO  VariantFiltration - Executing as timothy@coral on Linux v5.4.0-72-generic amd64
+20:02:14.057 INFO  VariantFiltration - Java runtime: OpenJDK 64-Bit Server VM v11.0.11+9-Ubuntu-0ubuntu2.20.04
+20:02:14.057 INFO  VariantFiltration - Start Date/Time: June 12, 2021 at 8:02:13 PM EDT
+20:02:14.057 INFO  VariantFiltration - ------------------------------------------------------------
+20:02:14.057 INFO  VariantFiltration - ------------------------------------------------------------
+20:02:14.057 INFO  VariantFiltration - HTSJDK Version: 2.24.0
+20:02:14.057 INFO  VariantFiltration - Picard Version: 2.25.0
+20:02:14.057 INFO  VariantFiltration - Built for Spark Version: 2.4.5
+20:02:14.057 INFO  VariantFiltration - HTSJDK Defaults.COMPRESSION_LEVEL : 2
+20:02:14.058 INFO  VariantFiltration - HTSJDK Defaults.USE_ASYNC_IO_READ_FOR_SAMTOOLS : false
+20:02:14.058 INFO  VariantFiltration - HTSJDK Defaults.USE_ASYNC_IO_WRITE_FOR_SAMTOOLS : true
+20:02:14.058 INFO  VariantFiltration - HTSJDK Defaults.USE_ASYNC_IO_WRITE_FOR_TRIBBLE : false
+20:02:14.058 INFO  VariantFiltration - Deflater: IntelDeflater
+20:02:14.058 INFO  VariantFiltration - Inflater: IntelInflater
+20:02:14.058 INFO  VariantFiltration - GCS max retries/reopens: 20
+20:02:14.058 INFO  VariantFiltration - Requester pays: disabled
+20:02:14.058 INFO  VariantFiltration - Initializing engine
+20:02:14.244 INFO  FeatureManager - Using codec VCFCodec to read file file:///scratch/timothy/projects/0017_Montipora_capitata_HiRise_Assembly/03_Analysis/2021_04_21/RNAseq_short_variant_analysis/filtering/GVCFall_SNPs.vcf.gz
+20:02:14.357 INFO  VariantFiltration - Done initializing engine
+20:02:14.414 INFO  ProgressMeter - Starting traversal
+20:02:14.414 INFO  ProgressMeter -        Current Locus  Elapsed Minutes    Variants Processed  Variants/Minute
+20:02:16.046 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:02:18.301 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:02:20.991 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:02:22.947 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:02:23.561 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:02:23.561 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:02:23.899 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:02:24.075 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:02:24.436 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_1___length_48529999:15549872              0.2                312000        1867890.6
+20:02:25.069 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:02:25.069 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:02:25.738 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:02:28.481 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:02:28.481 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:02:31.947 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:02:32.884 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:02:32.884 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:02:34.459 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_1___length_48529999:38607894              0.3                705000        2110357.2
+20:02:38.762 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:02:40.604 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:02:40.605 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:02:41.344 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:02:44.463 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_2___length_53177999:9214552              0.5               1080000        2156477.8
+20:02:44.628 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:02:45.515 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:02:46.311 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:02:50.789 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:02:50.789 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:02:51.241 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:02:51.241 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:02:51.835 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:02:53.122 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:02:54.101 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:02:54.482 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_2___length_53177999:34301090              0.7               1477000        2211740.0
+20:02:55.443 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:02:57.157 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:02:57.157 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:02:57.461 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:02:58.032 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:02:58.032 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:02:58.032 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:02:58.600 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:02:59.311 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:03:02.958 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:03:03.349 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:03:03.412 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:03:04.503 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_3___length_47342999:1699025              0.8               1859000        2226836.2
+20:03:06.795 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:03:06.935 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:03:07.272 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:03:07.641 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:03:08.031 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:03:08.876 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:03:08.877 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:03:08.877 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:03:08.951 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:03:08.951 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:03:08.951 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:03:10.389 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:03:10.840 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:03:11.192 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:03:11.192 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:03:11.229 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:03:11.743 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:03:12.792 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:03:12.792 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:03:12.792 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:03:12.792 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:03:13.789 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:03:13.842 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:03:14.527 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_3___length_47342999:30010514              1.0               2264000        2259744.1
+20:03:15.019 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:03:17.047 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:03:17.803 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:03:18.070 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:03:20.207 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:03:20.207 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:03:21.017 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:03:22.216 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:03:24.506 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:03:24.541 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_4___length_47716837:2937491              1.2               2650000        2267315.0
+20:03:25.250 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:03:31.866 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:03:32.477 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:03:34.000 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:03:34.545 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_4___length_47716837:27714969              1.3               3049000        2283011.6
+20:03:35.590 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:03:35.600 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:03:35.600 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:03:35.683 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:03:40.229 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:03:42.974 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:03:42.975 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:03:43.377 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:03:44.568 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_5___length_62411161:2259557              1.5               3441000        2290081.4
+20:03:44.940 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:03:47.619 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:03:50.046 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:03:51.595 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:03:52.586 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:03:53.472 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:03:54.579 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_5___length_62411161:23822680              1.7               3828000        2293016.5
+20:03:54.687 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:03:54.719 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:03:58.742 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:03:58.844 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:03:59.840 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:04:00.708 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:04:03.035 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:04:03.712 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:04:03.731 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:04:04.583 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_5___length_62411161:50424488              1.8               4234000        2305932.8
+20:04:06.514 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:04:06.566 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:04:07.201 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:04:07.542 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:04:11.131 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:04:12.550 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:04:12.550 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:04:14.253 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:04:14.611 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_6___length_38979999:5913886              2.0               4618000        2305215.6
+20:04:15.454 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:04:18.523 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:04:18.523 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:04:18.884 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:04:18.885 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:04:19.611 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:04:19.611 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:04:19.611 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:04:24.634 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_6___length_38979999:29440000              2.2               5015000        2310705.0
+20:04:24.714 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:04:32.651 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:04:33.065 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:04:34.590 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:04:34.644 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_7___length_22000686:9312433              2.3               5397000        2309206.3
+20:04:39.150 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:04:40.820 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:04:40.825 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:04:40.827 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:04:43.644 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:04:44.470 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:04:44.668 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_8___length_68683312:5487667              2.5               5781000        2308491.0
+20:04:45.160 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:04:47.543 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:04:47.816 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:04:47.816 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:04:48.277 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:04:50.226 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:04:50.227 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:04:51.249 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:04:52.418 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:04:52.418 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:04:52.486 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:04:52.731 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:04:54.508 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:04:54.671 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_8___length_68683312:27617722              2.7               6172000        2310788.3
+20:04:56.055 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:04:56.228 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:04:56.282 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:04:57.908 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:04:57.908 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:04:58.927 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:04:58.927 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:04:58.927 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:05:00.991 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:05:01.259 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:05:01.328 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:05:02.633 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:05:02.723 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:05:04.696 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_8___length_68683312:55378356              2.8               6584000        2319916.4
+20:05:04.907 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:05:04.907 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:05:06.903 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:05:10.312 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:05:10.817 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:05:10.817 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:05:11.665 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:05:12.058 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:05:13.038 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:05:13.038 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:05:13.038 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:05:13.756 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:05:14.496 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:05:14.497 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:05:14.722 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_9___length_36520733:5995822              3.0               6973000        2320362.9
+20:05:16.220 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:05:16.568 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:05:16.568 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:05:17.524 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:05:18.618 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:05:19.623 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:05:22.110 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:05:22.884 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:05:22.884 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:05:24.493 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:05:24.744 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_9___length_36520733:29527391              3.2               7382000        2327116.1
+20:05:26.094 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:05:26.094 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:05:26.094 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:05:28.040 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:05:28.319 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:05:28.915 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:05:31.117 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:05:31.204 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:05:31.204 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:05:32.397 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:05:32.398 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:05:32.399 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:05:34.066 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:05:34.768 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_10___length_69151359:10815772              3.3               7764000        2325084.6
+20:05:39.036 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:05:39.572 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:05:40.940 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:05:42.042 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:05:43.374 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:05:43.549 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:05:43.549 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:05:44.773 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_10___length_69151359:37059968              3.5               8169000        2330016.8
+20:05:47.125 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:05:47.859 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:05:48.148 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:05:52.560 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:05:53.536 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:05:53.937 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:05:53.937 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:05:53.937 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:05:53.943 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:05:54.777 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_10___length_69151359:60988134              3.7               8568000        2332878.0
+20:05:57.240 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:05:57.240 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:05:58.613 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:06:01.317 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:06:02.596 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:06:04.797 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_11___length_67098902:13589132              3.8               8957000        2332724.2
+20:06:07.905 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:06:11.105 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:06:12.211 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:06:13.511 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:06:13.584 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:06:14.224 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:06:14.543 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:06:14.800 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_11___length_67098902:35456430              4.0               9353000        2334495.4
+20:06:16.246 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:06:19.692 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:06:20.073 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:06:21.727 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:06:21.727 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:06:22.425 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:06:22.425 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:06:22.905 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:06:23.492 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:06:24.814 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_11___length_67098902:61595755              4.2               9764000        2339616.6
+20:06:25.515 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:06:28.018 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:06:28.018 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:06:28.018 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:06:29.215 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:06:30.870 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:06:34.831 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_12___length_43329812:17476674              4.3              10156000        2339939.4
+20:06:35.081 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:06:35.969 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:06:35.988 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:06:35.988 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:06:36.260 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:06:36.260 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:06:36.276 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:06:36.704 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:06:37.865 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:06:39.843 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:06:40.410 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:06:40.411 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:06:40.411 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:06:44.852 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_12___length_43329812:41399540              4.5              10559000        2342644.2
+20:06:48.780 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:06:48.780 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:06:49.279 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:06:50.087 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:06:50.332 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:06:50.780 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:06:52.425 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:06:52.484 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:06:53.896 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:06:54.194 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:06:54.858 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_13___length_39528174:21564521              4.7              10954000        2343569.5
+20:06:55.043 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:06:55.060 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:06:56.279 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:06:57.611 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:06:57.765 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:06:59.899 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:07:03.252 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:07:03.839 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:07:04.871 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_14___length_35226620:3751210              4.8              11344000        2343341.7
+20:07:05.555 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:07:05.556 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:07:05.556 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:07:05.556 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:07:08.673 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:07:09.701 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:07:10.066 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:07:10.536 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:07:11.094 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:07:11.474 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:07:11.567 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:07:12.891 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:07:12.891 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:07:14.875 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_14___length_35226620:27148037              5.0              11748000        2345995.0
+20:07:15.299 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:07:16.198 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:07:16.326 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:07:16.450 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:07:17.353 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:07:17.496 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:07:17.496 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:07:20.434 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:07:21.723 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:07:22.367 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:07:22.454 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:07:24.229 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:07:24.875 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_49___length_331024:120055              5.2              12156000        2349280.6
+20:07:24.933 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:07:25.705 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:07:25.705 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:07:26.717 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:07:27.475 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:07:27.475 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:07:28.488 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:07:28.488 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:07:29.275 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:07:29.275 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:07:29.362 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:07:30.675 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:07:30.713 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:07:31.591 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:07:33.178 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:07:33.689 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:07:34.082 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:07:34.482 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:07:34.482 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:07:34.884 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_260___length_101791:66115              5.3              12565000        2352482.3
+20:07:35.033 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:07:35.033 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:07:35.224 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:07:35.224 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:07:35.224 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:07:36.130 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:07:36.966 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:07:37.033 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:07:37.039 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:07:37.039 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:07:37.105 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:07:37.169 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:07:38.475 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:07:41.864 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:07:43.135 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:07:43.135 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:07:43.731 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:07:43.769 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_1685___length_1536:1376              5.5              12928239        2355192.2
+20:07:43.769 INFO  ProgressMeter - Traversal complete. Processed 12928239 total variants in 5.5 minutes.
+20:07:43.813 INFO  VariantFiltration - Shutting down engine
+[June 12, 2021 at 8:07:43 PM EDT] org.broadinstitute.hellbender.tools.walkers.filters.VariantFiltration done. Elapsed time: 5.50 minutes.
+Runtime.totalMemory()=4999610368
+Using GATK jar /home/timothy/programs/gatk-4.2.0.0/gatk-package-4.2.0.0-local.jar
+Running:
+    java -Dsamjdk.use_async_io_read_samtools=false -Dsamjdk.use_async_io_write_samtools=true -Dsamjdk.use_async_io_write_tribble=false -Dsamjdk.compression_level=2 -jar /home/timothy/programs/gatk-4.2.0.0/gatk-package-4.2.0.0-local.jar VariantFiltration --reference Montipora_capitata_HIv1.assembly.fasta --variant GVCFall_SNPs.vcf.gz --output GVCFall_SNPs_VarScores_filter.vcf.gz --filter-name VarScores_filter_QD --filter-expression QD < 20.000 --filter-name VarScores_filter_MQ --filter-expression MQ < 50.000 --filter-name VarScores_filter_FS --filter-expression FS > 5.000 --filter-name VarScores_filter_SOR --filter-expression SOR > 2.500

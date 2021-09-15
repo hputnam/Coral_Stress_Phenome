@@ -1,0 +1,76 @@
+Pacuta_ATAC_TP10_1559	CladeA
+Pacuta_HTAC_TP10_1536	CladeA
+Pacuta_HTAC_TP3_1617	CladeA
+Pacuta_ATAC_TP5_1757	CladeA
+Pacuta_ATHC_TP8_2564	CladeA
+Pacuta_ATHC_TP7_2409	CladeA
+Pacuta_ATAC_TP5_1563	CladeA
+Pacuta_HTAC_TP11_1647	CladeA
+Pacuta_ATAC_TP4_2002	CladeA
+Pacuta_ATAC_TP4_1060	CladeA
+Pacuta_ATAC_TP3_1471	CladeA
+Pacuta_HTAC_TP1_2005	CladeA
+Pacuta_ATAC_TP1_2363	CladeA
+Pacuta_ATAC_TP9_1594	CladeA
+Pacuta_HTAC_TP11_1582	CladeA
+Pacuta_ATAC_TP10_1641	CladeA
+
+Pacuta_ATHC_TP1_2743	CladeB
+Pacuta_ATHC_TP3_2750	CladeB
+Pacuta_ATAC_TP6_1542	CladeB
+Pacuta_ATAC_TP1_1043	CladeB
+
+Pacuta_ATHC_TP6_1254	CladeC
+Pacuta_ATAC_TP11_1777	CladeC
+Pacuta_ATHC_TP4_2733	CladeC
+Pacuta_ATHC_TP8_1459	CladeC
+Pacuta_ATAC_TP8_1051	CladeC
+
+Pacuta_ATAC_TP9_2357	CladeD
+Pacuta_ATAC_TP11_1103	CladeD
+Pacuta_HTAC_TP11_1596	CladeD
+Pacuta_ATAC_TP11_2306	CladeD
+Pacuta_ATHC_TP9_1451	CladeD
+Pacuta_ATAC_TP8_2012	CladeD
+Pacuta_HTAC_TP10_2064	CladeD
+Pacuta_ATHC_TP6_2870	CladeD
+Pacuta_ATHC_TP3_2534	CladeD
+Pacuta_ATAC_TP3_1041	CladeD
+Pacuta_ATAC_TP4_1762	CladeD
+Pacuta_ATAC_TP3_1637	CladeD
+Pacuta_ATAC_TP7_2413	CladeD
+Pacuta_ATHC_TP7_2878	Clade
+Pacuta_ATHC_TP11_1147	CladeD
+Pacuta_ATHC_TP9_2873	CladeD
+Pacuta_ATHC_TP5_2877	CladeD
+Pacuta_ATHC_TP4_1220	CladeD
+
+Pacuta_ATHC_TP11_2668	CladeE
+Pacuta_ATHC_TP11_2879	CladeE
+Pacuta_ATHC_TP9_2979	CladeE
+Pacuta_ATHC_TP8_2861	CladeE
+Pacuta_ATHC_TP6_2999	CladeE
+Pacuta_ATHC_TP3_1219	CladeE
+Pacuta_ATHC_TP5_1296	CladeE
+Pacuta_ATHC_TP1_2977	CladeE
+Pacuta_ATAC_TP6_1050	CladeE
+Pacuta_ATHC_TP7_1281	CladeE
+Pacuta_ATHC_TP1_1207	CladeE
+Pacuta_ATHC_TP4_2993	CladeE
+Pacuta_ATAC_TP7_1047	CladeE
+Pacuta_HTAC_TP10_1225	CladeE
+Pacuta_ATHC_TP10_2197	CladeE
+
+
+Pacuta_ATHC_TP10_2550	CladeF
+Pacuta_ATHC_TP10_1205	CladeF
+Pacuta_ATAC_TP5_1059	CladeF
+Pacuta_ATHC_TP5_2212	CladeF
+Pacuta_ATAC_TP1_1775	CladeF
+Pacuta_ATAC_TP6_1468	CladeF
+Pacuta_ATAC_TP8_1755	CladeF
+Pacuta_ATAC_TP9_1141	CladeF
+Pacuta_ATAC_TP10_1159	CladeF
+
+Pacuta_ATAC_TP7_1445	CladeG
+

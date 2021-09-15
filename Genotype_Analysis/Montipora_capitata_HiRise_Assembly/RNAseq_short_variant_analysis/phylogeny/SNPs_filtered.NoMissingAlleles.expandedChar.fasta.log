@@ -1,0 +1,409 @@
+IQ-TREE multicore version 1.6.12 for Linux 64-bit built Aug 15 2019
+Developed by Bui Quang Minh, Nguyen Lam Tung, Olga Chernomor,
+Heiko Schmidt, Dominik Schrempf, Michael Woodhams.
+
+Host:    coral (AVX512, FMA3, 376 GB RAM)
+Command: iqtree -nt AUTO -ntmax 24 -st DNA -m GTR -bb 2000 -quiet -s SNPs_filtered.NoMissingAlleles.expandedChar.fasta
+Seed:    126975 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Sun Jun 13 16:13:26 2021
+Kernel:  AVX+FMA - auto-detect threads (96 CPU cores detected)
+
+Reading alignment file SNPs_filtered.NoMissingAlleles.expandedChar.fasta ... Fasta format detected
+Alignment most likely contains DNA/RNA sequences
+Alignment has 132 sequences with 28382 columns, 23290 distinct patterns
+25541 parsimony-informative, 1165 singleton sites, 1676 constant sites
+                          Gap/Ambiguity  Composition  p-value
+   1  Mcapitata_ATAC_TP10_1095    0.00%    passed     50.09%
+   2  Mcapitata_ATAC_TP10_1561    0.00%    passed     93.42%
+   3  Mcapitata_ATAC_TP10_1631    0.00%    passed     92.47%
+   4  Mcapitata_ATAC_TP11_1076    0.00%    passed     73.19%
+   5  Mcapitata_ATAC_TP11_1644    0.00%    passed     77.65%
+   6  Mcapitata_ATAC_TP11_2302    0.00%    passed     95.35%
+   7  Mcapitata_ATAC_TP12_1120    0.00%    passed     94.77%
+   8  Mcapitata_ATAC_TP12_1452    0.00%    passed     84.05%
+   9  Mcapitata_ATAC_TP12_2403    0.00%    passed     36.20%
+  10  Mcapitata_ATAC_TP1_1037     0.00%    passed     85.99%
+  11  Mcapitata_ATAC_TP1_1600     0.00%    passed     55.13%
+  12  Mcapitata_ATAC_TP1_1652     0.00%    passed     98.66%
+  13  Mcapitata_ATAC_TP3_1101     0.00%    passed     98.75%
+  14  Mcapitata_ATAC_TP3_1548     0.00%    passed     52.12%
+  15  Mcapitata_ATAC_TP3_1628     0.00%    passed     78.83%
+  16  Mcapitata_ATAC_TP4_1108     0.00%    passed     86.13%
+  17  Mcapitata_ATAC_TP4_1609     0.00%    passed     97.98%
+  18  Mcapitata_ATAC_TP4_1651     0.00%    passed     60.14%
+  19  Mcapitata_ATAC_TP5_1196     0.00%    passed     89.74%
+  20  Mcapitata_ATAC_TP5_1610     0.00%    passed     46.35%
+  21  Mcapitata_ATAC_TP5_1776     0.00%    passed     95.67%
+  22  Mcapitata_ATAC_TP6_1114     0.00%    passed     61.05%
+  23  Mcapitata_ATAC_TP6_1611     0.00%    passed     40.80%
+  24  Mcapitata_ATAC_TP6_2402     0.00%    passed     34.28%
+  25  Mcapitata_ATAC_TP7_1058     0.00%    passed     47.42%
+  26  Mcapitata_ATAC_TP7_1455     0.00%    passed     80.78%
+  27  Mcapitata_ATAC_TP7_1499     0.00%    passed     32.26%
+  28  Mcapitata_ATAC_TP8_1083     0.00%    passed     17.66%
+  29  Mcapitata_ATAC_TP8_1436     0.00%    passed     88.86%
+  30  Mcapitata_ATAC_TP8_1779     0.00%    passed     57.20%
+  31  Mcapitata_ATAC_TP9_1121     0.00%    passed     77.42%
+  32  Mcapitata_ATAC_TP9_1420     0.00%    passed     72.99%
+  33  Mcapitata_ATAC_TP9_1580     0.00%    passed     77.58%
+  34  Mcapitata_ATHC_TP10_1204    0.00%    passed     76.13%
+  35  Mcapitata_ATHC_TP10_2554    0.00%    passed     22.38%
+  36  Mcapitata_ATHC_TP10_2737    0.00%    passed     80.33%
+  37  Mcapitata_ATHC_TP11_1237    0.00%    passed     92.25%
+  38  Mcapitata_ATHC_TP11_2188    0.00%    passed     78.24%
+  39  Mcapitata_ATHC_TP11_2756    0.00%    passed     24.03%
+  40  Mcapitata_ATHC_TP12_1154    0.00%    passed     37.97%
+  41  Mcapitata_ATHC_TP12_2736    0.00%    passed     54.13%
+  42  Mcapitata_ATHC_TP12_2990    0.00%    passed     92.52%
+  43  Mcapitata_ATHC_TP1_1218     0.00%    passed     80.17%
+  44  Mcapitata_ATHC_TP1_1826     0.00%    passed     88.84%
+  45  Mcapitata_ATHC_TP1_2068     0.00%    passed     92.55%
+  46  Mcapitata_ATHC_TP3_1544     0.00%    passed     91.33%
+  47  Mcapitata_ATHC_TP3_2731     0.00%    passed     90.32%
+  48  Mcapitata_ATHC_TP3_2866     0.00%    passed     31.93%
+  49  Mcapitata_ATHC_TP4_1221     0.00%    passed     99.08%
+  50  Mcapitata_ATHC_TP4_2561     0.00%    passed     72.93%
+  51  Mcapitata_ATHC_TP4_2734     0.00%    passed     59.52%
+  52  Mcapitata_ATHC_TP5_1229     0.00%    passed     59.99%
+  53  Mcapitata_ATHC_TP5_1706     0.00%    passed     87.13%
+  54  Mcapitata_ATHC_TP5_2986     0.00%    passed     91.05%
+  55  Mcapitata_ATHC_TP6_1212     0.00%    passed     91.76%
+  56  Mcapitata_ATHC_TP6_2016     0.00%    passed     86.70%
+  57  Mcapitata_ATHC_TP6_2555     0.00%    passed     93.55%
+  58  Mcapitata_ATHC_TP7_1223     0.00%    passed     78.43%
+  59  Mcapitata_ATHC_TP7_2860     0.00%    passed     70.25%
+  60  Mcapitata_ATHC_TP7_2875     0.00%    passed     83.93%
+  61  Mcapitata_ATHC_TP8_1260     0.00%    passed     42.26%
+  62  Mcapitata_ATHC_TP8_2735     0.00%    passed     92.22%
+  63  Mcapitata_ATHC_TP8_2753     0.00%    passed     25.12%
+  64  Mcapitata_ATHC_TP9_1148     0.00%    passed     84.55%
+  65  Mcapitata_ATHC_TP9_2862     0.00%    passed     95.74%
+  66  Mcapitata_ATHC_TP9_2995     0.00%    passed     51.13%
+  67  Mcapitata_HTAC_TP10_1315    0.00%    passed     91.21%
+  68  Mcapitata_HTAC_TP10_1478    0.00%    passed     94.01%
+  69  Mcapitata_HTAC_TP10_1754    0.00%    passed     17.88%
+  70  Mcapitata_HTAC_TP11_1248    0.00%    passed     97.11%
+  71  Mcapitata_HTAC_TP11_1562    0.00%    passed     49.53%
+  72  Mcapitata_HTAC_TP11_2380    0.00%    passed     97.91%
+  73  Mcapitata_HTAC_TP12_1632    0.00%    passed     91.18%
+  74  Mcapitata_HTAC_TP12_1729    0.00%    passed     42.50%
+  75  Mcapitata_HTAC_TP12_2007    0.00%    passed     85.73%
+  76  Mcapitata_HTAC_TP1_1579     0.00%    passed     52.70%
+  77  Mcapitata_HTAC_TP1_2153     0.00%    passed     60.45%
+  78  Mcapitata_HTAC_TP1_2183     0.00%    passed     59.32%
+  79  Mcapitata_HTAC_TP3_1289     0.00%    passed     46.73%
+  80  Mcapitata_HTAC_TP3_1751     0.00%    passed     93.70%
+  81  Mcapitata_HTAC_TP3_2021     0.00%    passed     99.63%
+  82  Mcapitata_HTAC_TP4_1269     0.00%    passed     59.71%
+  83  Mcapitata_HTAC_TP4_1481     0.00%    passed     48.02%
+  84  Mcapitata_HTAC_TP4_2000     0.00%    passed     90.33%
+  85  Mcapitata_HTAC_TP5_1321     0.00%    passed     56.63%
+  86  Mcapitata_HTAC_TP5_1583     0.00%    passed     98.52%
+  87  Mcapitata_HTAC_TP5_1997     0.00%    passed     96.19%
+  88  Mcapitata_HTAC_TP6_1496     0.00%    passed     43.46%
+  89  Mcapitata_HTAC_TP6_1588     0.00%    passed     42.69%
+  90  Mcapitata_HTAC_TP6_1705     0.00%    passed     34.44%
+  91  Mcapitata_HTAC_TP7_1278     0.00%    passed     90.63%
+  92  Mcapitata_HTAC_TP7_1645     0.00%    passed     94.60%
+  93  Mcapitata_HTAC_TP7_1722     0.00%    passed     87.62%
+  94  Mcapitata_HTAC_TP8_1235     0.00%    passed     80.54%
+  95  Mcapitata_HTAC_TP8_2386     0.00%    passed     69.38%
+  96  Mcapitata_HTAC_TP8_2410     0.00%    passed     52.04%
+  97  Mcapitata_HTAC_TP9_1306     0.00%    passed     51.11%
+  98  Mcapitata_HTAC_TP9_1467     0.00%    passed     95.57%
+  99  Mcapitata_HTAC_TP9_2412     0.00%    passed     62.25%
+ 100  Mcapitata_HTHC_TP10_1074    0.00%    passed     94.74%
+ 101  Mcapitata_HTHC_TP10_1332    0.00%    passed     58.80%
+ 102  Mcapitata_HTHC_TP10_1689    0.00%    passed     41.06%
+ 103  Mcapitata_HTHC_TP11_1178    0.00%    passed     76.48%
+ 104  Mcapitata_HTHC_TP11_1270    0.00%    passed     66.54%
+ 105  Mcapitata_HTHC_TP11_2511    0.00%    passed     68.84%
+ 106  Mcapitata_HTHC_TP12_1140    0.00%    passed     75.65%
+ 107  Mcapitata_HTHC_TP12_1274    0.00%    passed     65.72%
+ 108  Mcapitata_HTHC_TP12_2190    0.00%    passed     47.78%
+ 109  Mcapitata_HTHC_TP1_1145     0.00%    passed     81.30%
+ 110  Mcapitata_HTHC_TP1_1323     0.00%    passed     92.02%
+ 111  Mcapitata_HTHC_TP1_2081     0.00%    passed     31.08%
+ 112  Mcapitata_HTHC_TP3_1128     0.00%    passed     57.07%
+ 113  Mcapitata_HTHC_TP3_1277     0.00%    passed     92.70%
+ 114  Mcapitata_HTHC_TP3_2518     0.00%    passed     93.49%
+ 115  Mcapitata_HTHC_TP4_1124     0.00%    passed     87.84%
+ 116  Mcapitata_HTHC_TP4_1328     0.00%    passed     92.92%
+ 117  Mcapitata_HTHC_TP4_2204     0.00%    passed     97.95%
+ 118  Mcapitata_HTHC_TP5_1345     0.00%    passed     72.39%
+ 119  Mcapitata_HTHC_TP5_1449     0.00%    passed     55.74%
+ 120  Mcapitata_HTHC_TP5_1694     0.00%    passed     96.25%
+ 121  Mcapitata_HTHC_TP6_1164     0.00%    passed     45.46%
+ 122  Mcapitata_HTHC_TP6_1317     0.00%    passed     31.57%
+ 123  Mcapitata_HTHC_TP6_1604     0.00%    passed     85.05%
+ 124  Mcapitata_HTHC_TP7_1126     0.00%    passed     89.37%
+ 125  Mcapitata_HTHC_TP7_1250     0.00%    passed     47.12%
+ 126  Mcapitata_HTHC_TP7_2419     0.00%    passed     99.48%
+ 127  Mcapitata_HTHC_TP8_1082     0.00%    passed     79.42%
+ 128  Mcapitata_HTHC_TP8_1246     0.00%    passed     81.26%
+ 129  Mcapitata_HTHC_TP8_2067     0.00%    passed     62.31%
+ 130  Mcapitata_HTHC_TP9_1078     0.00%    passed     92.64%
+ 131  Mcapitata_HTHC_TP9_1331     0.00%    passed     99.48%
+ 132  Mcapitata_HTHC_TP9_2009     0.00%    passed     76.71%
+****  TOTAL                       0.00%  0 sequences failed composition chi2 test (p-value<5%; df=3)
+
+Create initial parsimony tree by phylogenetic likelihood library (PLL)... 0.815 seconds
+Generating 2000 samples for ultrafast bootstrap (seed: 126975)...
+
+NOTE: 277 MB RAM (0 GB) is required!
+Measuring multi-threading efficiency up to 24 CPU cores
+Increase to 10 rounds for branch lengths
+14 trees examined
+Threads: 1 / Time: 24.797 sec / Speedup: 1.000 / Efficiency: 100% / LogL: -2695406
+Threads: 2 / Time: 17.722 sec / Speedup: 1.399 / Efficiency: 70% / LogL: -2695406
+Threads: 3 / Time: 12.235 sec / Speedup: 2.027 / Efficiency: 68% / LogL: -2695406
+Threads: 4 / Time: 11.125 sec / Speedup: 2.229 / Efficiency: 56% / LogL: -2695406
+Threads: 5 / Time: 8.608 sec / Speedup: 2.881 / Efficiency: 58% / LogL: -2695406
+Threads: 6 / Time: 7.898 sec / Speedup: 3.140 / Efficiency: 52% / LogL: -2695406
+Threads: 7 / Time: 6.303 sec / Speedup: 3.934 / Efficiency: 56% / LogL: -2695406
+Threads: 8 / Time: 5.965 sec / Speedup: 4.157 / Efficiency: 52% / LogL: -2695406
+Threads: 9 / Time: 5.544 sec / Speedup: 4.473 / Efficiency: 50% / LogL: -2695406
+BEST NUMBER OF THREADS: 8
+
+Estimate model parameters (epsilon = 0.100)
+1. Initial log-likelihood: -2610242.077
+2. Current log-likelihood: -2489803.886
+3. Current log-likelihood: -2489598.217
+Optimal log-likelihood: -2489598.147
+Rate parameters:  A-C: 1.00033  A-G: 3.18073  A-T: 1.08791  C-G: 0.85177  C-T: 3.14719  G-T: 1.00000
+Base frequencies:  A: 0.253  C: 0.249  G: 0.250  T: 0.248
+Parameters optimization took 3 rounds (3.715 sec)
+Computing ML distances based on estimated model parameters... 8.327 sec
+Computing BIONJ tree...
+0.006 seconds
+Log-likelihood of BIONJ tree: -2486370.586
+--------------------------------------------------------------------
+|             INITIALIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Generating 98 parsimony trees... 74.374 second
+Computing log-likelihood of 98 initial trees ... 14.977 seconds
+Current best score: -2486370.586
+
+Do NNI search on 20 best initial trees
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 1: -2484577.406
+Iteration 10 / LogL: -2489184.330 / Time: 0h:3m:38s
+Iteration 20 / LogL: -2489728.840 / Time: 0h:3m:53s
+Finish initializing candidate tree set (20)
+Current best tree score: -2484577.406 / CPU time: 126.068
+Number of iterations: 20
+--------------------------------------------------------------------
+|               OPTIMIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Iteration 30 / LogL: -2484691.491 / Time: 0h:4m:9s (0h:10m:8s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 35: -2484038.666
+Iteration 40 / LogL: -2484456.257 / Time: 0h:4m:26s (0h:10m:46s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 43: -2483770.509
+Iteration 50 / LogL: -2484710.764 / Time: 0h:4m:39s (0h:8m:48s left)
+Log-likelihood cutoff on original alignment: -2484312.723
+Iteration 60 / LogL: -2484307.977 / Time: 0h:4m:51s (0h:6m:48s left)
+Iteration 70 / LogL: -2484495.331 / Time: 0h:5m:2s (0h:5m:18s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 78: -2483293.443
+Iteration 80 / LogL: -2484657.004 / Time: 0h:5m:14s (0h:6m:28s left)
+Iteration 90 / LogL: -2484396.634 / Time: 0h:5m:24s (0h:5m:20s left)
+Iteration 100 / LogL: -2484365.893 / Time: 0h:5m:35s (0h:4m:23s left)
+Log-likelihood cutoff on original alignment: -2484073.351
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.692
+NOTE: UFBoot does not converge, continue at least 100 more iterations
+Iteration 110 / LogL: -2483602.067 / Time: 0h:5m:48s (0h:4m:46s left)
+Iteration 120 / LogL: -2483629.490 / Time: 0h:5m:59s (0h:4m:1s left)
+Iteration 130 / LogL: -2484378.829 / Time: 0h:6m:11s (0h:3m:21s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 136: -2483275.184
+Iteration 140 / LogL: -2484893.622 / Time: 0h:6m:25s (0h:4m:25s left)
+Iteration 150 / LogL: -2483831.386 / Time: 0h:6m:36s (0h:3m:48s left)
+Log-likelihood cutoff on original alignment: -2484073.351
+Iteration 160 / LogL: -2483885.568 / Time: 0h:6m:48s (0h:3m:14s left)
+Iteration 170 / LogL: -2483832.670 / Time: 0h:6m:59s (0h:2m:43s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 172: -2483150.637
+Iteration 180 / LogL: -2483429.368 / Time: 0h:7m:14s (0h:3m:42s left)
+Iteration 190 / LogL: -2485410.762 / Time: 0h:7m:27s (0h:3m:13s left)
+Iteration 200 / LogL: -2485235.640 / Time: 0h:7m:39s (0h:2m:45s left)
+Log-likelihood cutoff on original alignment: -2484073.351
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.936
+NOTE: UFBoot does not converge, continue at least 100 more iterations
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 204: -2483002.263
+Iteration 210 / LogL: -2484883.939 / Time: 0h:7m:52s (0h:3m:32s left)
+Iteration 220 / LogL: -2484058.749 / Time: 0h:8m:4s (0h:3m:5s left)
+Iteration 230 / LogL: -2484490.651 / Time: 0h:8m:15s (0h:2m:39s left)
+Iteration 240 / LogL: -2484311.935 / Time: 0h:8m:27s (0h:2m:15s left)
+Iteration 250 / LogL: -2483394.827 / Time: 0h:8m:39s (0h:1m:52s left)
+Log-likelihood cutoff on original alignment: -2484073.351
+Iteration 260 / LogL: -2484726.103 / Time: 0h:8m:51s (0h:1m:30s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 268: -2482892.412
+Iteration 270 / LogL: -2485373.215 / Time: 0h:9m:5s (0h:3m:18s left)
+Iteration 280 / LogL: -2483536.483 / Time: 0h:9m:16s (0h:2m:55s left)
+Iteration 290 / LogL: -2484336.171 / Time: 0h:9m:29s (0h:2m:33s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 299: -2482788.147
+Iteration 300 / LogL: -2484530.142 / Time: 0h:9m:43s (0h:3m:12s left)
+Log-likelihood cutoff on original alignment: -2484073.351
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.879
+NOTE: UFBoot does not converge, continue at least 100 more iterations
+Iteration 310 / LogL: -2483917.689 / Time: 0h:9m:57s (0h:2m:53s left)
+Iteration 320 / LogL: -2484400.098 / Time: 0h:10m:10s (0h:2m:32s left)
+Iteration 330 / LogL: -2483905.117 / Time: 0h:10m:21s (0h:2m:12s left)
+Iteration 340 / LogL: -2486123.179 / Time: 0h:10m:33s (0h:1m:51s left)
+Iteration 350 / LogL: -2483365.420 / Time: 0h:10m:47s (0h:1m:32s left)
+Log-likelihood cutoff on original alignment: -2484073.351
+Iteration 360 / LogL: -2483438.091 / Time: 0h:11m:1s (0h:1m:13s left)
+Iteration 370 / LogL: -2483960.952 / Time: 0h:11m:14s (0h:0m:54s left)
+Iteration 380 / LogL: -2483400.252 / Time: 0h:11m:28s (0h:0m:36s left)
+Iteration 390 / LogL: -2483406.818 / Time: 0h:11m:41s (0h:0m:18s left)
+Iteration 400 / LogL: -2483268.389 / Time: 0h:11m:54s (0h:0m:0s left)
+Log-likelihood cutoff on original alignment: -2484073.351
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.878
+NOTE: UFBoot does not converge, continue at least 100 more iterations
+Iteration 410 / LogL: -2483326.060 / Time: 0h:12m:7s (0h:2m:39s left)
+Iteration 420 / LogL: -2484366.236 / Time: 0h:12m:19s (0h:2m:20s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 426: -2482700.582
+Iteration 430 / LogL: -2483113.912 / Time: 0h:12m:32s (0h:2m:48s left)
+Iteration 440 / LogL: -2483249.458 / Time: 0h:12m:44s (0h:2m:29s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 449: -2482370.985
+Iteration 450 / LogL: -2484659.464 / Time: 0h:12m:57s (0h:2m:51s left)
+Log-likelihood cutoff on original alignment: -2483840.597
+Iteration 460 / LogL: -2484010.714 / Time: 0h:13m:10s (0h:2m:33s left)
+Iteration 470 / LogL: -2483405.613 / Time: 0h:13m:21s (0h:2m:14s left)
+Iteration 480 / LogL: -2484683.078 / Time: 0h:13m:34s (0h:1m:57s left)
+Iteration 490 / LogL: -2483208.355 / Time: 0h:13m:49s (0h:1m:39s left)
+Iteration 500 / LogL: -2483748.970 / Time: 0h:14m:2s (0h:1m:22s left)
+Log-likelihood cutoff on original alignment: -2483840.597
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.743
+NOTE: UFBoot does not converge, continue at least 100 more iterations
+Iteration 510 / LogL: -2482802.102 / Time: 0h:14m:13s (0h:2m:30s left)
+Iteration 520 / LogL: -2482874.263 / Time: 0h:14m:27s (0h:2m:13s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 528: -2482264.451
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 529: -2482150.232
+Iteration 530 / LogL: -2482818.850 / Time: 0h:14m:44s (0h:2m:45s left)
+Iteration 540 / LogL: -2483280.004 / Time: 0h:14m:58s (0h:2m:28s left)
+Iteration 550 / LogL: -2482403.344 / Time: 0h:15m:14s (0h:2m:11s left)
+Log-likelihood cutoff on original alignment: -2483840.597
+Iteration 560 / LogL: -2483050.816 / Time: 0h:15m:30s (0h:1m:54s left)
+Iteration 570 / LogL: -2484266.755 / Time: 0h:15m:44s (0h:1m:37s left)
+Iteration 580 / LogL: -2482943.652 / Time: 0h:15m:57s (0h:1m:20s left)
+Iteration 590 / LogL: -2482411.073 / Time: 0h:16m:11s (0h:1m:4s left)
+Iteration 600 / LogL: -2482970.631 / Time: 0h:16m:25s (0h:0m:47s left)
+Log-likelihood cutoff on original alignment: -2483840.597
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.716
+NOTE: UFBoot does not converge, continue at least 100 more iterations
+Iteration 610 / LogL: -2483001.839 / Time: 0h:16m:39s (0h:2m:27s left)
+Iteration 620 / LogL: -2482739.768 / Time: 0h:16m:52s (0h:2m:10s left)
+Iteration 630 / LogL: -2482982.538 / Time: 0h:17m:6s (0h:1m:54s left)
+Iteration 640 / LogL: -2482922.412 / Time: 0h:17m:21s (0h:1m:37s left)
+Iteration 650 / LogL: -2483040.240 / Time: 0h:17m:34s (0h:1m:21s left)
+Log-likelihood cutoff on original alignment: -2483840.597
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 656: -2482106.588
+Iteration 660 / LogL: -2483333.056 / Time: 0h:17m:51s (0h:2m:35s left)
+Iteration 670 / LogL: -2482640.449 / Time: 0h:18m:7s (0h:2m:19s left)
+Iteration 680 / LogL: -2482952.588 / Time: 0h:18m:21s (0h:2m:3s left)
+Iteration 690 / LogL: -2483672.494 / Time: 0h:18m:35s (0h:1m:46s left)
+Iteration 700 / LogL: -2482222.680 / Time: 0h:18m:51s (0h:1m:30s left)
+Log-likelihood cutoff on original alignment: -2483840.597
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.739
+NOTE: UFBoot does not converge, continue at least 100 more iterations
+Iteration 710 / LogL: -2482882.576 / Time: 0h:19m:9s (0h:2m:25s left)
+Iteration 720 / LogL: -2483250.691 / Time: 0h:19m:24s (0h:2m:9s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 725: -2481933.098
+Iteration 730 / LogL: -2482460.926 / Time: 0h:19m:39s (0h:2m:33s left)
+Iteration 740 / LogL: -2482299.034 / Time: 0h:19m:51s (0h:2m:16s left)
+Iteration 750 / LogL: -2483092.240 / Time: 0h:20m:4s (0h:2m:0s left)
+Log-likelihood cutoff on original alignment: -2483357.797
+Iteration 760 / LogL: -2483161.848 / Time: 0h:20m:17s (0h:1m:44s left)
+Iteration 770 / LogL: -2482599.444 / Time: 0h:20m:32s (0h:1m:28s left)
+Iteration 780 / LogL: -2483213.050 / Time: 0h:20m:47s (0h:1m:11s left)
+Iteration 790 / LogL: -2483422.551 / Time: 0h:20m:59s (0h:0m:55s left)
+Iteration 800 / LogL: -2483259.850 / Time: 0h:21m:12s (0h:0m:39s left)
+Log-likelihood cutoff on original alignment: -2483357.797
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.723
+NOTE: UFBoot does not converge, continue at least 100 more iterations
+Iteration 810 / LogL: -2483360.972 / Time: 0h:21m:25s (0h:2m:22s left)
+Iteration 820 / LogL: -2482401.819 / Time: 0h:21m:38s (0h:2m:6s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 821: -2481705.735
+Iteration 830 / LogL: -2482683.321 / Time: 0h:21m:51s (0h:2m:23s left)
+Iteration 840 / LogL: -2483435.523 / Time: 0h:22m:2s (0h:2m:7s left)
+Iteration 850 / LogL: -2483431.411 / Time: 0h:22m:13s (0h:1m:51s left)
+Log-likelihood cutoff on original alignment: -2483071.512
+Iteration 860 / LogL: -2482952.451 / Time: 0h:22m:26s (0h:1m:35s left)
+Iteration 870 / LogL: -2482647.865 / Time: 0h:22m:38s (0h:1m:19s left)
+Iteration 880 / LogL: -2482698.270 / Time: 0h:22m:51s (0h:1m:3s left)
+Iteration 890 / LogL: -2483237.065 / Time: 0h:23m:1s (0h:0m:48s left)
+Iteration 900 / LogL: -2482805.267 / Time: 0h:23m:15s (0h:0m:32s left)
+Log-likelihood cutoff on original alignment: -2483071.512
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.794
+NOTE: UFBoot does not converge, continue at least 100 more iterations
+Iteration 910 / LogL: -2482733.144 / Time: 0h:23m:29s (0h:2m:19s left)
+Iteration 920 / LogL: -2484779.372 / Time: 0h:23m:41s (0h:2m:3s left)
+Iteration 930 / LogL: -2482956.215 / Time: 0h:23m:52s (0h:1m:47s left)
+Iteration 940 / LogL: -2483773.658 / Time: 0h:24m:4s (0h:1m:32s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 944: -2481647.684
+Iteration 950 / LogL: -2482384.303 / Time: 0h:24m:17s (0h:2m:24s left)
+Log-likelihood cutoff on original alignment: -2483071.512
+Iteration 960 / LogL: -2482623.414 / Time: 0h:24m:33s (0h:2m:8s left)
+Iteration 970 / LogL: -2482222.472 / Time: 0h:24m:47s (0h:1m:53s left)
+Iteration 980 / LogL: -2481872.339 / Time: 0h:24m:59s (0h:1m:37s left)
+Iteration 990 / LogL: -2482805.346 / Time: 0h:25m:10s (0h:1m:22s left)
+Iteration 1000 / LogL: -2482952.072 / Time: 0h:25m:22s (0h:1m:6s left)
+Log-likelihood cutoff on original alignment: -2482789.671
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.798
+NOTE: UFBoot does not converge, continue at least 100 more iterations
+WARNING: bootstrap analysis did not converge. You should rerun with higher number of iterations (-nm option)
+TREE SEARCH COMPLETED AFTER 1001 ITERATIONS / Time: 0h:25m:24s
+
+--------------------------------------------------------------------
+|                    FINALIZING TREE SEARCH                        |
+--------------------------------------------------------------------
+Performs final model parameters optimization
+Estimate model parameters (epsilon = 0.010)
+1. Initial log-likelihood: -2481647.684
+Optimal log-likelihood: -2481647.682
+Rate parameters:  A-C: 1.00583  A-G: 3.19017  A-T: 1.09077  C-G: 0.85458  C-T: 3.15083  G-T: 1.00000
+Base frequencies:  A: 0.253  C: 0.249  G: 0.250  T: 0.248
+Parameters optimization took 1 rounds (0.455 sec)
+BEST SCORE FOUND : -2481647.682
+Creating bootstrap support values...
+Split supports printed to NEXUS file SNPs_filtered.NoMissingAlleles.expandedChar.fasta.splits.nex
+Total tree length: 24.696
+
+Total number of iterations: 1001
+CPU time used for tree search: 10876.331 sec (3h:1m:16s)
+Wall-clock time used for tree search: 1416.534 sec (0h:23m:36s)
+Total CPU time used: 11326.597 sec (3h:8m:46s)
+Total wall-clock time used: 1525.198 sec (0h:25m:25s)
+
+Computing bootstrap consensus tree...
+Reading input file SNPs_filtered.NoMissingAlleles.expandedChar.fasta.splits.nex...
+132 taxa and 548 splits.
+Consensus tree written to SNPs_filtered.NoMissingAlleles.expandedChar.fasta.contree
+Reading input trees file SNPs_filtered.NoMissingAlleles.expandedChar.fasta.contree
+Log-likelihood of consensus tree: -2481729.811
+
+Analysis results written to: 
+  IQ-TREE report:                SNPs_filtered.NoMissingAlleles.expandedChar.fasta.iqtree
+  Maximum-likelihood tree:       SNPs_filtered.NoMissingAlleles.expandedChar.fasta.treefile
+  Likelihood distances:          SNPs_filtered.NoMissingAlleles.expandedChar.fasta.mldist
+
+Ultrafast bootstrap approximation results written to:
+  Split support values:          SNPs_filtered.NoMissingAlleles.expandedChar.fasta.splits.nex
+  Consensus tree:                SNPs_filtered.NoMissingAlleles.expandedChar.fasta.contree
+  Screen log file:               SNPs_filtered.NoMissingAlleles.expandedChar.fasta.log
+
+Date and Time: Sun Jun 13 16:38:52 2021

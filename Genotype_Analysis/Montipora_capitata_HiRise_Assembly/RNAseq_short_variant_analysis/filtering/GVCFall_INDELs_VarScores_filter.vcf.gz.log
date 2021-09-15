@@ -1,0 +1,95 @@
+20:13:50.824 INFO  NativeLibraryLoader - Loading libgkl_compression.so from jar:file:/home/timothy/programs/gatk-4.2.0.0/gatk-package-4.2.0.0-local.jar!/com/intel/gkl/native/libgkl_compression.so
+Jun 12, 2021 8:13:50 PM shaded.cloud_nio.com.google.auth.oauth2.ComputeEngineCredentials runningOnComputeEngine
+INFO: Failed to detect whether we are running on Google Compute Engine.
+20:13:50.939 INFO  VariantFiltration - ------------------------------------------------------------
+20:13:50.939 INFO  VariantFiltration - The Genome Analysis Toolkit (GATK) v4.2.0.0
+20:13:50.939 INFO  VariantFiltration - For support and documentation go to https://software.broadinstitute.org/gatk/
+20:13:50.939 INFO  VariantFiltration - Executing as timothy@coral on Linux v5.4.0-72-generic amd64
+20:13:50.939 INFO  VariantFiltration - Java runtime: OpenJDK 64-Bit Server VM v11.0.11+9-Ubuntu-0ubuntu2.20.04
+20:13:50.939 INFO  VariantFiltration - Start Date/Time: June 12, 2021 at 8:13:50 PM EDT
+20:13:50.939 INFO  VariantFiltration - ------------------------------------------------------------
+20:13:50.939 INFO  VariantFiltration - ------------------------------------------------------------
+20:13:50.940 INFO  VariantFiltration - HTSJDK Version: 2.24.0
+20:13:50.940 INFO  VariantFiltration - Picard Version: 2.25.0
+20:13:50.940 INFO  VariantFiltration - Built for Spark Version: 2.4.5
+20:13:50.940 INFO  VariantFiltration - HTSJDK Defaults.COMPRESSION_LEVEL : 2
+20:13:50.940 INFO  VariantFiltration - HTSJDK Defaults.USE_ASYNC_IO_READ_FOR_SAMTOOLS : false
+20:13:50.940 INFO  VariantFiltration - HTSJDK Defaults.USE_ASYNC_IO_WRITE_FOR_SAMTOOLS : true
+20:13:50.940 INFO  VariantFiltration - HTSJDK Defaults.USE_ASYNC_IO_WRITE_FOR_TRIBBLE : false
+20:13:50.940 INFO  VariantFiltration - Deflater: IntelDeflater
+20:13:50.940 INFO  VariantFiltration - Inflater: IntelInflater
+20:13:50.940 INFO  VariantFiltration - GCS max retries/reopens: 20
+20:13:50.940 INFO  VariantFiltration - Requester pays: disabled
+20:13:50.940 INFO  VariantFiltration - Initializing engine
+20:13:51.096 INFO  FeatureManager - Using codec VCFCodec to read file file:///scratch/timothy/projects/0017_Montipora_capitata_HiRise_Assembly/03_Analysis/2021_04_21/RNAseq_short_variant_analysis/filtering/GVCFall_INDELs.vcf.gz
+20:13:51.210 INFO  VariantFiltration - Done initializing engine
+20:13:51.269 INFO  ProgressMeter - Starting traversal
+20:13:51.269 INFO  ProgressMeter -        Current Locus  Elapsed Minutes    Variants Processed  Variants/Minute
+20:13:52.130 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:13:54.416 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:13:54.479 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:13:56.296 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:13:57.232 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:13:57.233 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:13:57.694 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:13:59.780 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:13:59.863 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:13:59.863 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:14:00.525 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:14:01.271 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_3___length_47342999:20516017              0.2                343000        2057794.2
+20:14:01.298 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:14:01.572 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:14:01.849 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:14:03.334 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:14:03.461 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:14:04.054 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:14:11.276 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_6___length_38979999:179911              0.3                722000        2165242.2
+20:14:11.541 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:14:11.542 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:14:11.902 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:14:12.680 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:14:13.498 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:14:13.498 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:14:14.109 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:14:14.411 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:14:16.067 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:14:16.235 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:14:16.235 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:14:16.522 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:14:18.062 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:14:19.069 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:14:20.198 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:14:21.295 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_9___length_36520733:3395639              0.5               1112000        2222148.2
+20:14:22.220 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:14:28.446 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:14:28.505 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:14:29.500 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:14:30.679 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:14:31.278 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:14:31.308 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_11___length_67098902:47292003              0.7               1498000        2244811.3
+20:14:31.451 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:14:31.586 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:14:31.950 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:14:32.246 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:14:32.730 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:14:33.043 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:14:33.981 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:14:35.069 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:14:35.182 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:14:37.141 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:14:37.293 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:14:37.627 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:14:39.478 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:14:41.314 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_42___length_378314:41789              0.8               1888000        2263562.8
+20:14:41.997 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:14:42.545 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:14:42.872 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:14:43.186 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+20:14:43.652 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_1622___length_6468:2434              0.9               1982583        2270869.9
+20:14:43.652 INFO  ProgressMeter - Traversal complete. Processed 1982583 total variants in 0.9 minutes.
+20:14:43.692 INFO  VariantFiltration - Shutting down engine
+[June 12, 2021 at 8:14:43 PM EDT] org.broadinstitute.hellbender.tools.walkers.filters.VariantFiltration done. Elapsed time: 0.88 minutes.
+Runtime.totalMemory()=3468689408
+Using GATK jar /home/timothy/programs/gatk-4.2.0.0/gatk-package-4.2.0.0-local.jar
+Running:
+    java -Dsamjdk.use_async_io_read_samtools=false -Dsamjdk.use_async_io_write_samtools=true -Dsamjdk.use_async_io_write_tribble=false -Dsamjdk.compression_level=2 -jar /home/timothy/programs/gatk-4.2.0.0/gatk-package-4.2.0.0-local.jar VariantFiltration --reference Montipora_capitata_HIv1.assembly.fasta --variant GVCFall_INDELs.vcf.gz --output GVCFall_INDELs_VarScores_filter.vcf.gz --filter-name VarScores_filter_QD --filter-expression QD < 20.000 --filter-name VarScores_filter_MQ --filter-expression MQ < 45.000 --filter-name VarScores_filter_FS --filter-expression FS > 5.000 --filter-name VarScores_filter_SOR --filter-expression SOR > 2.500

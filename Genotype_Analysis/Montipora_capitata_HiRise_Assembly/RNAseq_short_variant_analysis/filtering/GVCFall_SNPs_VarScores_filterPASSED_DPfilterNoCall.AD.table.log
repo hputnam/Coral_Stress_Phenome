@@ -1,0 +1,215 @@
+13:42:42.765 INFO  NativeLibraryLoader - Loading libgkl_compression.so from jar:file:/home/timothy/programs/gatk-4.2.0.0/gatk-package-4.2.0.0-local.jar!/com/intel/gkl/native/libgkl_compression.so
+Jun 13, 2021 1:42:42 PM shaded.cloud_nio.com.google.auth.oauth2.ComputeEngineCredentials runningOnComputeEngine
+INFO: Failed to detect whether we are running on Google Compute Engine.
+13:42:42.874 INFO  VariantsToTable - ------------------------------------------------------------
+13:42:42.875 INFO  VariantsToTable - The Genome Analysis Toolkit (GATK) v4.2.0.0
+13:42:42.875 INFO  VariantsToTable - For support and documentation go to https://software.broadinstitute.org/gatk/
+13:42:42.875 INFO  VariantsToTable - Executing as timothy@coral on Linux v5.4.0-72-generic amd64
+13:42:42.875 INFO  VariantsToTable - Java runtime: OpenJDK 64-Bit Server VM v11.0.11+9-Ubuntu-0ubuntu2.20.04
+13:42:42.875 INFO  VariantsToTable - Start Date/Time: June 13, 2021 at 1:42:42 PM EDT
+13:42:42.875 INFO  VariantsToTable - ------------------------------------------------------------
+13:42:42.875 INFO  VariantsToTable - ------------------------------------------------------------
+13:42:42.875 INFO  VariantsToTable - HTSJDK Version: 2.24.0
+13:42:42.875 INFO  VariantsToTable - Picard Version: 2.25.0
+13:42:42.875 INFO  VariantsToTable - Built for Spark Version: 2.4.5
+13:42:42.876 INFO  VariantsToTable - HTSJDK Defaults.COMPRESSION_LEVEL : 2
+13:42:42.876 INFO  VariantsToTable - HTSJDK Defaults.USE_ASYNC_IO_READ_FOR_SAMTOOLS : false
+13:42:42.876 INFO  VariantsToTable - HTSJDK Defaults.USE_ASYNC_IO_WRITE_FOR_SAMTOOLS : true
+13:42:42.876 INFO  VariantsToTable - HTSJDK Defaults.USE_ASYNC_IO_WRITE_FOR_TRIBBLE : false
+13:42:42.876 INFO  VariantsToTable - Deflater: IntelDeflater
+13:42:42.876 INFO  VariantsToTable - Inflater: IntelInflater
+13:42:42.876 INFO  VariantsToTable - GCS max retries/reopens: 20
+13:42:42.876 INFO  VariantsToTable - Requester pays: disabled
+13:42:42.876 INFO  VariantsToTable - Initializing engine
+13:42:43.037 INFO  FeatureManager - Using codec VCFCodec to read file file:///scratch/timothy/projects/0017_Montipora_capitata_HiRise_Assembly/03_Analysis/2021_04_21/RNAseq_short_variant_analysis/filtering/GVCFall_SNPs_VarScores_filterPASSED_DPfilterNoCall.vcf
+13:42:43.155 INFO  VariantsToTable - Done initializing engine
+13:42:43.158 WARN  VariantsToTable - Allele-specific fields will only be split if splitting multi-allelic variants is specified (`--split-multi-allelic` or `-SMA`
+13:42:43.159 INFO  ProgressMeter - Starting traversal
+13:42:43.159 INFO  ProgressMeter -        Current Locus  Elapsed Minutes    Variants Processed  Variants/Minute
+13:42:53.250 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_1___length_48529999:3365224              0.2                 45000         267591.7
+13:43:03.359 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_1___length_48529999:7077115              0.3                 97000         288118.8
+13:43:13.444 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_1___length_48529999:10357370              0.5                149000         295205.4
+13:43:23.580 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_1___length_48529999:14405579              0.7                203000         301336.0
+13:43:33.754 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_1___length_48529999:18721747              0.8                257000         304773.2
+13:43:43.783 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_1___length_48529999:23111307              1.0                310000         306809.2
+13:43:53.944 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_1___length_48529999:27594415              1.2                364000         308539.9
+13:44:04.088 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_1___length_48529999:31837002              1.3                418000         309901.3
+13:44:14.272 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_1___length_48529999:35741190              1.5                472000         310822.8
+13:44:24.392 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_1___length_48529999:38807320              1.7                525000         311166.4
+13:44:34.449 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_1___length_48529999:42950876              1.9                578000         311618.3
+13:44:44.502 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_1___length_48529999:46377330              2.0                630000         311513.6
+13:44:54.531 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_2___length_53177999:1761374              2.2                683000         311938.6
+13:45:04.557 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_2___length_53177999:5165003              2.4                735000         311887.8
+13:45:14.643 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_2___length_53177999:9280176              2.5                788000         312112.2
+13:45:24.813 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_2___length_53177999:13030281              2.7                842000         312521.3
+13:45:34.930 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_2___length_53177999:17037605              2.9                896000         312974.8
+13:45:45.019 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_2___length_53177999:20557419              3.0                949000         313098.0
+13:45:55.174 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_2___length_53177999:25678999              3.2               1002000         313100.5
+13:46:05.268 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_2___length_53177999:31212052              3.4               1056000         313494.2
+13:46:15.272 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_2___length_53177999:36236491              3.5               1110000         313985.1
+13:46:25.413 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_2___length_53177999:41457680              3.7               1164000         314235.1
+13:46:35.597 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_2___length_53177999:44948058              3.9               1218000         314406.4
+13:46:45.757 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_2___length_53177999:48448257              4.0               1271000         314347.2
+13:46:55.870 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_2___length_53177999:51895790              4.2               1323000         314113.8
+13:47:05.939 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_3___length_47342999:2562781              4.4               1376000         314180.4
+13:47:16.109 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_3___length_47342999:6311415              4.5               1430000         314344.4
+13:47:26.198 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_3___length_47342999:11423128              4.7               1484000         314586.7
+13:47:36.262 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_3___length_47342999:15684598              4.9               1537000         314633.4
+13:47:46.367 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_3___length_47342999:20706529              5.1               1591000         314833.4
+13:47:56.426 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_3___length_47342999:26395353              5.2               1644000         314875.2
+13:48:06.433 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_3___length_47342999:31522304              5.4               1697000         314965.0
+13:48:16.523 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_3___length_47342999:36318729              5.6               1751000         315152.0
+13:48:26.606 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_3___length_47342999:40395200              5.7               1805000         315332.5
+13:48:36.641 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_3___length_47342999:43840911              5.9               1858000         315376.7
+13:48:46.684 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_3___length_47342999:46870839              6.1               1909000         315082.4
+13:48:56.820 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_4___length_47716837:3672880              6.2               1963000         315205.5
+13:49:06.942 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_4___length_47716837:7274197              6.4               2016000         315178.1
+13:49:16.956 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_4___length_47716837:11657697              6.6               2069000         315238.6
+13:49:27.046 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_4___length_47716837:15925544              6.7               2123000         315385.2
+13:49:37.203 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_4___length_47716837:20529902              6.9               2177000         315473.7
+13:49:47.350 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_4___length_47716837:25547807              7.1               2231000         315565.4
+13:49:57.502 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_4___length_47716837:30859116              7.2               2286000         315787.3
+13:50:07.679 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_4___length_47716837:36231895              7.4               2340000         315846.3
+13:50:17.726 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_4___length_47716837:39495075              7.6               2393000         315861.0
+13:50:27.831 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_4___length_47716837:42978272              7.7               2447000         315964.8
+13:50:37.936 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_4___length_47716837:47469560              7.9               2501000         316064.2
+13:50:48.025 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_5___length_62411161:3661035              8.1               2554000         316046.1
+13:50:58.202 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_5___length_62411161:7435160              8.3               2608000         316093.8
+13:51:08.207 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_5___length_62411161:11652784              8.4               2661000         316129.0
+13:51:18.322 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_5___length_62411161:15730532              8.6               2714000         316094.1
+13:51:28.346 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_5___length_62411161:19541764              8.8               2767000         316116.0
+13:51:38.491 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_5___length_62411161:24037932              8.9               2821000         316178.2
+13:51:48.496 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_5___length_62411161:28700138              9.1               2874000         316208.1
+13:51:58.681 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_5___length_62411161:32375056              9.3               2928000         316243.1
+13:52:08.849 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_5___length_62411161:37540977              9.4               2981000         316180.2
+13:52:18.853 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_5___length_62411161:42374384              9.6               3034000         316209.7
+13:52:28.891 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_5___length_62411161:46761078              9.8               3088000         316322.1
+13:52:39.036 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_5___length_62411161:51321495              9.9               3142000         316374.0
+13:52:49.076 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_5___length_62411161:54906302             10.1               3195000         316380.0
+13:52:59.235 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_5___length_62411161:58043949             10.3               3248000         316324.6
+13:53:09.375 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_5___length_62411161:61774956             10.4               3301000         316280.6
+13:53:19.483 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_6___length_38979999:3074697             10.6               3354000         316254.0
+13:53:29.629 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_6___length_38979999:6567709             10.8               3407000         316209.6
+13:53:39.753 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_6___length_38979999:10347669             10.9               3461000         316269.0
+13:53:49.902 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_6___length_38979999:15107089             11.1               3515000         316313.8
+13:53:59.903 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_6___length_38979999:19041796             11.3               3567000         316249.6
+13:54:10.003 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_6___length_38979999:24514806             11.4               3621000         316316.4
+13:54:20.183 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_6___length_38979999:28254830             11.6               3675000         316344.9
+13:54:30.254 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_6___length_38979999:31647147             11.8               3728000         316336.6
+13:54:40.300 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_6___length_38979999:34776071             12.0               3781000         316339.9
+13:54:50.406 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_7___length_22000686:327438             12.1               3835000         316398.7
+13:55:00.449 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_7___length_22000686:4550702             12.3               3888000         316402.0
+13:55:10.564 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_7___length_22000686:8115361             12.5               3941000         316374.7
+13:55:20.652 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_7___length_22000686:11617885             12.6               3994000         316359.4
+13:55:30.678 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_7___length_22000686:15106872             12.8               4047000         316370.0
+13:55:40.822 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_7___length_22000686:18713552             13.0               4100000         316332.4
+13:55:50.886 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_7___length_22000686:21556385             13.1               4153000         316328.3
+13:56:00.963 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_8___length_68683312:3408708             13.3               4207000         316393.5
+13:56:11.030 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_8___length_68683312:7350272             13.5               4260000         316387.1
+13:56:21.058 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_8___length_68683312:11885539             13.6               4314000         316469.4
+13:56:31.161 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_8___length_68683312:15831970             13.8               4367000         316448.5
+13:56:41.237 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_8___length_68683312:19861689             14.0               4420000         316438.3
+13:56:51.391 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_8___length_68683312:23734952             14.1               4474000         316470.0
+13:57:01.507 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_8___length_68683312:27955941             14.3               4528000         316515.0
+13:57:11.665 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_8___length_68683312:32670643             14.5               4582000         316543.6
+13:57:21.762 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_8___length_68683312:37864585             14.6               4636000         316593.5
+13:57:31.942 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_8___length_68683312:43447511             14.8               4691000         316680.2
+13:57:41.954 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_8___length_68683312:48269155             15.0               4745000         316757.4
+13:57:52.032 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_8___length_68683312:52336896             15.1               4798000         316743.9
+13:58:02.154 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_8___length_68683312:55915346             15.3               4852000         316780.8
+13:58:12.312 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_8___length_68683312:59623053             15.5               4906000         316804.7
+13:58:22.490 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_8___length_68683312:64042712             15.7               4960000         316821.6
+13:58:32.503 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_8___length_68683312:68156475             15.8               5013000         316829.3
+13:58:42.538 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_9___length_36520733:2695342             16.0               5066000         316830.3
+13:58:52.582 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_9___length_36520733:5914869             16.2               5119000         316827.6
+13:59:02.750 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_9___length_36520733:9306848             16.3               5173000         316846.5
+13:59:12.806 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_9___length_36520733:12474348             16.5               5226000         316840.2
+13:59:22.846 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_9___length_36520733:17017368             16.7               5279000         316839.2
+13:59:33.044 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_9___length_36520733:21412060             16.8               5333000         316848.0
+13:59:43.109 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_9___length_36520733:26618438             17.0               5387000         316897.9
+13:59:53.202 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_9___length_36520733:29800506             17.2               5440000         316880.3
+14:00:03.317 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_9___length_36520733:32434494             17.3               5493000         316855.7
+14:00:13.467 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_9___length_36520733:35972183             17.5               5546000         316821.4
+14:00:23.608 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_10___length_69151359:3291033             17.7               5599000         316790.3
+14:00:33.618 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_10___length_69151359:6737742             17.8               5652000         316798.7
+14:00:43.765 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_10___length_69151359:11138192             18.0               5705000         316766.7
+14:00:53.936 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_10___length_69151359:15242870             18.2               5759000         316783.4
+14:01:04.048 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_10___length_69151359:19102981             18.3               5813000         316817.0
+14:01:14.172 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_10___length_69151359:23447501             18.5               5867000         316846.0
+14:01:24.308 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_10___length_69151359:28961385             18.7               5921000         316871.4
+14:01:34.392 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_10___length_69151359:34039371             18.9               5975000         316910.8
+14:01:44.534 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_10___length_69151359:39400733             19.0               6030000         316986.1
+14:01:54.619 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_10___length_69151359:43947790             19.2               6084000         317023.6
+14:02:04.800 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_10___length_69151359:48175795             19.4               6138000         317034.3
+14:02:14.847 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_10___length_69151359:52183693             19.5               6191000         317030.1
+14:02:25.030 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_10___length_69151359:56505249             19.7               6245000         317039.7
+14:02:35.170 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_10___length_69151359:60479701             19.9               6299000         317061.1
+14:02:45.239 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_10___length_69151359:64824804             20.0               6353000         317100.4
+14:02:55.397 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_10___length_69151359:68632770             20.2               6407000         317115.9
+14:03:05.411 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_11___length_67098902:4106705             20.4               6460000         317119.5
+14:03:15.593 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_11___length_67098902:7805053             20.5               6513000         317080.1
+14:03:25.755 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_11___length_67098902:12221146             20.7               6567000         317094.5
+14:03:35.777 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_11___length_67098902:16008311             20.9               6620000         317095.9
+14:03:45.906 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_11___length_67098902:20118426             21.0               6674000         317118.4
+14:03:55.935 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_11___length_67098902:24127429             21.2               6727000         317117.9
+14:04:06.067 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_11___length_67098902:28086456             21.4               6781000         317138.9
+14:04:16.239 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_11___length_67098902:31845278             21.6               6835000         317149.8
+14:04:26.383 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_11___length_67098902:36465543             21.7               6889000         317167.3
+14:04:36.437 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_11___length_67098902:41605974             21.9               6943000         317206.3
+14:04:46.447 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_11___length_67098902:47110819             22.1               6997000         317255.2
+14:04:56.571 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_11___length_67098902:51056260             22.2               7050000         317231.3
+14:05:06.722 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_11___length_67098902:55383172             22.4               7104000         317246.0
+14:05:16.892 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_11___length_67098902:59069185             22.6               7158000         317256.1
+14:05:27.043 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_11___length_67098902:62840582             22.7               7212000         317270.6
+14:05:37.165 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_12___length_43329812:91077             22.9               7266000         317291.2
+14:05:47.333 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_12___length_43329812:4136134             23.1               7320000         317301.1
+14:05:57.425 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_12___length_43329812:7080527             23.2               7373000         317285.5
+14:06:07.456 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_12___length_43329812:11229169             23.4               7426000         317283.3
+14:06:17.510 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_12___length_43329812:16868323             23.6               7480000         317318.7
+14:06:27.692 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_12___length_43329812:21568984             23.7               7534000         317325.0
+14:06:37.800 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_12___length_43329812:26629269             23.9               7588000         317347.9
+14:06:47.916 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_12___length_43329812:30480666             24.1               7642000         317368.2
+14:06:58.028 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_12___length_43329812:34300691             24.2               7696000         317389.4
+14:07:08.043 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_12___length_43329812:38417036             24.4               7749000         317390.3
+14:07:18.059 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_12___length_43329812:42070190             24.6               7802000         317391.0
+14:07:28.092 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_13___length_39528174:2073247             24.7               7855000         317388.1
+14:07:38.250 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_13___length_39528174:5555580             24.9               7909000         317398.7
+14:07:48.378 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_13___length_39528174:9825829             25.1               7963000         317415.6
+14:07:58.507 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_13___length_39528174:13732229             25.3               8017000         317432.0
+14:08:08.551 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_13___length_39528174:19082720             25.4               8070000         317426.6
+14:08:18.552 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_13___length_39528174:25493020             25.6               8124000         317469.2
+14:08:28.555 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_13___length_39528174:29690497             25.8               8177000         317472.0
+14:08:38.671 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_13___length_39528174:33559741             25.9               8231000         317490.3
+14:08:48.764 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_13___length_39528174:36846500             26.1               8284000         317474.9
+14:08:58.799 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_14___length_35226620:997344             26.3               8337000         317471.0
+14:09:08.808 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_14___length_35226620:4494638             26.4               8389000         317434.7
+14:09:18.863 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_14___length_35226620:7989185             26.6               8442000         317427.5
+14:09:28.947 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_14___length_35226620:11136867             26.8               8495000         317414.3
+14:09:38.983 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_14___length_35226620:16556622             26.9               8548000         317411.0
+14:09:49.021 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_14___length_35226620:21339084             27.1               8602000         317444.1
+14:09:59.154 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_14___length_35226620:25307653             27.3               8656000         317458.2
+14:10:09.269 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_14___length_35226620:28413801             27.4               8710000         317475.9
+14:10:19.315 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_14___length_35226620:31159372             27.6               8763000         317470.1
+14:10:29.485 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_14___length_35226620:34485363             27.8               8817000         317476.9
+14:10:39.592 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_18___length_729353:278854             27.9               8871000         317495.5
+14:10:49.756 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_29___length_508187:112667             28.1               8926000         317538.8
+14:10:59.808 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_43___length_371354:351877             28.3               8979000         317531.8
+14:11:09.873 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_63___length_288605:261870             28.4               9033000         317557.6
+14:11:19.948 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_85___length_245961:234133             28.6               9087000         317581.4
+14:11:29.963 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_112___length_189310:110756             28.8               9141000         317615.7
+14:11:40.022 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_150___length_152338:34981             28.9               9195000         317641.6
+14:11:50.207 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_198___length_120563:86262             29.1               9250000         317678.7
+14:12:00.221 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_257___length_102350:61697             29.3               9304000         317712.2
+14:12:10.303 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_327___length_80947:53137             29.5               9358000         317733.0
+14:12:20.318 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_438___length_61400:21376             29.6               9412000         317765.6
+14:12:30.430 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_595___length_45461:24775             29.8               9466000         317780.6
+14:12:40.532 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_874___length_30593:4799             30.0               9520000         317797.3
+14:12:50.617 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_1477___length_12631:8026             30.1               9574000         317816.5
+14:12:52.643 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_1642___length_5182:4666             30.2               9584962         317824.2
+14:12:52.643 INFO  ProgressMeter - Traversal complete. Processed 9584962 total variants in 30.2 minutes.
+14:12:52.643 INFO  VariantsToTable - Shutting down engine
+[June 13, 2021 at 2:12:52 PM EDT] org.broadinstitute.hellbender.tools.walkers.variantutils.VariantsToTable done. Elapsed time: 30.17 minutes.
+Runtime.totalMemory()=3082813440
+Using GATK jar /home/timothy/programs/gatk-4.2.0.0/gatk-package-4.2.0.0-local.jar
+Running:
+    java -Dsamjdk.use_async_io_read_samtools=false -Dsamjdk.use_async_io_write_samtools=true -Dsamjdk.use_async_io_write_tribble=false -Dsamjdk.compression_level=2 -jar /home/timothy/programs/gatk-4.2.0.0/gatk-package-4.2.0.0-local.jar VariantsToTable --reference Montipora_capitata_HIv1.assembly.fasta --variant GVCFall_SNPs_VarScores_filterPASSED_DPfilterNoCall.vcf --output GVCFall_SNPs_VarScores_filterPASSED_DPfilterNoCall.AD.table -F CHROM -F POS -GF GT -GF AD -GF DP

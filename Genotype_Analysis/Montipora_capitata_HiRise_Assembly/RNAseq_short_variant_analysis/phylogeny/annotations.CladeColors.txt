@@ -1,0 +1,6 @@
+CladeMC1	#1f78b4
+CladeMC2	#a6cee3
+CladeMC3	#33a02c
+CladeMC4	#b2df8a
+CladeMC5	#e31a1c
+CladeMC6	#fb9a99

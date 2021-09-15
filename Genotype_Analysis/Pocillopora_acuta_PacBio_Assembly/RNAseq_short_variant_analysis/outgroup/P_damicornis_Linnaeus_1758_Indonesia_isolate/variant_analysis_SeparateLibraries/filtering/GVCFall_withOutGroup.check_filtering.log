@@ -1,0 +1,40 @@
+                                                       CHROM POS   QUAL    QD
+1 Pocillopora_acuta_HIv1___Scaffold_000000F___length_7015273  23 117.80 25.36
+2 Pocillopora_acuta_HIv1___Scaffold_000000F___length_7015273  27 114.38 28.73
+3 Pocillopora_acuta_HIv1___Scaffold_000000F___length_7015273  79  47.22 23.61
+4 Pocillopora_acuta_HIv1___Scaffold_000000F___length_7015273  97 176.66 30.97
+5 Pocillopora_acuta_HIv1___Scaffold_000000F___length_7015273 149  75.53 28.20
+6 Pocillopora_acuta_HIv1___Scaffold_000000F___length_7015273 150 115.77 28.94
+   DP MQ FS   SOR MQRankSum ReadPosRankSum  X
+1  24 60  0 0.693        NA             NA NA
+2  28 60  0 0.693        NA             NA NA
+3  74 60  0 0.693        NA             NA NA
+4  92 60  0 0.693        NA             NA NA
+5 194 60  0 0.693        NA             NA NA
+6 199 60  0 0.693        NA             NA NA
+[1] 0
+[1] 0
+[1] 0
+[1] 0
+[1] 0
+[1] 4
+                                                       CHROM  POS    QUAL    QD
+1 Pocillopora_acuta_HIv1___Scaffold_000000F___length_7015273   98  179.42 27.24
+2 Pocillopora_acuta_HIv1___Scaffold_000000F___length_7015273  375   89.60 26.00
+3 Pocillopora_acuta_HIv1___Scaffold_000000F___length_7015273  780   91.44 29.03
+4 Pocillopora_acuta_HIv1___Scaffold_000000F___length_7015273  863   70.30 23.43
+5 Pocillopora_acuta_HIv1___Scaffold_000000F___length_7015273 1807 1347.98 33.85
+6 Pocillopora_acuta_HIv1___Scaffold_000000F___length_7015273 2026   74.04 24.68
+   DP MQ FS   SOR MQRankSum ReadPosRankSum  X
+1  92 60  0 0.693        NA             NA NA
+2  56 60  0 0.693        NA             NA NA
+3  53 60  0 0.693        NA             NA NA
+4  58 60  0 0.223         0          0.967 NA
+5  25 60  0 0.804        NA             NA NA
+6 137 60  0 0.223         0         -0.967 NA
+[1] 0
+[1] 0
+[1] 0
+[1] 0
+[1] 0
+[1] 3

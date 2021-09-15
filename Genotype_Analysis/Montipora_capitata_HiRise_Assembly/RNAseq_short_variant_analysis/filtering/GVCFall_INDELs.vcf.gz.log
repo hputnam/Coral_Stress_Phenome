@@ -1,0 +1,59 @@
+19:30:58.048 INFO  NativeLibraryLoader - Loading libgkl_compression.so from jar:file:/home/timothy/programs/gatk-4.2.0.0/gatk-package-4.2.0.0-local.jar!/com/intel/gkl/native/libgkl_compression.so
+Jun 12, 2021 7:30:58 PM shaded.cloud_nio.com.google.auth.oauth2.ComputeEngineCredentials runningOnComputeEngine
+INFO: Failed to detect whether we are running on Google Compute Engine.
+19:30:58.182 INFO  SelectVariants - ------------------------------------------------------------
+19:30:58.183 INFO  SelectVariants - The Genome Analysis Toolkit (GATK) v4.2.0.0
+19:30:58.183 INFO  SelectVariants - For support and documentation go to https://software.broadinstitute.org/gatk/
+19:30:58.183 INFO  SelectVariants - Executing as timothy@coral on Linux v5.4.0-72-generic amd64
+19:30:58.183 INFO  SelectVariants - Java runtime: OpenJDK 64-Bit Server VM v11.0.11+9-Ubuntu-0ubuntu2.20.04
+19:30:58.183 INFO  SelectVariants - Start Date/Time: June 12, 2021 at 7:30:58 PM EDT
+19:30:58.183 INFO  SelectVariants - ------------------------------------------------------------
+19:30:58.183 INFO  SelectVariants - ------------------------------------------------------------
+19:30:58.183 INFO  SelectVariants - HTSJDK Version: 2.24.0
+19:30:58.183 INFO  SelectVariants - Picard Version: 2.25.0
+19:30:58.183 INFO  SelectVariants - Built for Spark Version: 2.4.5
+19:30:58.183 INFO  SelectVariants - HTSJDK Defaults.COMPRESSION_LEVEL : 2
+19:30:58.183 INFO  SelectVariants - HTSJDK Defaults.USE_ASYNC_IO_READ_FOR_SAMTOOLS : false
+19:30:58.184 INFO  SelectVariants - HTSJDK Defaults.USE_ASYNC_IO_WRITE_FOR_SAMTOOLS : true
+19:30:58.184 INFO  SelectVariants - HTSJDK Defaults.USE_ASYNC_IO_WRITE_FOR_TRIBBLE : false
+19:30:58.184 INFO  SelectVariants - Deflater: IntelDeflater
+19:30:58.184 INFO  SelectVariants - Inflater: IntelInflater
+19:30:58.184 INFO  SelectVariants - GCS max retries/reopens: 20
+19:30:58.184 INFO  SelectVariants - Requester pays: disabled
+19:30:58.184 INFO  SelectVariants - Initializing engine
+19:30:58.367 INFO  FeatureManager - Using codec VCFCodec to read file file:///scratch/timothy/projects/0017_Montipora_capitata_HiRise_Assembly/03_Analysis/2021_04_21/RNAseq_short_variant_analysis/filtering/GVCFall.vcf.gz
+19:30:58.476 INFO  SelectVariants - Done initializing engine
+19:30:58.521 INFO  ProgressMeter - Starting traversal
+19:30:58.522 INFO  ProgressMeter -        Current Locus  Elapsed Minutes    Variants Processed  Variants/Minute
+19:31:08.588 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_1___length_48529999:24304390              0.2                 74000         441132.6
+19:31:18.607 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_2___length_53177999:2182794              0.3                152000         454092.8
+19:31:28.691 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_2___length_53177999:32618048              0.5                234000         465378.4
+19:31:38.708 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_3___length_47342999:8385963              0.7                317000         473310.9
+19:31:48.812 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_3___length_47342999:44671235              0.8                400000         477241.5
+19:31:58.846 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_4___length_47716837:28325072              1.0                487000         484384.3
+19:32:08.930 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_5___length_62411161:10851289              1.2                574000         489149.0
+19:32:18.933 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_5___length_62411161:42647630              1.3                660000         492469.9
+19:32:28.985 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_6___length_38979999:6276623              1.5                746000         494787.9
+19:32:39.043 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_6___length_38979999:36261615              1.7                829000         494822.0
+19:32:49.061 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_8___length_68683312:859609              1.8                914000         496119.0
+19:32:59.113 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_8___length_68683312:31560543              2.0               1001000         498047.1
+19:33:09.171 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_8___length_68683312:66104740              2.2               1089000         500118.6
+19:33:19.195 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_9___length_36520733:27249258              2.3               1169000         498603.1
+19:33:29.277 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_10___length_69151359:15822050              2.5               1244000         495111.2
+19:33:39.338 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_10___length_69151359:53524061              2.7               1327000         495100.0
+19:33:49.385 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_11___length_67098902:14409831              2.8               1413000         496189.9
+19:33:59.416 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_11___length_67098902:48051610              3.0               1501000         497860.6
+19:34:09.501 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_12___length_43329812:9795759              3.2               1588000         498903.0
+19:34:19.565 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_13___length_39528174:694006              3.4               1672000         498997.7
+19:34:29.596 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_13___length_39528174:35891012              3.5               1748000         496887.3
+19:34:39.630 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_14___length_35226620:25168465              3.7               1834000         497675.3
+19:34:49.762 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_92___length_229342:118854              3.9               1905000         494291.6
+19:34:59.803 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_1204___length_18637:16428              4.0               1977000         491625.9
+19:35:00.434 INFO  ProgressMeter - Montipora_capitata_HIv1___Scaffold_1622___length_6468:2434              4.0               1982583         491728.3
+19:35:00.434 INFO  ProgressMeter - Traversal complete. Processed 1982583 total variants in 4.0 minutes.
+19:35:00.477 INFO  SelectVariants - Shutting down engine
+[June 12, 2021 at 7:35:00 PM EDT] org.broadinstitute.hellbender.tools.walkers.variantutils.SelectVariants done. Elapsed time: 4.04 minutes.
+Runtime.totalMemory()=4823449600
+Using GATK jar /home/timothy/programs/gatk-4.2.0.0/gatk-package-4.2.0.0-local.jar
+Running:
+    java -Dsamjdk.use_async_io_read_samtools=false -Dsamjdk.use_async_io_write_samtools=true -Dsamjdk.use_async_io_write_tribble=false -Dsamjdk.compression_level=2 -jar /home/timothy/programs/gatk-4.2.0.0/gatk-package-4.2.0.0-local.jar SelectVariants --reference Montipora_capitata_HIv1.assembly.fasta --variant GVCFall.vcf.gz --output GVCFall_INDELs.vcf.gz -select-type INDEL

@@ -1,0 +1,9 @@
+CladePA1	#1f78b4
+CladePA2	#a6cee3
+CladePA3	#33a02c
+CladePA4	#b2df8a
+CladePA5	#e31a1c
+CladePA6	#fb9a99
+CladePA7	#ff7f00
+CladePA8	#fdbf6f
+CladePA9	#cab2d6

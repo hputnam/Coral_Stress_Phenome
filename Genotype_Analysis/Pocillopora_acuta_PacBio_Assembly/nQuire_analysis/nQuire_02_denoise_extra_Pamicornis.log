@@ -1,0 +1,6 @@
+[Wed 28 Jul 2021 11:02:37 AM EDT]      CMD: nQuire denoise -o SRR414924.denoise SRR414924.bin 1> SRR414924.denoise.log
+[Wed 28 Jul 2021 11:02:38 AM EDT]      CMD: nQuire denoise -o SRR414925.denoise SRR414925.bin 1> SRR414925.denoise.log
+[Wed 28 Jul 2021 11:02:40 AM EDT]      CMD: nQuire denoise -o SRR988551.denoise SRR988551.bin 1> SRR988551.denoise.log
+[Wed 28 Jul 2021 11:02:41 AM EDT]      CMD: nQuire denoise -o SRR988670.denoise SRR988670.bin 1> SRR988670.denoise.log
+[Wed 28 Jul 2021 11:02:41 AM EDT]      CMD: nQuire denoise -o SRR988671.denoise SRR988671.bin 1> SRR988671.denoise.log
+[Wed 28 Jul 2021 11:02:42 AM EDT]      CMD: nQuire denoise -o SRR988672.denoise SRR988672.bin 1> SRR988672.denoise.log

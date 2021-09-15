@@ -1,0 +1,59 @@
+17:19:43.687 INFO  NativeLibraryLoader - Loading libgkl_compression.so from jar:file:/home/timothy/programs/gatk-4.2.0.0/gatk-package-4.2.0.0-local.jar!/com/intel/gkl/native/libgkl_compression.so
+Jun 13, 2021 5:19:43 PM shaded.cloud_nio.com.google.auth.oauth2.ComputeEngineCredentials runningOnComputeEngine
+INFO: Failed to detect whether we are running on Google Compute Engine.
+17:19:43.836 INFO  VariantFiltration - ------------------------------------------------------------
+17:19:43.836 INFO  VariantFiltration - The Genome Analysis Toolkit (GATK) v4.2.0.0
+17:19:43.836 INFO  VariantFiltration - For support and documentation go to https://software.broadinstitute.org/gatk/
+17:19:43.836 INFO  VariantFiltration - Executing as timothy@coral on Linux v5.4.0-72-generic amd64
+17:19:43.836 INFO  VariantFiltration - Java runtime: OpenJDK 64-Bit Server VM v11.0.11+9-Ubuntu-0ubuntu2.20.04
+17:19:43.836 INFO  VariantFiltration - Start Date/Time: June 13, 2021 at 5:19:43 PM EDT
+17:19:43.836 INFO  VariantFiltration - ------------------------------------------------------------
+17:19:43.836 INFO  VariantFiltration - ------------------------------------------------------------
+17:19:43.837 INFO  VariantFiltration - HTSJDK Version: 2.24.0
+17:19:43.837 INFO  VariantFiltration - Picard Version: 2.25.0
+17:19:43.837 INFO  VariantFiltration - Built for Spark Version: 2.4.5
+17:19:43.837 INFO  VariantFiltration - HTSJDK Defaults.COMPRESSION_LEVEL : 2
+17:19:43.837 INFO  VariantFiltration - HTSJDK Defaults.USE_ASYNC_IO_READ_FOR_SAMTOOLS : false
+17:19:43.837 INFO  VariantFiltration - HTSJDK Defaults.USE_ASYNC_IO_WRITE_FOR_SAMTOOLS : true
+17:19:43.837 INFO  VariantFiltration - HTSJDK Defaults.USE_ASYNC_IO_WRITE_FOR_TRIBBLE : false
+17:19:43.837 INFO  VariantFiltration - Deflater: IntelDeflater
+17:19:43.837 INFO  VariantFiltration - Inflater: IntelInflater
+17:19:43.837 INFO  VariantFiltration - GCS max retries/reopens: 20
+17:19:43.837 INFO  VariantFiltration - Requester pays: disabled
+17:19:43.837 INFO  VariantFiltration - Initializing engine
+17:19:43.957 INFO  FeatureManager - Using codec VCFCodec to read file file:///scratch/timothy/projects/0020_Pocillopora_acuta_PacBio_Assembly/03_Analysis/2021_05_26/RNAseq_short_variant_analysis/outgroup/P_damicornis_Linnaeus_1758_Indonesia_isolate/variant_analysis_SeparateLibraries/filtering/GVCFall_withOutGroup_INDELs.vcf.gz
+17:19:44.053 INFO  VariantFiltration - Done initializing engine
+17:19:44.104 INFO  ProgressMeter - Starting traversal
+17:19:44.104 INFO  ProgressMeter -        Current Locus  Elapsed Minutes    Variants Processed  Variants/Minute
+17:19:44.924 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+17:19:46.206 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+17:19:46.901 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+17:19:46.902 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+17:19:49.337 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+17:19:53.034 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+17:19:53.815 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+17:19:54.128 INFO  ProgressMeter - Pocillopora_acuta_HIv1___Scaffold_000052F___length_1749787:1450896              0.2                309000        1849745.6
+17:19:57.381 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+17:20:00.033 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+17:20:00.317 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+17:20:04.131 INFO  ProgressMeter - Pocillopora_acuta_HIv1___Scaffold_000194F___length_966782:80606              0.3                657000        1968342.7
+17:20:04.289 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+17:20:05.025 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+17:20:05.052 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+17:20:05.079 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+17:20:05.316 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+17:20:06.674 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+17:20:07.659 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+17:20:08.863 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+17:20:09.229 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+17:20:09.547 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+17:20:11.659 WARN  JexlEngine - ![0,2]: 'QD < 20.000;' undefined variable QD
+17:20:14.138 INFO  ProgressMeter - Pocillopora_acuta_HIv1___Scaffold_000875F___length_296038:22170              0.5               1024000        2045681.6
+17:20:15.628 INFO  ProgressMeter - Pocillopora_acuta_HIv1___Scaffold_001829F___length_31435:17088              0.5               1079342        2054324.3
+17:20:15.628 INFO  ProgressMeter - Traversal complete. Processed 1079342 total variants in 0.5 minutes.
+17:20:15.655 INFO  VariantFiltration - Shutting down engine
+[June 13, 2021 at 5:20:15 PM EDT] org.broadinstitute.hellbender.tools.walkers.filters.VariantFiltration done. Elapsed time: 0.53 minutes.
+Runtime.totalMemory()=4248829952
+Using GATK jar /home/timothy/programs/gatk-4.2.0.0/gatk-package-4.2.0.0-local.jar
+Running:
+    java -Dsamjdk.use_async_io_read_samtools=false -Dsamjdk.use_async_io_write_samtools=true -Dsamjdk.use_async_io_write_tribble=false -Dsamjdk.compression_level=2 -jar /home/timothy/programs/gatk-4.2.0.0/gatk-package-4.2.0.0-local.jar VariantFiltration --reference Pocillopora_acuta_HIv1.assembly.purged.fasta --variant GVCFall_withOutGroup_INDELs.vcf.gz --output GVCFall_withOutGroup_INDELs_VarScores_filter.vcf.gz --filter-name VarScores_filter_QD --filter-expression QD < 20.000 --filter-name VarScores_filter_MQ --filter-expression MQ < 45.000 --filter-name VarScores_filter_FS --filter-expression FS > 5.000 --filter-name VarScores_filter_SOR --filter-expression SOR > 2.500

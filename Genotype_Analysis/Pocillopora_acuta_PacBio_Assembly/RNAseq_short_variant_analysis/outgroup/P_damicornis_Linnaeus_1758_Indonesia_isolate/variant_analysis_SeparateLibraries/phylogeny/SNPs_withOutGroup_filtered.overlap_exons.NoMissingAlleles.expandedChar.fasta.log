@@ -1,0 +1,334 @@
+IQ-TREE multicore version 1.6.12 for Linux 64-bit built Aug 15 2019
+Developed by Bui Quang Minh, Nguyen Lam Tung, Olga Chernomor,
+Heiko Schmidt, Dominik Schrempf, Michael Woodhams.
+
+Host:    coral (AVX512, FMA3, 376 GB RAM)
+Command: iqtree -nt AUTO -ntmax 24 -s SNPs_withOutGroup_filtered.overlap_exons.NoMissingAlleles.expandedChar.fasta -st DNA -m GTR -bb 2000 -quiet
+Seed:    950203 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Mon Jun 14 01:34:50 2021
+Kernel:  AVX+FMA - auto-detect threads (96 CPU cores detected)
+
+Reading alignment file SNPs_withOutGroup_filtered.overlap_exons.NoMissingAlleles.expandedChar.fasta ... Fasta format detected
+Alignment most likely contains DNA/RNA sequences
+Alignment has 125 sequences with 712 columns, 303 distinct patterns
+531 parsimony-informative, 28 singleton sites, 153 constant sites
+                       Gap/Ambiguity  Composition  p-value
+   1  Pacuta_ATAC_TP10_1159    0.00%    passed     81.80%
+   2  Pacuta_ATAC_TP10_1559    0.00%    passed     96.40%
+   3  Pacuta_ATAC_TP10_1641    0.00%    passed     97.12%
+   4  Pacuta_ATAC_TP11_1103    0.00%    passed     94.41%
+   5  Pacuta_ATAC_TP11_1777    0.00%    passed     99.47%
+   6  Pacuta_ATAC_TP11_2306    0.00%    passed     91.37%
+   7  Pacuta_ATAC_TP1_1043     0.00%    passed     98.26%
+   8  Pacuta_ATAC_TP1_1775     0.00%    passed     83.47%
+   9  Pacuta_ATAC_TP1_2363     0.00%    passed     95.42%
+  10  Pacuta_ATAC_TP3_1041     0.00%    passed     94.20%
+  11  Pacuta_ATAC_TP3_1471     0.00%    passed     88.64%
+  12  Pacuta_ATAC_TP3_1637     0.00%    passed     90.09%
+  13  Pacuta_ATAC_TP4_1060     0.00%    passed     96.40%
+  14  Pacuta_ATAC_TP4_1762     0.00%    passed     91.37%
+  15  Pacuta_ATAC_TP4_2002     0.00%    passed     93.89%
+  16  Pacuta_ATAC_TP5_1059     0.00%    passed     98.08%
+  17  Pacuta_ATAC_TP5_1563     0.00%    passed     95.42%
+  18  Pacuta_ATAC_TP5_1757     0.00%    passed     88.64%
+  19  Pacuta_ATAC_TP6_1050     0.00%    passed     95.20%
+  20  Pacuta_ATAC_TP6_1468     0.00%    passed     83.47%
+  21  Pacuta_ATAC_TP6_1542     0.00%    passed     97.99%
+  22  Pacuta_ATAC_TP7_1047     0.00%    passed     96.93%
+  23  Pacuta_ATAC_TP7_1445     0.00%    passed     93.43%
+  24  Pacuta_ATAC_TP7_2413     0.00%    passed     91.61%
+  25  Pacuta_ATAC_TP8_1051     0.00%    passed     98.57%
+  26  Pacuta_ATAC_TP8_1755     0.00%    passed     81.80%
+  27  Pacuta_ATAC_TP8_2012     0.00%    passed     91.61%
+  28  Pacuta_ATAC_TP9_1141     0.00%    passed     81.80%
+  29  Pacuta_ATAC_TP9_1594     0.00%    passed     95.42%
+  30  Pacuta_ATAC_TP9_2357     0.00%    passed     91.61%
+  31  Pacuta_ATHC_TP10_1205    0.00%    passed     96.22%
+  32  Pacuta_ATHC_TP10_2197    0.00%    passed     96.93%
+  33  Pacuta_ATHC_TP10_2550    0.00%    passed     97.00%
+  34  Pacuta_ATHC_TP11_1147    0.00%    passed     91.37%
+  35  Pacuta_ATHC_TP11_2668    0.00%    passed     96.93%
+  36  Pacuta_ATHC_TP11_2879    0.00%    passed     96.93%
+  37  Pacuta_ATHC_TP1_1207     0.00%    passed     96.93%
+  38  Pacuta_ATHC_TP1_2743     0.00%    passed     98.26%
+  39  Pacuta_ATHC_TP1_2977     0.00%    passed     96.93%
+  40  Pacuta_ATHC_TP3_1219     0.00%    passed     96.93%
+  41  Pacuta_ATHC_TP3_2534     0.00%    passed     89.05%
+  42  Pacuta_ATHC_TP3_2750     0.00%    passed     98.26%
+  43  Pacuta_ATHC_TP4_1220     0.00%    passed     90.61%
+  44  Pacuta_ATHC_TP4_2733     0.00%    passed     98.03%
+  45  Pacuta_ATHC_TP4_2993     0.00%    passed     96.93%
+  46  Pacuta_ATHC_TP5_1296     0.00%    passed     96.93%
+  47  Pacuta_ATHC_TP5_2212     0.00%    passed     85.77%
+  48  Pacuta_ATHC_TP5_2877     0.00%    passed     91.61%
+  49  Pacuta_ATHC_TP6_1254     0.00%    passed     99.64%
+  50  Pacuta_ATHC_TP6_2870     0.00%    passed     94.41%
+  51  Pacuta_ATHC_TP6_2999     0.00%    passed     96.93%
+  52  Pacuta_ATHC_TP7_1281     0.00%    passed     96.93%
+  53  Pacuta_ATHC_TP7_2409     0.00%    passed     94.40%
+  54  Pacuta_ATHC_TP7_2878     0.00%    passed     90.09%
+  55  Pacuta_ATHC_TP8_1459     0.00%    passed     97.85%
+  56  Pacuta_ATHC_TP8_2564     0.00%    passed     93.89%
+  57  Pacuta_ATHC_TP8_2861     0.00%    passed     96.93%
+  58  Pacuta_ATHC_TP9_1451     0.00%    passed     91.61%
+  59  Pacuta_ATHC_TP9_2873     0.00%    passed     94.41%
+  60  Pacuta_ATHC_TP9_2979     0.00%    passed     96.93%
+  61  Pacuta_HTAC_TP10_1225    0.00%    passed     96.93%
+  62  Pacuta_HTAC_TP10_1536    0.00%    passed     95.42%
+  63  Pacuta_HTAC_TP10_2064    0.00%    passed     91.61%
+  64  Pacuta_HTAC_TP11_1582    0.00%    passed     95.42%
+  65  Pacuta_HTAC_TP11_1596    0.00%    passed     91.37%
+  66  Pacuta_HTAC_TP11_1647    0.00%    passed     93.89%
+  67  Pacuta_HTAC_TP1_1653     0.00%    passed     96.26%
+  68  Pacuta_HTAC_TP1_2005     0.00%    passed     95.42%
+  69  Pacuta_HTAC_TP1_2414     0.00%    passed     91.37%
+  70  Pacuta_HTAC_TP3_1617     0.00%    passed     95.42%
+  71  Pacuta_HTAC_TP3_1642     0.00%    passed     97.85%
+  72  Pacuta_HTAC_TP3_2026     0.00%    passed     96.93%
+  73  Pacuta_HTAC_TP4_1581     0.00%    passed     96.25%
+  74  Pacuta_HTAC_TP4_1701     0.00%    passed     95.42%
+  75  Pacuta_HTAC_TP4_1767     0.00%    passed     98.57%
+  76  Pacuta_HTAC_TP5_1303     0.00%    passed     96.93%
+  77  Pacuta_HTAC_TP5_1571     0.00%    passed     96.93%
+  78  Pacuta_HTAC_TP5_1707     0.00%    passed     94.20%
+  79  Pacuta_HTAC_TP6_1330     0.00%    passed     97.56%
+  80  Pacuta_HTAC_TP6_1466     0.00%    passed     91.37%
+  81  Pacuta_HTAC_TP6_1744     0.00%    passed     83.47%
+  82  Pacuta_HTAC_TP7_1487     0.00%    passed     98.10%
+  83  Pacuta_HTAC_TP7_1728     0.00%    passed     91.37%
+  84  Pacuta_HTAC_TP7_2072     0.00%    passed     99.24%
+  85  Pacuta_HTAC_TP8_1329     0.00%    passed     96.93%
+  86  Pacuta_HTAC_TP8_1765     0.00%    passed     95.96%
+  87  Pacuta_HTAC_TP8_2513     0.00%    passed     94.41%
+  88  Pacuta_HTAC_TP9_1302     0.00%    passed     76.82%
+  89  Pacuta_HTAC_TP9_1486     0.00%    passed     81.80%
+  90  Pacuta_HTAC_TP9_1696     0.00%    passed     91.37%
+  91  Pacuta_HTHC_TP10_1238    0.00%    passed     96.40%
+  92  Pacuta_HTHC_TP10_1732    0.00%    passed     95.42%
+  93  Pacuta_HTHC_TP10_2300    0.00%    passed     91.61%
+  94  Pacuta_HTHC_TP11_1416    0.00%    passed     96.93%
+  95  Pacuta_HTHC_TP11_2185    0.00%    passed     97.80%
+  96  Pacuta_HTHC_TP1_1239     0.00%    passed     93.89%
+  97  Pacuta_HTHC_TP1_1676     0.00%    passed     96.93%
+  98  Pacuta_HTHC_TP1_2210     0.00%    passed     96.53%
+  99  Pacuta_HTHC_TP3_1227     0.00%    passed     94.41%
+ 100  Pacuta_HTHC_TP3_1418     0.00%    passed     92.64%
+ 101  Pacuta_HTHC_TP3_2527     0.00%    passed     96.93%
+ 102  Pacuta_HTHC_TP4_1169     0.00%    passed     96.93%
+ 103  Pacuta_HTHC_TP4_1343     0.00%    passed     97.99%
+ 104  Pacuta_HTHC_TP4_2195     0.00%    passed     93.89%
+ 105  Pacuta_HTHC_TP5_1168     0.00%    passed     96.93%
+ 106  Pacuta_HTHC_TP5_1415     0.00%    passed     95.32%
+ 107  Pacuta_HTHC_TP5_2087     0.00%    passed     90.62%
+ 108  Pacuta_HTHC_TP6_1138     0.00%    passed     91.37%
+ 109  Pacuta_HTHC_TP6_1595     0.00%    passed     94.20%
+ 110  Pacuta_HTHC_TP6_1721     0.00%    passed     98.00%
+ 111  Pacuta_HTHC_TP7_1090     0.00%    passed     96.40%
+ 112  Pacuta_HTHC_TP7_1427     0.00%    passed     97.99%
+ 113  Pacuta_HTHC_TP7_1820     0.00%    passed     95.42%
+ 114  Pacuta_HTHC_TP8_1184     0.00%    passed     97.99%
+ 115  Pacuta_HTHC_TP8_1709     0.00%    passed     91.37%
+ 116  Pacuta_HTHC_TP8_2304     0.00%    passed     96.17%
+ 117  Pacuta_HTHC_TP9_1131     0.00%    passed     88.11%
+ 118  Pacuta_HTHC_TP9_2202     0.00%    passed     88.11%
+ 119  Pacuta_HTHC_TP9_2305     0.00%    passed     90.61%
+ 120  SRR414924                0.00%    passed     44.52%
+ 121  SRR414925                0.00%    passed     33.66%
+ 122  SRR988551                0.00%    passed     21.67%
+ 123  SRR988670                0.00%    passed     24.78%
+ 124  SRR988671                0.00%    passed     32.36%
+ 125  SRR988672                0.00%    passed     27.59%
+****  TOTAL                    0.00%  0 sequences failed composition chi2 test (p-value<5%; df=3)
+NOTE: Pacuta_ATAC_TP8_1755 is identical to Pacuta_ATAC_TP10_1159 but kept for subsequent analysis
+NOTE: Pacuta_ATAC_TP4_1060 is identical to Pacuta_ATAC_TP10_1559 but kept for subsequent analysis
+NOTE: Pacuta_ATHC_TP6_2870 is identical to Pacuta_ATAC_TP11_1103 but kept for subsequent analysis
+NOTE: Pacuta_ATAC_TP4_1762 is identical to Pacuta_ATAC_TP11_2306 but kept for subsequent analysis
+NOTE: Pacuta_ATHC_TP1_2743 is identical to Pacuta_ATAC_TP1_1043 but kept for subsequent analysis
+NOTE: Pacuta_ATAC_TP6_1468 is identical to Pacuta_ATAC_TP1_1775 but kept for subsequent analysis
+NOTE: Pacuta_ATAC_TP5_1563 is identical to Pacuta_ATAC_TP1_2363 but kept for subsequent analysis
+NOTE: Pacuta_ATAC_TP5_1757 is identical to Pacuta_ATAC_TP3_1471 but kept for subsequent analysis
+NOTE: Pacuta_ATHC_TP7_2878 is identical to Pacuta_ATAC_TP3_1637 but kept for subsequent analysis
+NOTE: Pacuta_ATHC_TP8_2564 is identical to Pacuta_ATAC_TP4_2002 but kept for subsequent analysis
+NOTE: Pacuta_HTHC_TP4_1343 is identical to Pacuta_ATAC_TP6_1542 but kept for subsequent analysis
+NOTE: Pacuta_ATHC_TP10_2197 is identical to Pacuta_ATAC_TP7_1047 but kept for subsequent analysis
+NOTE: Pacuta_ATAC_TP8_2012 is identical to Pacuta_ATAC_TP7_2413 but kept for subsequent analysis
+NOTE: Pacuta_HTAC_TP4_1767 is identical to Pacuta_ATAC_TP8_1051 but kept for subsequent analysis
+NOTE: Pacuta_HTHC_TP6_1595 is identical to Pacuta_HTAC_TP5_1707 but kept for subsequent analysis
+NOTE: Pacuta_HTHC_TP9_2202 is identical to Pacuta_HTHC_TP9_1131 but kept for subsequent analysis
+NOTE: 52 identical sequences (see below) will be ignored for subsequent analysis
+NOTE: Pacuta_ATAC_TP9_1141 (identical to Pacuta_ATAC_TP10_1159) is ignored but added at the end
+NOTE: Pacuta_HTAC_TP9_1486 (identical to Pacuta_ATAC_TP10_1159) is ignored but added at the end
+NOTE: Pacuta_HTHC_TP10_1238 (identical to Pacuta_ATAC_TP10_1559) is ignored but added at the end
+NOTE: Pacuta_HTHC_TP7_1090 (identical to Pacuta_ATAC_TP10_1559) is ignored but added at the end
+NOTE: Pacuta_ATHC_TP9_2873 (identical to Pacuta_ATAC_TP11_1103) is ignored but added at the end
+NOTE: Pacuta_HTAC_TP8_2513 (identical to Pacuta_ATAC_TP11_1103) is ignored but added at the end
+NOTE: Pacuta_HTHC_TP3_1227 (identical to Pacuta_ATAC_TP11_1103) is ignored but added at the end
+NOTE: Pacuta_ATHC_TP11_1147 (identical to Pacuta_ATAC_TP11_2306) is ignored but added at the end
+NOTE: Pacuta_HTAC_TP11_1596 (identical to Pacuta_ATAC_TP11_2306) is ignored but added at the end
+NOTE: Pacuta_HTAC_TP1_2414 (identical to Pacuta_ATAC_TP11_2306) is ignored but added at the end
+NOTE: Pacuta_HTAC_TP7_1728 (identical to Pacuta_ATAC_TP11_2306) is ignored but added at the end
+NOTE: Pacuta_HTAC_TP9_1696 (identical to Pacuta_ATAC_TP11_2306) is ignored but added at the end
+NOTE: Pacuta_HTHC_TP6_1138 (identical to Pacuta_ATAC_TP11_2306) is ignored but added at the end
+NOTE: Pacuta_HTHC_TP8_1709 (identical to Pacuta_ATAC_TP11_2306) is ignored but added at the end
+NOTE: Pacuta_ATHC_TP3_2750 (identical to Pacuta_ATAC_TP1_1043) is ignored but added at the end
+NOTE: Pacuta_HTAC_TP6_1744 (identical to Pacuta_ATAC_TP1_1775) is ignored but added at the end
+NOTE: Pacuta_ATAC_TP9_1594 (identical to Pacuta_ATAC_TP1_2363) is ignored but added at the end
+NOTE: Pacuta_HTAC_TP10_1536 (identical to Pacuta_ATAC_TP1_2363) is ignored but added at the end
+NOTE: Pacuta_HTAC_TP11_1582 (identical to Pacuta_ATAC_TP1_2363) is ignored but added at the end
+NOTE: Pacuta_HTAC_TP1_2005 (identical to Pacuta_ATAC_TP1_2363) is ignored but added at the end
+NOTE: Pacuta_HTAC_TP3_1617 (identical to Pacuta_ATAC_TP1_2363) is ignored but added at the end
+NOTE: Pacuta_HTAC_TP4_1701 (identical to Pacuta_ATAC_TP1_2363) is ignored but added at the end
+NOTE: Pacuta_HTHC_TP7_1820 (identical to Pacuta_ATAC_TP1_2363) is ignored but added at the end
+NOTE: Pacuta_HTAC_TP11_1647 (identical to Pacuta_ATAC_TP4_2002) is ignored but added at the end
+NOTE: Pacuta_HTHC_TP1_1239 (identical to Pacuta_ATAC_TP4_2002) is ignored but added at the end
+NOTE: Pacuta_HTHC_TP4_2195 (identical to Pacuta_ATAC_TP4_2002) is ignored but added at the end
+NOTE: Pacuta_HTHC_TP7_1427 (identical to Pacuta_ATAC_TP6_1542) is ignored but added at the end
+NOTE: Pacuta_HTHC_TP8_1184 (identical to Pacuta_ATAC_TP6_1542) is ignored but added at the end
+NOTE: Pacuta_ATHC_TP11_2668 (identical to Pacuta_ATAC_TP7_1047) is ignored but added at the end
+NOTE: Pacuta_ATHC_TP11_2879 (identical to Pacuta_ATAC_TP7_1047) is ignored but added at the end
+NOTE: Pacuta_ATHC_TP1_1207 (identical to Pacuta_ATAC_TP7_1047) is ignored but added at the end
+NOTE: Pacuta_ATHC_TP3_1219 (identical to Pacuta_ATAC_TP7_1047) is ignored but added at the end
+NOTE: Pacuta_ATHC_TP4_2993 (identical to Pacuta_ATAC_TP7_1047) is ignored but added at the end
+NOTE: Pacuta_ATHC_TP5_1296 (identical to Pacuta_ATAC_TP7_1047) is ignored but added at the end
+NOTE: Pacuta_ATHC_TP6_2999 (identical to Pacuta_ATAC_TP7_1047) is ignored but added at the end
+NOTE: Pacuta_ATHC_TP7_1281 (identical to Pacuta_ATAC_TP7_1047) is ignored but added at the end
+NOTE: Pacuta_ATHC_TP8_2861 (identical to Pacuta_ATAC_TP7_1047) is ignored but added at the end
+NOTE: Pacuta_ATHC_TP9_2979 (identical to Pacuta_ATAC_TP7_1047) is ignored but added at the end
+NOTE: Pacuta_HTAC_TP10_1225 (identical to Pacuta_ATAC_TP7_1047) is ignored but added at the end
+NOTE: Pacuta_HTAC_TP3_2026 (identical to Pacuta_ATAC_TP7_1047) is ignored but added at the end
+NOTE: Pacuta_HTAC_TP5_1303 (identical to Pacuta_ATAC_TP7_1047) is ignored but added at the end
+NOTE: Pacuta_HTAC_TP5_1571 (identical to Pacuta_ATAC_TP7_1047) is ignored but added at the end
+NOTE: Pacuta_HTAC_TP8_1329 (identical to Pacuta_ATAC_TP7_1047) is ignored but added at the end
+NOTE: Pacuta_HTHC_TP11_1416 (identical to Pacuta_ATAC_TP7_1047) is ignored but added at the end
+NOTE: Pacuta_HTHC_TP1_1676 (identical to Pacuta_ATAC_TP7_1047) is ignored but added at the end
+NOTE: Pacuta_HTHC_TP3_2527 (identical to Pacuta_ATAC_TP7_1047) is ignored but added at the end
+NOTE: Pacuta_HTHC_TP4_1169 (identical to Pacuta_ATAC_TP7_1047) is ignored but added at the end
+NOTE: Pacuta_HTHC_TP5_1168 (identical to Pacuta_ATAC_TP7_1047) is ignored but added at the end
+NOTE: Pacuta_ATAC_TP9_2357 (identical to Pacuta_ATAC_TP7_2413) is ignored but added at the end
+NOTE: Pacuta_ATHC_TP5_2877 (identical to Pacuta_ATAC_TP7_2413) is ignored but added at the end
+NOTE: Pacuta_ATHC_TP9_1451 (identical to Pacuta_ATAC_TP7_2413) is ignored but added at the end
+NOTE: Pacuta_HTHC_TP10_2300 (identical to Pacuta_ATAC_TP7_2413) is ignored but added at the end
+
+For your convenience alignment with unique sequences printed to SNPs_withOutGroup_filtered.overlap_exons.NoMissingAlleles.expandedChar.fasta.uniqueseq.phy
+
+Create initial parsimony tree by phylogenetic likelihood library (PLL)... 0.005 seconds
+Generating 2000 samples for ultrafast bootstrap (seed: 950203)...
+
+NOTE: 3 MB RAM (0 GB) is required!
+Measuring multi-threading efficiency up to 24 CPU cores
+Increase to 10 rounds for branch lengths
+2273 trees examined
+Threads: 1 / Time: 24.006 sec / Speedup: 1.000 / Efficiency: 100% / LogL: -20061
+Threads: 2 / Time: 51.537 sec / Speedup: 0.466 / Efficiency: 23% / LogL: -20061
+BEST NUMBER OF THREADS: 1
+
+Estimate model parameters (epsilon = 0.100)
+1. Initial log-likelihood: -6328.852
+2. Current log-likelihood: -6013.931
+3. Current log-likelihood: -5864.879
+4. Current log-likelihood: -5858.874
+Optimal log-likelihood: -5858.862
+Rate parameters:  A-C: 1.09685  A-G: 8.57299  A-T: 2.65160  C-G: 1.18849  C-T: 8.78783  G-T: 1.00000
+Base frequencies:  A: 0.243  C: 0.259  G: 0.263  T: 0.235
+Parameters optimization took 4 rounds (0.083 sec)
+Computing ML distances based on estimated model parameters... 0.030 sec
+Computing BIONJ tree...
+0.002 seconds
+Log-likelihood of BIONJ tree: -5894.164
+--------------------------------------------------------------------
+|             INITIALIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Generating 98 parsimony trees... 0.402 second
+Computing log-likelihood of 98 initial trees ... 0.324 seconds
+Current best score: -5846.568
+
+Do NNI search on 20 best initial trees
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 1: -5845.434
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 2: -5843.613
+Iteration 10 / LogL: -5846.340 / Time: 0h:1m:17s
+Iteration 20 / LogL: -5847.944 / Time: 0h:1m:18s
+Finish initializing candidate tree set (20)
+Current best tree score: -5843.613 / CPU time: 2.547
+Number of iterations: 20
+--------------------------------------------------------------------
+|               OPTIMIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 21: -5840.785
+Iteration 30 / LogL: -5843.486 / Time: 0h:1m:19s (0h:4m:7s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 32: -5839.374
+Iteration 40 / LogL: -5900.239 / Time: 0h:1m:19s (0h:3m:7s left)
+BETTER TREE FOUND at iteration 41: -5839.364
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 42: -5839.289
+Iteration 50 / LogL: -5845.396 / Time: 0h:1m:20s (0h:2m:30s left)
+Log-likelihood cutoff on original alignment: -5873.738
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 54: -5838.409
+Iteration 60 / LogL: -5856.014 / Time: 0h:1m:21s (0h:2m:9s left)
+Iteration 70 / LogL: -5846.332 / Time: 0h:1m:22s (0h:1m:39s left)
+Iteration 80 / LogL: -5838.435 / Time: 0h:1m:22s (0h:1m:17s left)
+Iteration 90 / LogL: -5838.516 / Time: 0h:1m:23s (0h:0m:59s left)
+Iteration 100 / LogL: -5839.391 / Time: 0h:1m:24s (0h:0m:45s left)
+Log-likelihood cutoff on original alignment: -5874.310
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.996
+Iteration 110 / LogL: -5838.519 / Time: 0h:1m:25s (0h:1m:10s left)
+BETTER TREE FOUND at iteration 120: -5838.408
+Iteration 120 / LogL: -5838.408 / Time: 0h:1m:25s (0h:1m:11s left)
+Iteration 130 / LogL: -5886.926 / Time: 0h:1m:26s (0h:1m:0s left)
+Iteration 140 / LogL: -5838.519 / Time: 0h:1m:27s (0h:0m:50s left)
+Iteration 150 / LogL: -5838.409 / Time: 0h:1m:27s (0h:0m:41s left)
+Log-likelihood cutoff on original alignment: -5874.310
+Iteration 160 / LogL: -5838.524 / Time: 0h:1m:28s (0h:0m:33s left)
+Iteration 170 / LogL: -5842.039 / Time: 0h:1m:29s (0h:0m:26s left)
+Iteration 180 / LogL: -5843.995 / Time: 0h:1m:30s (0h:0m:20s left)
+Iteration 190 / LogL: -5858.050 / Time: 0h:1m:30s (0h:0m:14s left)
+Iteration 200 / LogL: -5852.158 / Time: 0h:1m:31s (0h:0m:9s left)
+Log-likelihood cutoff on original alignment: -5874.310
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.992
+Iteration 210 / LogL: -5839.330 / Time: 0h:1m:32s (0h:0m:39s left)
+Iteration 220 / LogL: -5868.112 / Time: 0h:1m:33s (0h:0m:34s left)
+TREE SEARCH COMPLETED AFTER 221 ITERATIONS / Time: 0h:1m:33s
+
+--------------------------------------------------------------------
+|                    FINALIZING TREE SEARCH                        |
+--------------------------------------------------------------------
+Performs final model parameters optimization
+Estimate model parameters (epsilon = 0.010)
+1. Initial log-likelihood: -5838.408
+Optimal log-likelihood: -5838.408
+Rate parameters:  A-C: 1.10161  A-G: 8.57415  A-T: 2.58671  C-G: 1.14939  C-T: 9.00671  G-T: 1.00000
+Base frequencies:  A: 0.243  C: 0.259  G: 0.263  T: 0.235
+Parameters optimization took 1 rounds (0.005 sec)
+BEST SCORE FOUND : -5838.408
+Creating bootstrap support values...
+Split supports printed to NEXUS file SNPs_withOutGroup_filtered.overlap_exons.NoMissingAlleles.expandedChar.fasta.splits.nex
+Total tree length: 1.899
+
+Total number of iterations: 221
+CPU time used for tree search: 17.722 sec (0h:0m:17s)
+Wall-clock time used for tree search: 17.649 sec (0h:0m:17s)
+Total CPU time used: 161.426 sec (0h:2m:41s)
+Total wall-clock time used: 93.752 sec (0h:1m:33s)
+
+Computing bootstrap consensus tree...
+Reading input file SNPs_withOutGroup_filtered.overlap_exons.NoMissingAlleles.expandedChar.fasta.splits.nex...
+73 taxa and 798 splits.
+Consensus tree written to SNPs_withOutGroup_filtered.overlap_exons.NoMissingAlleles.expandedChar.fasta.contree
+Reading input trees file SNPs_withOutGroup_filtered.overlap_exons.NoMissingAlleles.expandedChar.fasta.contree
+Log-likelihood of consensus tree: -5843.506
+
+Analysis results written to: 
+  IQ-TREE report:                SNPs_withOutGroup_filtered.overlap_exons.NoMissingAlleles.expandedChar.fasta.iqtree
+  Maximum-likelihood tree:       SNPs_withOutGroup_filtered.overlap_exons.NoMissingAlleles.expandedChar.fasta.treefile
+  Likelihood distances:          SNPs_withOutGroup_filtered.overlap_exons.NoMissingAlleles.expandedChar.fasta.mldist
+
+Ultrafast bootstrap approximation results written to:
+  Split support values:          SNPs_withOutGroup_filtered.overlap_exons.NoMissingAlleles.expandedChar.fasta.splits.nex
+  Consensus tree:                SNPs_withOutGroup_filtered.overlap_exons.NoMissingAlleles.expandedChar.fasta.contree
+  Screen log file:               SNPs_withOutGroup_filtered.overlap_exons.NoMissingAlleles.expandedChar.fasta.log
+
+Date and Time: Mon Jun 14 01:36:24 2021

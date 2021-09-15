@@ -1,0 +1,4 @@
+ATAC	#add8e6
+ATHC	#0000ff
+HTAC	#fa8072
+HTHC	#cd0000

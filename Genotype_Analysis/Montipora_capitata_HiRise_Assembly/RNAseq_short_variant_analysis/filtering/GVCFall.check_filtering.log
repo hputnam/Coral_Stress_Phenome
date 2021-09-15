@@ -1,0 +1,40 @@
+                                                   CHROM   POS   QUAL    QD DP
+1 Montipora_capitata_HIv1___Scaffold_1___length_48529999  5123 157.71 30.97  8
+2 Montipora_capitata_HIv1___Scaffold_1___length_48529999  5127 157.71 27.24  8
+3 Montipora_capitata_HIv1___Scaffold_1___length_48529999 14090 288.49 28.20 18
+4 Montipora_capitata_HIv1___Scaffold_1___length_48529999 14129 366.14 29.56 21
+5 Montipora_capitata_HIv1___Scaffold_1___length_48529999 14130 259.89 30.62 21
+6 Montipora_capitata_HIv1___Scaffold_1___length_48529999 14157 227.75 28.17 14
+  MQ FS   SOR MQRankSum ReadPosRankSum  X
+1 60  0 0.693        NA             NA NA
+2 60  0 0.693        NA             NA NA
+3 60  0 0.693        NA             NA NA
+4 60  0 0.693        NA             NA NA
+5 60  0 0.693        NA             NA NA
+6 60  0 1.179        NA             NA NA
+[1] 0
+[1] 0
+[1] 0
+[1] 0
+[1] 0
+[1] 4
+                                                   CHROM   POS   QUAL    QD DP
+1 Montipora_capitata_HIv1___Scaffold_1___length_48529999  4843 155.36 25.36  1
+2 Montipora_capitata_HIv1___Scaffold_1___length_48529999  4861 188.06 28.73  2
+3 Montipora_capitata_HIv1___Scaffold_1___length_48529999 14128  66.06 25.00 20
+4 Montipora_capitata_HIv1___Scaffold_1___length_48529999 16415  83.68 28.55 23
+5 Montipora_capitata_HIv1___Scaffold_1___length_48529999 16601 107.71 34.42 26
+6 Montipora_capitata_HIv1___Scaffold_1___length_48529999 16980  82.81 29.52 94
+  MQ FS   SOR MQRankSum ReadPosRankSum  X
+1 60  0 1.609        NA             NA NA
+2 60  0 0.693        NA             NA NA
+3 60  0 1.609        NA             NA NA
+4 60  0 0.693        NA             NA NA
+5 60  0 2.303        NA             NA NA
+6 60  0 0.693        NA             NA NA
+[1] 0
+[1] 0
+[1] 0
+[1] 0
+[1] 0
+[1] 0

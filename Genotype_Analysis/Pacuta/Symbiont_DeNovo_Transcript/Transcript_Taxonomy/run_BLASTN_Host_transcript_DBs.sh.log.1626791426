@@ -1,0 +1,13 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Tue 20 Jul 2021 10:30:26 AM EDT
+Working directory is /scratch/timothy/projects/0009_Coral_Stress_Phenome/03_Analysis/2021-02-02/Pacuta/Symbiont_DeNovo_Transcript/Transcript_Taxonomy
+=====================================================================
+
+[Tue 20 Jul 2021 10:30:27 AM EDT]      CMD: blastn -query Trinity.fasta -db host_db/Host_DB.trans.fna -out Trinity.fasta.blastn_HostDB.outfmt6 -num_threads 24 -outfmt "6 qseqid sseqid pident length mismatch gapopen qstart qend sstart send evalue bitscore qlen slen"
+
+=====================================================================
+Started: at Tue 20 Jul 2021 10:30:26 AM EDT
+Finished: at Tue 20 Jul 2021 10:59:57 AM EDT
+ExitStatus: 0
+=====================================================================

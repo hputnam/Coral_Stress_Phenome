@@ -1,0 +1,136 @@
+[1] "Found AD info files:"
+  [1] ../RNAseq_short_variant_analysis/filtering/GVCFall_SNPs.AD_Analysis/GVCFall_SNPs_DPfilterNoCall.AD.sumSDdenominator/Mcapitata_ATAC_TP10_1095.GT.AD.sumSDdenominator.txt
+  [2] ../RNAseq_short_variant_analysis/filtering/GVCFall_SNPs.AD_Analysis/GVCFall_SNPs_DPfilterNoCall.AD.sumSDdenominator/Mcapitata_ATAC_TP10_1561.GT.AD.sumSDdenominator.txt
+  [3] ../RNAseq_short_variant_analysis/filtering/GVCFall_SNPs.AD_Analysis/GVCFall_SNPs_DPfilterNoCall.AD.sumSDdenominator/Mcapitata_ATAC_TP10_1631.GT.AD.sumSDdenominator.txt
+  [4] ../RNAseq_short_variant_analysis/filtering/GVCFall_SNPs.AD_Analysis/GVCFall_SNPs_DPfilterNoCall.AD.sumSDdenominator/Mcapitata_ATAC_TP11_1076.GT.AD.sumSDdenominator.txt
+  [5] ../RNAseq_short_variant_analysis/filtering/GVCFall_SNPs.AD_Analysis/GVCFall_SNPs_DPfilterNoCall.AD.sumSDdenominator/Mcapitata_ATAC_TP11_1644.GT.AD.sumSDdenominator.txt
+  [6] ../RNAseq_short_variant_analysis/filtering/GVCFall_SNPs.AD_Analysis/GVCFall_SNPs_DPfilterNoCall.AD.sumSDdenominator/Mcapitata_ATAC_TP11_2302.GT.AD.sumSDdenominator.txt
+  [7] ../RNAseq_short_variant_analysis/filtering/GVCFall_SNPs.AD_Analysis/GVCFall_SNPs_DPfilterNoCall.AD.sumSDdenominator/Mcapitata_ATAC_TP12_1120.GT.AD.sumSDdenominator.txt
+  [8] ../RNAseq_short_variant_analysis/filtering/GVCFall_SNPs.AD_Analysis/GVCFall_SNPs_DPfilterNoCall.AD.sumSDdenominator/Mcapitata_ATAC_TP12_1452.GT.AD.sumSDdenominator.txt
+  [9] ../RNAseq_short_variant_analysis/filtering/GVCFall_SNPs.AD_Analysis/GVCFall_SNPs_DPfilterNoCall.AD.sumSDdenominator/Mcapitata_ATAC_TP12_2403.GT.AD.sumSDdenominator.txt
+ [10] ../RNAseq_short_variant_analysis/filtering/GVCFall_SNPs.AD_Analysis/GVCFall_SNPs_DPfilterNoCall.AD.sumSDdenominator/Mcapitata_ATAC_TP1_1037.GT.AD.sumSDdenominator.txt 
+ [11] ../RNAseq_short_variant_analysis/filtering/GVCFall_SNPs.AD_Analysis/GVCFall_SNPs_DPfilterNoCall.AD.sumSDdenominator/Mcapitata_ATAC_TP1_1600.GT.AD.sumSDdenominator.txt 
+ [12] ../RNAseq_short_variant_analysis/filtering/GVCFall_SNPs.AD_Analysis/GVCFall_SNPs_DPfilterNoCall.AD.sumSDdenominator/Mcapitata_ATAC_TP1_1652.GT.AD.sumSDdenominator.txt 
+ [13] ../RNAseq_short_variant_analysis/filtering/GVCFall_SNPs.AD_Analysis/GVCFall_SNPs_DPfilterNoCall.AD.sumSDdenominator/Mcapitata_ATAC_TP3_1101.GT.AD.sumSDdenominator.txt 
+ [14] ../RNAseq_short_variant_analysis/filtering/GVCFall_SNPs.AD_Analysis/GVCFall_SNPs_DPfilterNoCall.AD.sumSDdenominator/Mcapitata_ATAC_TP3_1548.GT.AD.sumSDdenominator.txt 
+ [15] ../RNAseq_short_variant_analysis/filtering/GVCFall_SNPs.AD_Analysis/GVCFall_SNPs_DPfilterNoCall.AD.sumSDdenominator/Mcapitata_ATAC_TP3_1628.GT.AD.sumSDdenominator.txt 
+ [16] ../RNAseq_short_variant_analysis/filtering/GVCFall_SNPs.AD_Analysis/GVCFall_SNPs_DPfilterNoCall.AD.sumSDdenominator/Mcapitata_ATAC_TP4_1108.GT.AD.sumSDdenominator.txt 
+ [17] ../RNAseq_short_variant_analysis/filtering/GVCFall_SNPs.AD_Analysis/GVCFall_SNPs_DPfilterNoCall.AD.sumSDdenominator/Mcapitata_ATAC_TP4_1609.GT.AD.sumSDdenominator.txt 
+ [18] ../RNAseq_short_variant_analysis/filtering/GVCFall_SNPs.AD_Analysis/GVCFall_SNPs_DPfilterNoCall.AD.sumSDdenominator/Mcapitata_ATAC_TP4_1651.GT.AD.sumSDdenominator.txt 
+ [19] ../RNAseq_short_variant_analysis/filtering/GVCFall_SNPs.AD_Analysis/GVCFall_SNPs_DPfilterNoCall.AD.sumSDdenominator/Mcapitata_ATAC_TP5_1196.GT.AD.sumSDdenominator.txt 
+ [20] ../RNAseq_short_variant_analysis/filtering/GVCFall_SNPs.AD_Analysis/GVCFall_SNPs_DPfilterNoCall.AD.sumSDdenominator/Mcapitata_ATAC_TP5_1610.GT.AD.sumSDdenominator.txt 
+ [21] ../RNAseq_short_variant_analysis/filtering/GVCFall_SNPs.AD_Analysis/GVCFall_SNPs_DPfilterNoCall.AD.sumSDdenominator/Mcapitata_ATAC_TP5_1776.GT.AD.sumSDdenominator.txt 
+ [22] ../RNAseq_short_variant_analysis/filtering/GVCFall_SNPs.AD_Analysis/GVCFall_SNPs_DPfilterNoCall.AD.sumSDdenominator/Mcapitata_ATAC_TP6_1114.GT.AD.sumSDdenominator.txt 
+ [23] ../RNAseq_short_variant_analysis/filtering/GVCFall_SNPs.AD_Analysis/GVCFall_SNPs_DPfilterNoCall.AD.sumSDdenominator/Mcapitata_ATAC_TP6_1611.GT.AD.sumSDdenominator.txt 
+ [24] ../RNAseq_short_variant_analysis/filtering/GVCFall_SNPs.AD_Analysis/GVCFall_SNPs_DPfilterNoCall.AD.sumSDdenominator/Mcapitata_ATAC_TP6_2402.GT.AD.sumSDdenominator.txt 
+ [25] ../RNAseq_short_variant_analysis/filtering/GVCFall_SNPs.AD_Analysis/GVCFall_SNPs_DPfilterNoCall.AD.sumSDdenominator/Mcapitata_ATAC_TP7_1058.GT.AD.sumSDdenominator.txt 
+ [26] ../RNAseq_short_variant_analysis/filtering/GVCFall_SNPs.AD_Analysis/GVCFall_SNPs_DPfilterNoCall.AD.sumSDdenominator/Mcapitata_ATAC_TP7_1455.GT.AD.sumSDdenominator.txt 
+ [27] ../RNAseq_short_variant_analysis/filtering/GVCFall_SNPs.AD_Analysis/GVCFall_SNPs_DPfilterNoCall.AD.sumSDdenominator/Mcapitata_ATAC_TP7_1499.GT.AD.sumSDdenominator.txt 
+ [28] ../RNAseq_short_variant_analysis/filtering/GVCFall_SNPs.AD_Analysis/GVCFall_SNPs_DPfilterNoCall.AD.sumSDdenominator/Mcapitata_ATAC_TP8_1083.GT.AD.sumSDdenominator.txt 
+ [29] ../RNAseq_short_variant_analysis/filtering/GVCFall_SNPs.AD_Analysis/GVCFall_SNPs_DPfilterNoCall.AD.sumSDdenominator/Mcapitata_ATAC_TP8_1436.GT.AD.sumSDdenominator.txt 
+ [30] ../RNAseq_short_variant_analysis/filtering/GVCFall_SNPs.AD_Analysis/GVCFall_SNPs_DPfilterNoCall.AD.sumSDdenominator/Mcapitata_ATAC_TP8_1779.GT.AD.sumSDdenominator.txt 
+ [31] ../RNAseq_short_variant_analysis/filtering/GVCFall_SNPs.AD_Analysis/GVCFall_SNPs_DPfilterNoCall.AD.sumSDdenominator/Mcapitata_ATAC_TP9_1121.GT.AD.sumSDdenominator.txt 
+ [32] ../RNAseq_short_variant_analysis/filtering/GVCFall_SNPs.AD_Analysis/GVCFall_SNPs_DPfilterNoCall.AD.sumSDdenominator/Mcapitata_ATAC_TP9_1420.GT.AD.sumSDdenominator.txt 
+ [33] ../RNAseq_short_variant_analysis/filtering/GVCFall_SNPs.AD_Analysis/GVCFall_SNPs_DPfilterNoCall.AD.sumSDdenominator/Mcapitata_ATAC_TP9_1580.GT.AD.sumSDdenominator.txt 
+ [34] ../RNAseq_short_variant_analysis/filtering/GVCFall_SNPs.AD_Analysis/GVCFall_SNPs_DPfilterNoCall.AD.sumSDdenominator/Mcapitata_ATHC_TP10_1204.GT.AD.sumSDdenominator.txt
+ [35] ../RNAseq_short_variant_analysis/filtering/GVCFall_SNPs.AD_Analysis/GVCFall_SNPs_DPfilterNoCall.AD.sumSDdenominator/Mcapitata_ATHC_TP10_2554.GT.AD.sumSDdenominator.txt
+ [36] ../RNAseq_short_variant_analysis/filtering/GVCFall_SNPs.AD_Analysis/GVCFall_SNPs_DPfilterNoCall.AD.sumSDdenominator/Mcapitata_ATHC_TP10_2737.GT.AD.sumSDdenominator.txt
+ [37] ../RNAseq_short_variant_analysis/filtering/GVCFall_SNPs.AD_Analysis/GVCFall_SNPs_DPfilterNoCall.AD.sumSDdenominator/Mcapitata_ATHC_TP11_1237.GT.AD.sumSDdenominator.txt
+ [38] ../RNAseq_short_variant_analysis/filtering/GVCFall_SNPs.AD_Analysis/GVCFall_SNPs_DPfilterNoCall.AD.sumSDdenominator/Mcapitata_ATHC_TP11_2188.GT.AD.sumSDdenominator.txt
+ [39] ../RNAseq_short_variant_analysis/filtering/GVCFall_SNPs.AD_Analysis/GVCFall_SNPs_DPfilterNoCall.AD.sumSDdenominator/Mcapitata_ATHC_TP11_2756.GT.AD.sumSDdenominator.txt
+ [40] ../RNAseq_short_variant_analysis/filtering/GVCFall_SNPs.AD_Analysis/GVCFall_SNPs_DPfilterNoCall.AD.sumSDdenominator/Mcapitata_ATHC_TP12_1154.GT.AD.sumSDdenominator.txt
+ [41] ../RNAseq_short_variant_analysis/filtering/GVCFall_SNPs.AD_Analysis/GVCFall_SNPs_DPfilterNoCall.AD.sumSDdenominator/Mcapitata_ATHC_TP12_2736.GT.AD.sumSDdenominator.txt
+ [42] ../RNAseq_short_variant_analysis/filtering/GVCFall_SNPs.AD_Analysis/GVCFall_SNPs_DPfilterNoCall.AD.sumSDdenominator/Mcapitata_ATHC_TP12_2990.GT.AD.sumSDdenominator.txt
+ [43] ../RNAseq_short_variant_analysis/filtering/GVCFall_SNPs.AD_Analysis/GVCFall_SNPs_DPfilterNoCall.AD.sumSDdenominator/Mcapitata_ATHC_TP1_1218.GT.AD.sumSDdenominator.txt 
+ [44] ../RNAseq_short_variant_analysis/filtering/GVCFall_SNPs.AD_Analysis/GVCFall_SNPs_DPfilterNoCall.AD.sumSDdenominator/Mcapitata_ATHC_TP1_1826.GT.AD.sumSDdenominator.txt 
+ [45] ../RNAseq_short_variant_analysis/filtering/GVCFall_SNPs.AD_Analysis/GVCFall_SNPs_DPfilterNoCall.AD.sumSDdenominator/Mcapitata_ATHC_TP1_2068.GT.AD.sumSDdenominator.txt 
+ [46] ../RNAseq_short_variant_analysis/filtering/GVCFall_SNPs.AD_Analysis/GVCFall_SNPs_DPfilterNoCall.AD.sumSDdenominator/Mcapitata_ATHC_TP3_1544.GT.AD.sumSDdenominator.txt 
+ [47] ../RNAseq_short_variant_analysis/filtering/GVCFall_SNPs.AD_Analysis/GVCFall_SNPs_DPfilterNoCall.AD.sumSDdenominator/Mcapitata_ATHC_TP3_2731.GT.AD.sumSDdenominator.txt 
+ [48] ../RNAseq_short_variant_analysis/filtering/GVCFall_SNPs.AD_Analysis/GVCFall_SNPs_DPfilterNoCall.AD.sumSDdenominator/Mcapitata_ATHC_TP3_2866.GT.AD.sumSDdenominator.txt 
+ [49] ../RNAseq_short_variant_analysis/filtering/GVCFall_SNPs.AD_Analysis/GVCFall_SNPs_DPfilterNoCall.AD.sumSDdenominator/Mcapitata_ATHC_TP4_1221.GT.AD.sumSDdenominator.txt 
+ [50] ../RNAseq_short_variant_analysis/filtering/GVCFall_SNPs.AD_Analysis/GVCFall_SNPs_DPfilterNoCall.AD.sumSDdenominator/Mcapitata_ATHC_TP4_2561.GT.AD.sumSDdenominator.txt 
+ [51] ../RNAseq_short_variant_analysis/filtering/GVCFall_SNPs.AD_Analysis/GVCFall_SNPs_DPfilterNoCall.AD.sumSDdenominator/Mcapitata_ATHC_TP4_2734.GT.AD.sumSDdenominator.txt 
+ [52] ../RNAseq_short_variant_analysis/filtering/GVCFall_SNPs.AD_Analysis/GVCFall_SNPs_DPfilterNoCall.AD.sumSDdenominator/Mcapitata_ATHC_TP5_1229.GT.AD.sumSDdenominator.txt 
+ [53] ../RNAseq_short_variant_analysis/filtering/GVCFall_SNPs.AD_Analysis/GVCFall_SNPs_DPfilterNoCall.AD.sumSDdenominator/Mcapitata_ATHC_TP5_1706.GT.AD.sumSDdenominator.txt 
+ [54] ../RNAseq_short_variant_analysis/filtering/GVCFall_SNPs.AD_Analysis/GVCFall_SNPs_DPfilterNoCall.AD.sumSDdenominator/Mcapitata_ATHC_TP5_2986.GT.AD.sumSDdenominator.txt 
+ [55] ../RNAseq_short_variant_analysis/filtering/GVCFall_SNPs.AD_Analysis/GVCFall_SNPs_DPfilterNoCall.AD.sumSDdenominator/Mcapitata_ATHC_TP6_1212.GT.AD.sumSDdenominator.txt 
+ [56] ../RNAseq_short_variant_analysis/filtering/GVCFall_SNPs.AD_Analysis/GVCFall_SNPs_DPfilterNoCall.AD.sumSDdenominator/Mcapitata_ATHC_TP6_2016.GT.AD.sumSDdenominator.txt 
+ [57] ../RNAseq_short_variant_analysis/filtering/GVCFall_SNPs.AD_Analysis/GVCFall_SNPs_DPfilterNoCall.AD.sumSDdenominator/Mcapitata_ATHC_TP6_2555.GT.AD.sumSDdenominator.txt 
+ [58] ../RNAseq_short_variant_analysis/filtering/GVCFall_SNPs.AD_Analysis/GVCFall_SNPs_DPfilterNoCall.AD.sumSDdenominator/Mcapitata_ATHC_TP7_1223.GT.AD.sumSDdenominator.txt 
+ [59] ../RNAseq_short_variant_analysis/filtering/GVCFall_SNPs.AD_Analysis/GVCFall_SNPs_DPfilterNoCall.AD.sumSDdenominator/Mcapitata_ATHC_TP7_2860.GT.AD.sumSDdenominator.txt 
+ [60] ../RNAseq_short_variant_analysis/filtering/GVCFall_SNPs.AD_Analysis/GVCFall_SNPs_DPfilterNoCall.AD.sumSDdenominator/Mcapitata_ATHC_TP7_2875.GT.AD.sumSDdenominator.txt 
+ [61] ../RNAseq_short_variant_analysis/filtering/GVCFall_SNPs.AD_Analysis/GVCFall_SNPs_DPfilterNoCall.AD.sumSDdenominator/Mcapitata_ATHC_TP8_1260.GT.AD.sumSDdenominator.txt 
+ [62] ../RNAseq_short_variant_analysis/filtering/GVCFall_SNPs.AD_Analysis/GVCFall_SNPs_DPfilterNoCall.AD.sumSDdenominator/Mcapitata_ATHC_TP8_2735.GT.AD.sumSDdenominator.txt 
+ [63] ../RNAseq_short_variant_analysis/filtering/GVCFall_SNPs.AD_Analysis/GVCFall_SNPs_DPfilterNoCall.AD.sumSDdenominator/Mcapitata_ATHC_TP8_2753.GT.AD.sumSDdenominator.txt 
+ [64] ../RNAseq_short_variant_analysis/filtering/GVCFall_SNPs.AD_Analysis/GVCFall_SNPs_DPfilterNoCall.AD.sumSDdenominator/Mcapitata_ATHC_TP9_1148.GT.AD.sumSDdenominator.txt 
+ [65] ../RNAseq_short_variant_analysis/filtering/GVCFall_SNPs.AD_Analysis/GVCFall_SNPs_DPfilterNoCall.AD.sumSDdenominator/Mcapitata_ATHC_TP9_2862.GT.AD.sumSDdenominator.txt 
+ [66] ../RNAseq_short_variant_analysis/filtering/GVCFall_SNPs.AD_Analysis/GVCFall_SNPs_DPfilterNoCall.AD.sumSDdenominator/Mcapitata_ATHC_TP9_2995.GT.AD.sumSDdenominator.txt 
+ [67] ../RNAseq_short_variant_analysis/filtering/GVCFall_SNPs.AD_Analysis/GVCFall_SNPs_DPfilterNoCall.AD.sumSDdenominator/Mcapitata_HTAC_TP10_1315.GT.AD.sumSDdenominator.txt
+ [68] ../RNAseq_short_variant_analysis/filtering/GVCFall_SNPs.AD_Analysis/GVCFall_SNPs_DPfilterNoCall.AD.sumSDdenominator/Mcapitata_HTAC_TP10_1478.GT.AD.sumSDdenominator.txt
+ [69] ../RNAseq_short_variant_analysis/filtering/GVCFall_SNPs.AD_Analysis/GVCFall_SNPs_DPfilterNoCall.AD.sumSDdenominator/Mcapitata_HTAC_TP10_1754.GT.AD.sumSDdenominator.txt
+ [70] ../RNAseq_short_variant_analysis/filtering/GVCFall_SNPs.AD_Analysis/GVCFall_SNPs_DPfilterNoCall.AD.sumSDdenominator/Mcapitata_HTAC_TP11_1248.GT.AD.sumSDdenominator.txt
+ [71] ../RNAseq_short_variant_analysis/filtering/GVCFall_SNPs.AD_Analysis/GVCFall_SNPs_DPfilterNoCall.AD.sumSDdenominator/Mcapitata_HTAC_TP11_1562.GT.AD.sumSDdenominator.txt
+ [72] ../RNAseq_short_variant_analysis/filtering/GVCFall_SNPs.AD_Analysis/GVCFall_SNPs_DPfilterNoCall.AD.sumSDdenominator/Mcapitata_HTAC_TP11_2380.GT.AD.sumSDdenominator.txt
+ [73] ../RNAseq_short_variant_analysis/filtering/GVCFall_SNPs.AD_Analysis/GVCFall_SNPs_DPfilterNoCall.AD.sumSDdenominator/Mcapitata_HTAC_TP12_1632.GT.AD.sumSDdenominator.txt
+ [74] ../RNAseq_short_variant_analysis/filtering/GVCFall_SNPs.AD_Analysis/GVCFall_SNPs_DPfilterNoCall.AD.sumSDdenominator/Mcapitata_HTAC_TP12_1729.GT.AD.sumSDdenominator.txt
+ [75] ../RNAseq_short_variant_analysis/filtering/GVCFall_SNPs.AD_Analysis/GVCFall_SNPs_DPfilterNoCall.AD.sumSDdenominator/Mcapitata_HTAC_TP12_2007.GT.AD.sumSDdenominator.txt
+ [76] ../RNAseq_short_variant_analysis/filtering/GVCFall_SNPs.AD_Analysis/GVCFall_SNPs_DPfilterNoCall.AD.sumSDdenominator/Mcapitata_HTAC_TP1_1579.GT.AD.sumSDdenominator.txt 
+ [77] ../RNAseq_short_variant_analysis/filtering/GVCFall_SNPs.AD_Analysis/GVCFall_SNPs_DPfilterNoCall.AD.sumSDdenominator/Mcapitata_HTAC_TP1_2153.GT.AD.sumSDdenominator.txt 
+ [78] ../RNAseq_short_variant_analysis/filtering/GVCFall_SNPs.AD_Analysis/GVCFall_SNPs_DPfilterNoCall.AD.sumSDdenominator/Mcapitata_HTAC_TP1_2183.GT.AD.sumSDdenominator.txt 
+ [79] ../RNAseq_short_variant_analysis/filtering/GVCFall_SNPs.AD_Analysis/GVCFall_SNPs_DPfilterNoCall.AD.sumSDdenominator/Mcapitata_HTAC_TP3_1289.GT.AD.sumSDdenominator.txt 
+ [80] ../RNAseq_short_variant_analysis/filtering/GVCFall_SNPs.AD_Analysis/GVCFall_SNPs_DPfilterNoCall.AD.sumSDdenominator/Mcapitata_HTAC_TP3_1751.GT.AD.sumSDdenominator.txt 
+ [81] ../RNAseq_short_variant_analysis/filtering/GVCFall_SNPs.AD_Analysis/GVCFall_SNPs_DPfilterNoCall.AD.sumSDdenominator/Mcapitata_HTAC_TP3_2021.GT.AD.sumSDdenominator.txt 
+ [82] ../RNAseq_short_variant_analysis/filtering/GVCFall_SNPs.AD_Analysis/GVCFall_SNPs_DPfilterNoCall.AD.sumSDdenominator/Mcapitata_HTAC_TP4_1269.GT.AD.sumSDdenominator.txt 
+ [83] ../RNAseq_short_variant_analysis/filtering/GVCFall_SNPs.AD_Analysis/GVCFall_SNPs_DPfilterNoCall.AD.sumSDdenominator/Mcapitata_HTAC_TP4_1481.GT.AD.sumSDdenominator.txt 
+ [84] ../RNAseq_short_variant_analysis/filtering/GVCFall_SNPs.AD_Analysis/GVCFall_SNPs_DPfilterNoCall.AD.sumSDdenominator/Mcapitata_HTAC_TP4_2000.GT.AD.sumSDdenominator.txt 
+ [85] ../RNAseq_short_variant_analysis/filtering/GVCFall_SNPs.AD_Analysis/GVCFall_SNPs_DPfilterNoCall.AD.sumSDdenominator/Mcapitata_HTAC_TP5_1321.GT.AD.sumSDdenominator.txt 
+ [86] ../RNAseq_short_variant_analysis/filtering/GVCFall_SNPs.AD_Analysis/GVCFall_SNPs_DPfilterNoCall.AD.sumSDdenominator/Mcapitata_HTAC_TP5_1583.GT.AD.sumSDdenominator.txt 
+ [87] ../RNAseq_short_variant_analysis/filtering/GVCFall_SNPs.AD_Analysis/GVCFall_SNPs_DPfilterNoCall.AD.sumSDdenominator/Mcapitata_HTAC_TP5_1997.GT.AD.sumSDdenominator.txt 
+ [88] ../RNAseq_short_variant_analysis/filtering/GVCFall_SNPs.AD_Analysis/GVCFall_SNPs_DPfilterNoCall.AD.sumSDdenominator/Mcapitata_HTAC_TP6_1496.GT.AD.sumSDdenominator.txt 
+ [89] ../RNAseq_short_variant_analysis/filtering/GVCFall_SNPs.AD_Analysis/GVCFall_SNPs_DPfilterNoCall.AD.sumSDdenominator/Mcapitata_HTAC_TP6_1588.GT.AD.sumSDdenominator.txt 
+ [90] ../RNAseq_short_variant_analysis/filtering/GVCFall_SNPs.AD_Analysis/GVCFall_SNPs_DPfilterNoCall.AD.sumSDdenominator/Mcapitata_HTAC_TP6_1705.GT.AD.sumSDdenominator.txt 
+ [91] ../RNAseq_short_variant_analysis/filtering/GVCFall_SNPs.AD_Analysis/GVCFall_SNPs_DPfilterNoCall.AD.sumSDdenominator/Mcapitata_HTAC_TP7_1278.GT.AD.sumSDdenominator.txt 
+ [92] ../RNAseq_short_variant_analysis/filtering/GVCFall_SNPs.AD_Analysis/GVCFall_SNPs_DPfilterNoCall.AD.sumSDdenominator/Mcapitata_HTAC_TP7_1645.GT.AD.sumSDdenominator.txt 
+ [93] ../RNAseq_short_variant_analysis/filtering/GVCFall_SNPs.AD_Analysis/GVCFall_SNPs_DPfilterNoCall.AD.sumSDdenominator/Mcapitata_HTAC_TP7_1722.GT.AD.sumSDdenominator.txt 
+ [94] ../RNAseq_short_variant_analysis/filtering/GVCFall_SNPs.AD_Analysis/GVCFall_SNPs_DPfilterNoCall.AD.sumSDdenominator/Mcapitata_HTAC_TP8_1235.GT.AD.sumSDdenominator.txt 
+ [95] ../RNAseq_short_variant_analysis/filtering/GVCFall_SNPs.AD_Analysis/GVCFall_SNPs_DPfilterNoCall.AD.sumSDdenominator/Mcapitata_HTAC_TP8_2386.GT.AD.sumSDdenominator.txt 
+ [96] ../RNAseq_short_variant_analysis/filtering/GVCFall_SNPs.AD_Analysis/GVCFall_SNPs_DPfilterNoCall.AD.sumSDdenominator/Mcapitata_HTAC_TP8_2410.GT.AD.sumSDdenominator.txt 
+ [97] ../RNAseq_short_variant_analysis/filtering/GVCFall_SNPs.AD_Analysis/GVCFall_SNPs_DPfilterNoCall.AD.sumSDdenominator/Mcapitata_HTAC_TP9_1306.GT.AD.sumSDdenominator.txt 
+ [98] ../RNAseq_short_variant_analysis/filtering/GVCFall_SNPs.AD_Analysis/GVCFall_SNPs_DPfilterNoCall.AD.sumSDdenominator/Mcapitata_HTAC_TP9_1467.GT.AD.sumSDdenominator.txt 
+ [99] ../RNAseq_short_variant_analysis/filtering/GVCFall_SNPs.AD_Analysis/GVCFall_SNPs_DPfilterNoCall.AD.sumSDdenominator/Mcapitata_HTAC_TP9_2412.GT.AD.sumSDdenominator.txt 
+[100] ../RNAseq_short_variant_analysis/filtering/GVCFall_SNPs.AD_Analysis/GVCFall_SNPs_DPfilterNoCall.AD.sumSDdenominator/Mcapitata_HTHC_TP10_1074.GT.AD.sumSDdenominator.txt
+[101] ../RNAseq_short_variant_analysis/filtering/GVCFall_SNPs.AD_Analysis/GVCFall_SNPs_DPfilterNoCall.AD.sumSDdenominator/Mcapitata_HTHC_TP10_1332.GT.AD.sumSDdenominator.txt
+[102] ../RNAseq_short_variant_analysis/filtering/GVCFall_SNPs.AD_Analysis/GVCFall_SNPs_DPfilterNoCall.AD.sumSDdenominator/Mcapitata_HTHC_TP10_1689.GT.AD.sumSDdenominator.txt
+[103] ../RNAseq_short_variant_analysis/filtering/GVCFall_SNPs.AD_Analysis/GVCFall_SNPs_DPfilterNoCall.AD.sumSDdenominator/Mcapitata_HTHC_TP11_1178.GT.AD.sumSDdenominator.txt
+[104] ../RNAseq_short_variant_analysis/filtering/GVCFall_SNPs.AD_Analysis/GVCFall_SNPs_DPfilterNoCall.AD.sumSDdenominator/Mcapitata_HTHC_TP11_1270.GT.AD.sumSDdenominator.txt
+[105] ../RNAseq_short_variant_analysis/filtering/GVCFall_SNPs.AD_Analysis/GVCFall_SNPs_DPfilterNoCall.AD.sumSDdenominator/Mcapitata_HTHC_TP11_2511.GT.AD.sumSDdenominator.txt
+[106] ../RNAseq_short_variant_analysis/filtering/GVCFall_SNPs.AD_Analysis/GVCFall_SNPs_DPfilterNoCall.AD.sumSDdenominator/Mcapitata_HTHC_TP12_1140.GT.AD.sumSDdenominator.txt
+[107] ../RNAseq_short_variant_analysis/filtering/GVCFall_SNPs.AD_Analysis/GVCFall_SNPs_DPfilterNoCall.AD.sumSDdenominator/Mcapitata_HTHC_TP12_1274.GT.AD.sumSDdenominator.txt
+[108] ../RNAseq_short_variant_analysis/filtering/GVCFall_SNPs.AD_Analysis/GVCFall_SNPs_DPfilterNoCall.AD.sumSDdenominator/Mcapitata_HTHC_TP12_2190.GT.AD.sumSDdenominator.txt
+[109] ../RNAseq_short_variant_analysis/filtering/GVCFall_SNPs.AD_Analysis/GVCFall_SNPs_DPfilterNoCall.AD.sumSDdenominator/Mcapitata_HTHC_TP1_1145.GT.AD.sumSDdenominator.txt 
+[110] ../RNAseq_short_variant_analysis/filtering/GVCFall_SNPs.AD_Analysis/GVCFall_SNPs_DPfilterNoCall.AD.sumSDdenominator/Mcapitata_HTHC_TP1_1323.GT.AD.sumSDdenominator.txt 
+[111] ../RNAseq_short_variant_analysis/filtering/GVCFall_SNPs.AD_Analysis/GVCFall_SNPs_DPfilterNoCall.AD.sumSDdenominator/Mcapitata_HTHC_TP1_2081.GT.AD.sumSDdenominator.txt 
+[112] ../RNAseq_short_variant_analysis/filtering/GVCFall_SNPs.AD_Analysis/GVCFall_SNPs_DPfilterNoCall.AD.sumSDdenominator/Mcapitata_HTHC_TP3_1128.GT.AD.sumSDdenominator.txt 
+[113] ../RNAseq_short_variant_analysis/filtering/GVCFall_SNPs.AD_Analysis/GVCFall_SNPs_DPfilterNoCall.AD.sumSDdenominator/Mcapitata_HTHC_TP3_1277.GT.AD.sumSDdenominator.txt 
+[114] ../RNAseq_short_variant_analysis/filtering/GVCFall_SNPs.AD_Analysis/GVCFall_SNPs_DPfilterNoCall.AD.sumSDdenominator/Mcapitata_HTHC_TP3_2518.GT.AD.sumSDdenominator.txt 
+[115] ../RNAseq_short_variant_analysis/filtering/GVCFall_SNPs.AD_Analysis/GVCFall_SNPs_DPfilterNoCall.AD.sumSDdenominator/Mcapitata_HTHC_TP4_1124.GT.AD.sumSDdenominator.txt 
+[116] ../RNAseq_short_variant_analysis/filtering/GVCFall_SNPs.AD_Analysis/GVCFall_SNPs_DPfilterNoCall.AD.sumSDdenominator/Mcapitata_HTHC_TP4_1328.GT.AD.sumSDdenominator.txt 
+[117] ../RNAseq_short_variant_analysis/filtering/GVCFall_SNPs.AD_Analysis/GVCFall_SNPs_DPfilterNoCall.AD.sumSDdenominator/Mcapitata_HTHC_TP4_2204.GT.AD.sumSDdenominator.txt 
+[118] ../RNAseq_short_variant_analysis/filtering/GVCFall_SNPs.AD_Analysis/GVCFall_SNPs_DPfilterNoCall.AD.sumSDdenominator/Mcapitata_HTHC_TP5_1345.GT.AD.sumSDdenominator.txt 
+[119] ../RNAseq_short_variant_analysis/filtering/GVCFall_SNPs.AD_Analysis/GVCFall_SNPs_DPfilterNoCall.AD.sumSDdenominator/Mcapitata_HTHC_TP5_1449.GT.AD.sumSDdenominator.txt 
+[120] ../RNAseq_short_variant_analysis/filtering/GVCFall_SNPs.AD_Analysis/GVCFall_SNPs_DPfilterNoCall.AD.sumSDdenominator/Mcapitata_HTHC_TP5_1694.GT.AD.sumSDdenominator.txt 
+[121] ../RNAseq_short_variant_analysis/filtering/GVCFall_SNPs.AD_Analysis/GVCFall_SNPs_DPfilterNoCall.AD.sumSDdenominator/Mcapitata_HTHC_TP6_1164.GT.AD.sumSDdenominator.txt 
+[122] ../RNAseq_short_variant_analysis/filtering/GVCFall_SNPs.AD_Analysis/GVCFall_SNPs_DPfilterNoCall.AD.sumSDdenominator/Mcapitata_HTHC_TP6_1317.GT.AD.sumSDdenominator.txt 
+[123] ../RNAseq_short_variant_analysis/filtering/GVCFall_SNPs.AD_Analysis/GVCFall_SNPs_DPfilterNoCall.AD.sumSDdenominator/Mcapitata_HTHC_TP6_1604.GT.AD.sumSDdenominator.txt 
+[124] ../RNAseq_short_variant_analysis/filtering/GVCFall_SNPs.AD_Analysis/GVCFall_SNPs_DPfilterNoCall.AD.sumSDdenominator/Mcapitata_HTHC_TP7_1126.GT.AD.sumSDdenominator.txt 
+[125] ../RNAseq_short_variant_analysis/filtering/GVCFall_SNPs.AD_Analysis/GVCFall_SNPs_DPfilterNoCall.AD.sumSDdenominator/Mcapitata_HTHC_TP7_1250.GT.AD.sumSDdenominator.txt 
+[126] ../RNAseq_short_variant_analysis/filtering/GVCFall_SNPs.AD_Analysis/GVCFall_SNPs_DPfilterNoCall.AD.sumSDdenominator/Mcapitata_HTHC_TP7_2419.GT.AD.sumSDdenominator.txt 
+[127] ../RNAseq_short_variant_analysis/filtering/GVCFall_SNPs.AD_Analysis/GVCFall_SNPs_DPfilterNoCall.AD.sumSDdenominator/Mcapitata_HTHC_TP8_1082.GT.AD.sumSDdenominator.txt 
+[128] ../RNAseq_short_variant_analysis/filtering/GVCFall_SNPs.AD_Analysis/GVCFall_SNPs_DPfilterNoCall.AD.sumSDdenominator/Mcapitata_HTHC_TP8_1246.GT.AD.sumSDdenominator.txt 
+[129] ../RNAseq_short_variant_analysis/filtering/GVCFall_SNPs.AD_Analysis/GVCFall_SNPs_DPfilterNoCall.AD.sumSDdenominator/Mcapitata_HTHC_TP8_2067.GT.AD.sumSDdenominator.txt 
+[130] ../RNAseq_short_variant_analysis/filtering/GVCFall_SNPs.AD_Analysis/GVCFall_SNPs_DPfilterNoCall.AD.sumSDdenominator/Mcapitata_HTHC_TP9_1078.GT.AD.sumSDdenominator.txt 
+[131] ../RNAseq_short_variant_analysis/filtering/GVCFall_SNPs.AD_Analysis/GVCFall_SNPs_DPfilterNoCall.AD.sumSDdenominator/Mcapitata_HTHC_TP9_1331.GT.AD.sumSDdenominator.txt 
+[132] ../RNAseq_short_variant_analysis/filtering/GVCFall_SNPs.AD_Analysis/GVCFall_SNPs_DPfilterNoCall.AD.sumSDdenominator/Mcapitata_HTHC_TP9_2009.GT.AD.sumSDdenominator.txt 
+132 Levels: ../RNAseq_short_variant_analysis/filtering/GVCFall_SNPs.AD_Analysis/GVCFall_SNPs_DPfilterNoCall.AD.sumSDdenominator/Mcapitata_ATAC_TP1_1037.GT.AD.sumSDdenominator.txt ...
+null device 
+          1 

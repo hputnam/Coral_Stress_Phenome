@@ -1,0 +1,128 @@
+This is cutadapt 2.9 with Python 3.5.2
+Command line parameters: -G G{20} -e 0.0 -n 10 --minimum-length 25 --cores 4 -o Pacuta_ATHC_TP1_2977_R1_TrimmingRound2.fastq.gz -p Pacuta_ATHC_TP1_2977_R2_TrimmingRound2.fastq.gz Pacuta_ATHC_TP1_2977_R1_TrimmingRound1.fastq.gz Pacuta_ATHC_TP1_2977_R2_TrimmingRound1.fastq.gz
+Processing reads on 4 cores in paired-end mode ...
+Finished in 517.46 s (30 us/read; 1.98 M reads/minute).
+
+=== Summary ===
+
+Total read pairs processed:         17,089,036
+  Read 1 with adapter:                       0 (0.0%)
+  Read 2 with adapter:                 266,047 (1.6%)
+Pairs written (passing filters):    17,088,999 (100.0%)
+
+Total basepairs processed: 4,700,682,204 bp
+  Read 1: 2,346,101,689 bp
+  Read 2: 2,354,580,515 bp
+Total written (filtered):  4,699,792,329 bp (100.0%)
+  Read 1: 2,346,096,376 bp
+  Read 2: 2,353,695,953 bp
+
+=== Second read: Adapter 1 ===
+
+Sequence: GGGGGGGGGGGGGGGGGGGG; Type: regular 5'; Length: 20; Trimmed: 266101 times
+
+No. of allowed errors:
+0-20 bp: 0
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	207245	267016.2	0	207245
+4	47157	66754.0	0	47157
+5	9153	16688.5	0	9153
+6	1559	4172.1	0	1559
+7	428	1043.0	0	428
+8	229	260.8	0	229
+9	96	65.2	0	96
+10	40	16.3	0	40
+11	23	4.1	0	23
+12	16	1.0	0	16
+13	3	0.3	0	3
+14	5	0.1	0	5
+15	2	0.0	0	2
+16	2	0.0	0	2
+17	5	0.0	0	5
+18	1	0.0	0	1
+20	1	0.0	0	1
+22	1	0.0	0	1
+24	2	0.0	0	2
+25	2	0.0	0	2
+26	1	0.0	0	1
+27	1	0.0	0	1
+28	2	0.0	0	2
+29	1	0.0	0	1
+30	1	0.0	0	1
+32	2	0.0	0	2
+34	4	0.0	0	4
+35	3	0.0	0	3
+36	3	0.0	0	3
+38	2	0.0	0	2
+40	1	0.0	0	1
+41	1	0.0	0	1
+42	1	0.0	0	1
+43	1	0.0	0	1
+44	1	0.0	0	1
+48	1	0.0	0	1
+50	2	0.0	0	2
+53	1	0.0	0	1
+54	1	0.0	0	1
+55	1	0.0	0	1
+58	1	0.0	0	1
+60	3	0.0	0	3
+61	2	0.0	0	2
+65	1	0.0	0	1
+66	1	0.0	0	1
+67	2	0.0	0	2
+68	1	0.0	0	1
+71	1	0.0	0	1
+73	2	0.0	0	2
+76	1	0.0	0	1
+77	2	0.0	0	2
+78	1	0.0	0	1
+79	1	0.0	0	1
+80	1	0.0	0	1
+82	1	0.0	0	1
+83	2	0.0	0	2
+84	1	0.0	0	1
+85	3	0.0	0	3
+86	1	0.0	0	1
+87	5	0.0	0	5
+88	1	0.0	0	1
+89	2	0.0	0	2
+90	2	0.0	0	2
+94	2	0.0	0	2
+95	2	0.0	0	2
+96	3	0.0	0	3
+98	1	0.0	0	1
+99	1	0.0	0	1
+100	1	0.0	0	1
+102	1	0.0	0	1
+103	1	0.0	0	1
+104	1	0.0	0	1
+105	1	0.0	0	1
+108	1	0.0	0	1
+112	3	0.0	0	3
+113	1	0.0	0	1
+114	1	0.0	0	1
+116	1	0.0	0	1
+117	3	0.0	0	3
+118	2	0.0	0	2
+121	3	0.0	0	3
+125	2	0.0	0	2
+126	1	0.0	0	1
+127	3	0.0	0	3
+129	1	0.0	0	1
+130	1	0.0	0	1
+131	1	0.0	0	1
+133	1	0.0	0	1
+135	3	0.0	0	3
+136	2	0.0	0	2
+137	2	0.0	0	2
+138	3	0.0	0	3
+139	1	0.0	0	1
+140	2	0.0	0	2
+141	2	0.0	0	2
+143	2	0.0	0	2
+144	3	0.0	0	3
+145	1	0.0	0	1
+148	1	0.0	0	1
+149	1	0.0	0	1

@@ -1,0 +1,13 @@
+=====================================================================
+Slurm config version 0.1
+Starting at Tue 09 Feb 2021 10:25:16 PM EST
+Working directory is /scratch/timothy/projects/Coral_Stress_Phenome/results/2021-02-02/Pacuta/Read_Mapping/GenomeScaffolds_Pacuta_RNAseq_HISAT2
+=====================================================================
+
+[Wed 10 Feb 2021 04:24:00 AM EST]      LOG: Parallel finished with exit status: 0
+
+=====================================================================
+Started: at Tue 09 Feb 2021 10:25:16 PM EST
+Finished: at Wed 10 Feb 2021 04:24:00 AM EST
+ExitStatus: 0
+=====================================================================

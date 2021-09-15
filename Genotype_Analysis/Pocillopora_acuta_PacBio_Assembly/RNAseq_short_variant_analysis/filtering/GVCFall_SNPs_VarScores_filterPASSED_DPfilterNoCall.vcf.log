@@ -1,0 +1,137 @@
+12:20:31.464 INFO  NativeLibraryLoader - Loading libgkl_compression.so from jar:file:/home/timothy/programs/gatk-4.2.0.0/gatk-package-4.2.0.0-local.jar!/com/intel/gkl/native/libgkl_compression.so
+Jun 13, 2021 12:20:31 PM shaded.cloud_nio.com.google.auth.oauth2.ComputeEngineCredentials runningOnComputeEngine
+INFO: Failed to detect whether we are running on Google Compute Engine.
+12:20:31.619 INFO  SelectVariants - ------------------------------------------------------------
+12:20:31.619 INFO  SelectVariants - The Genome Analysis Toolkit (GATK) v4.2.0.0
+12:20:31.619 INFO  SelectVariants - For support and documentation go to https://software.broadinstitute.org/gatk/
+12:20:31.619 INFO  SelectVariants - Executing as timothy@coral on Linux v5.4.0-72-generic amd64
+12:20:31.619 INFO  SelectVariants - Java runtime: OpenJDK 64-Bit Server VM v11.0.11+9-Ubuntu-0ubuntu2.20.04
+12:20:31.619 INFO  SelectVariants - Start Date/Time: June 13, 2021 at 12:20:31 PM EDT
+12:20:31.620 INFO  SelectVariants - ------------------------------------------------------------
+12:20:31.620 INFO  SelectVariants - ------------------------------------------------------------
+12:20:31.620 INFO  SelectVariants - HTSJDK Version: 2.24.0
+12:20:31.620 INFO  SelectVariants - Picard Version: 2.25.0
+12:20:31.620 INFO  SelectVariants - Built for Spark Version: 2.4.5
+12:20:31.620 INFO  SelectVariants - HTSJDK Defaults.COMPRESSION_LEVEL : 2
+12:20:31.620 INFO  SelectVariants - HTSJDK Defaults.USE_ASYNC_IO_READ_FOR_SAMTOOLS : false
+12:20:31.620 INFO  SelectVariants - HTSJDK Defaults.USE_ASYNC_IO_WRITE_FOR_SAMTOOLS : true
+12:20:31.620 INFO  SelectVariants - HTSJDK Defaults.USE_ASYNC_IO_WRITE_FOR_TRIBBLE : false
+12:20:31.620 INFO  SelectVariants - Deflater: IntelDeflater
+12:20:31.620 INFO  SelectVariants - Inflater: IntelInflater
+12:20:31.620 INFO  SelectVariants - GCS max retries/reopens: 20
+12:20:31.620 INFO  SelectVariants - Requester pays: disabled
+12:20:31.620 INFO  SelectVariants - Initializing engine
+12:20:31.745 INFO  FeatureManager - Using codec VCFCodec to read file file:///scratch/timothy/projects/0020_Pocillopora_acuta_PacBio_Assembly/03_Analysis/2021_05_26/RNAseq_short_variant_analysis/filtering/GVCFall_SNPs_VarScores_filterPASSED_DPfilter.vcf
+12:20:31.880 INFO  SelectVariants - Done initializing engine
+12:20:31.917 INFO  ProgressMeter - Starting traversal
+12:20:31.917 INFO  ProgressMeter -        Current Locus  Elapsed Minutes    Variants Processed  Variants/Minute
+12:20:42.048 INFO  ProgressMeter - Pocillopora_acuta_HIv1___Scaffold_000000F___length_7015273:2674839              0.2                 38000         225051.8
+12:20:52.103 INFO  ProgressMeter - Pocillopora_acuta_HIv1___Scaffold_000000F___length_7015273:6705697              0.3                 88000         261567.4
+12:21:02.253 INFO  ProgressMeter - Pocillopora_acuta_HIv1___Scaffold_000001F___length_3838978:2823923              0.5                136000         268987.3
+12:21:12.358 INFO  ProgressMeter - Pocillopora_acuta_HIv1___Scaffold_000003F___length_3310154:3032973              0.7                185000         274473.9
+12:21:22.517 INFO  ProgressMeter - Pocillopora_acuta_HIv1___Scaffold_000007F___length_3038207:979691              0.8                236000         279841.9
+12:21:32.701 INFO  ProgressMeter - Pocillopora_acuta_HIv1___Scaffold_000006F___length_3012071:1701522              1.0                286000         282311.1
+12:21:42.778 INFO  ProgressMeter - Pocillopora_acuta_HIv1___Scaffold_000004F___length_2973859:1660783              1.2                335000         283653.9
+12:21:52.976 INFO  ProgressMeter - Pocillopora_acuta_HIv1___Scaffold_000005F___length_2913003:2353028              1.4                386000         285717.8
+12:22:03.177 INFO  ProgressMeter - Pocillopora_acuta_HIv1___Scaffold_000008F___length_2769899:2214046              1.5                436000         286653.5
+12:22:13.281 INFO  ProgressMeter - Pocillopora_acuta_HIv1___Scaffold_000009F___length_2672951:2461605              1.7                484000         286492.2
+12:22:23.352 INFO  ProgressMeter - Pocillopora_acuta_HIv1___Scaffold_000011F___length_2586769:897108              1.9                534000         287521.9
+12:22:33.382 INFO  ProgressMeter - Pocillopora_acuta_HIv1___Scaffold_000012F___length_2520783:1578960              2.0                579000         286008.3
+12:22:43.554 INFO  ProgressMeter - Pocillopora_acuta_HIv1___Scaffold_000020F___length_2467453:812111              2.2                626000         285332.3
+12:22:53.661 INFO  ProgressMeter - Pocillopora_acuta_HIv1___Scaffold_000019F___length_2418994:2382642              2.4                674000         285303.1
+12:23:03.850 INFO  ProgressMeter - Pocillopora_acuta_HIv1___Scaffold_000017F___length_2344199:1901203              2.5                723000         285520.6
+12:23:13.873 INFO  ProgressMeter - Pocillopora_acuta_HIv1___Scaffold_000022F___length_2234617:742123              2.7                772000         286003.6
+12:23:24.062 INFO  ProgressMeter - Pocillopora_acuta_HIv1___Scaffold_000016F___length_2230716:1745497              2.9                821000         286155.8
+12:23:34.245 INFO  ProgressMeter - Pocillopora_acuta_HIv1___Scaffold_000028F___length_2192771:617343              3.0                871000         286626.3
+12:23:44.368 INFO  ProgressMeter - Pocillopora_acuta_HIv1___Scaffold_000029F___length_2136925:349702              3.2                923000         287761.6
+12:23:54.430 INFO  ProgressMeter - Pocillopora_acuta_HIv1___Scaffold_000013F___length_2048302:1492863              3.4                972000         287981.5
+12:24:04.602 INFO  ProgressMeter - Pocillopora_acuta_HIv1___Scaffold_000030F___length_1997862:1332695              3.5               1023000         288595.8
+12:24:14.725 INFO  ProgressMeter - Pocillopora_acuta_HIv1___Scaffold_000033F___length_1976463:635862              3.7               1073000         288948.3
+12:24:24.801 INFO  ProgressMeter - Pocillopora_acuta_HIv1___Scaffold_000036F___length_1887486:764229              3.9               1123000         289328.6
+12:24:34.844 INFO  ProgressMeter - Pocillopora_acuta_HIv1___Scaffold_000046F___length_1870459:778310              4.0               1173000         289716.7
+12:24:45.024 INFO  ProgressMeter - Pocillopora_acuta_HIv1___Scaffold_000038F___length_1860461:455896              4.2               1223000         289916.9
+12:24:55.028 INFO  ProgressMeter - Pocillopora_acuta_HIv1___Scaffold_000044F___length_1822362:307093              4.4               1272000         290067.7
+12:25:05.148 INFO  ProgressMeter - Pocillopora_acuta_HIv1___Scaffold_000047F___length_1804076:1150751              4.6               1323000         290523.4
+12:25:15.312 INFO  ProgressMeter - Pocillopora_acuta_HIv1___Scaffold_000048F___length_1779791:709067              4.7               1373000         290689.7
+12:25:25.458 INFO  ProgressMeter - Pocillopora_acuta_HIv1___Scaffold_000051F___length_1752840:884628              4.9               1424000         291066.7
+12:25:35.635 INFO  ProgressMeter - Pocillopora_acuta_HIv1___Scaffold_000052F___length_1749787:1745098              5.1               1475000         291388.7
+12:25:45.673 INFO  ProgressMeter - Pocillopora_acuta_HIv1___Scaffold_000055F___length_1685811:1472873              5.2               1525000         291627.9
+12:25:55.810 INFO  ProgressMeter - Pocillopora_acuta_HIv1___Scaffold_000063F___length_1625206:41371              5.4               1574000         291577.8
+12:26:05.838 INFO  ProgressMeter - Pocillopora_acuta_HIv1___Scaffold_000058F___length_1607644:472449              5.6               1624000         291805.5
+12:26:15.943 INFO  ProgressMeter - Pocillopora_acuta_HIv1___Scaffold_000053F___length_1590508:814877              5.7               1674000         291954.7
+12:26:26.071 INFO  ProgressMeter - Pocillopora_acuta_HIv1___Scaffold_000067F___length_1571305:667196              5.9               1724000         292076.3
+12:26:36.254 INFO  ProgressMeter - Pocillopora_acuta_HIv1___Scaffold_000050F___length_1523765:296295              6.1               1774000         292147.1
+12:26:46.401 INFO  ProgressMeter - Pocillopora_acuta_HIv1___Scaffold_000074F___length_1495598:898042              6.2               1825000         292402.3
+12:26:56.581 INFO  ProgressMeter - Pocillopora_acuta_HIv1___Scaffold_000078F___length_1491746:1074503              6.4               1877000         292775.0
+12:27:06.731 INFO  ProgressMeter - Pocillopora_acuta_HIv1___Scaffold_000080F___length_1480119:1289460              6.6               1928000         292998.7
+12:27:16.921 INFO  ProgressMeter - Pocillopora_acuta_HIv1___Scaffold_000077F___length_1459619:759972              6.8               1978000         293034.1
+12:27:27.019 INFO  ProgressMeter - Pocillopora_acuta_HIv1___Scaffold_000088F___length_1443323:919867              6.9               2029000         293277.3
+12:27:37.113 INFO  ProgressMeter - Pocillopora_acuta_HIv1___Scaffold_000089F___length_1432987:1232170              7.1               2079000         293370.6
+12:27:47.193 INFO  ProgressMeter - Pocillopora_acuta_HIv1___Scaffold_000099F___length_1380629:606105              7.3               2129000         293469.6
+12:27:57.240 INFO  ProgressMeter - Pocillopora_acuta_HIv1___Scaffold_000085F___length_1359006:791532              7.4               2180000         293719.4
+12:28:07.248 INFO  ProgressMeter - Pocillopora_acuta_HIv1___Scaffold_000076F___length_1335001:488813              7.6               2229000         293720.4
+12:28:17.309 INFO  ProgressMeter - Pocillopora_acuta_HIv1___Scaffold_000087F___length_1327027:1171265              7.8               2279000         293816.8
+12:28:27.328 INFO  ProgressMeter - Pocillopora_acuta_HIv1___Scaffold_000107F___length_1282968:79424              7.9               2330000         294061.3
+12:28:37.530 INFO  ProgressMeter - Pocillopora_acuta_HIv1___Scaffold_000104F___length_1271314:767306              8.1               2379000         293937.8
+12:28:47.590 INFO  ProgressMeter - Pocillopora_acuta_HIv1___Scaffold_000113F___length_1223651:414772              8.3               2429000         294024.5
+12:28:57.740 INFO  ProgressMeter - Pocillopora_acuta_HIv1___Scaffold_000120F___length_1192788:726493              8.4               2479000         294055.4
+12:29:07.772 INFO  ProgressMeter - Pocillopora_acuta_HIv1___Scaffold_000119F___length_1183488:905259              8.6               2529000         294153.0
+12:29:17.876 INFO  ProgressMeter - Pocillopora_acuta_HIv1___Scaffold_000132F___length_1157907:89282              8.8               2580000         294319.5
+12:29:27.907 INFO  ProgressMeter - Pocillopora_acuta_HIv1___Scaffold_000145F___length_1145118:1139071              8.9               2631000         294520.4
+12:29:37.914 INFO  ProgressMeter - Pocillopora_acuta_HIv1___Scaffold_000141F___length_1122045:219128              9.1               2682000         294727.4
+12:29:48.109 INFO  ProgressMeter - Pocillopora_acuta_HIv1___Scaffold_000149F___length_1101333:219229              9.3               2733000         294826.2
+12:29:58.198 INFO  ProgressMeter - Pocillopora_acuta_HIv1___Scaffold_000158F___length_1083353:35249              9.4               2784000         294977.2
+12:30:08.234 INFO  ProgressMeter - Pocillopora_acuta_HIv1___Scaffold_000143F___length_1067668:831804              9.6               2834000         295046.5
+12:30:18.306 INFO  ProgressMeter - Pocillopora_acuta_HIv1___Scaffold_000114F___length_1038772:602345              9.8               2884000         295094.2
+12:30:28.428 INFO  ProgressMeter - Pocillopora_acuta_HIv1___Scaffold_000177F___length_1015216:843949              9.9               2934000         295116.1
+12:30:38.508 INFO  ProgressMeter - Pocillopora_acuta_HIv1___Scaffold_000196F___length_999679:580785             10.1               2985000         295256.6
+12:30:48.630 INFO  ProgressMeter - Pocillopora_acuta_HIv1___Scaffold_000178F___length_988684:524639             10.3               3036000         295372.4
+12:30:58.681 INFO  ProgressMeter - Pocillopora_acuta_HIv1___Scaffold_000191F___length_971184:46413             10.4               3087000         295517.9
+12:31:08.836 INFO  ProgressMeter - Pocillopora_acuta_HIv1___Scaffold_000147F___length_962551:617149             10.6               3137000         295516.4
+12:31:18.891 INFO  ProgressMeter - Pocillopora_acuta_HIv1___Scaffold_000207F___length_933288:60151             10.8               3188000         295653.3
+12:31:28.939 INFO  ProgressMeter - Pocillopora_acuta_HIv1___Scaffold_000212F___length_929236:828448             11.0               3238000         295697.9
+12:31:39.039 INFO  ProgressMeter - Pocillopora_acuta_HIv1___Scaffold_000115F___length_901292:329356             11.1               3289000         295808.4
+12:31:49.062 INFO  ProgressMeter - Pocillopora_acuta_HIv1___Scaffold_000214F___length_879870:530738             11.3               3340000         295948.4
+12:31:59.154 INFO  ProgressMeter - Pocillopora_acuta_HIv1___Scaffold_000183F___length_864840:236608             11.5               3390000         295967.8
+12:32:09.295 INFO  ProgressMeter - Pocillopora_acuta_HIv1___Scaffold_000211F___length_854053:53165             11.6               3441000         296051.8
+12:32:19.503 INFO  ProgressMeter - Pocillopora_acuta_HIv1___Scaffold_000228F___length_826142:323580             11.8               3492000         296105.3
+12:32:29.612 INFO  ProgressMeter - Pocillopora_acuta_HIv1___Scaffold_000236F___length_817659:616854             12.0               3543000         296198.2
+12:32:39.779 INFO  ProgressMeter - Pocillopora_acuta_HIv1___Scaffold_000240F___length_794972:748374             12.1               3594000         296265.0
+12:32:49.805 INFO  ProgressMeter - Pocillopora_acuta_HIv1___Scaffold_000172F___length_786143:396871             12.3               3644000         296305.5
+12:32:59.898 INFO  ProgressMeter - Pocillopora_acuta_HIv1___Scaffold_000286F___length_769775:511022             12.5               3694000         296317.7
+12:33:09.923 INFO  ProgressMeter - Pocillopora_acuta_HIv1___Scaffold_000303F___length_752589:426412             12.6               3745000         296436.0
+12:33:20.089 INFO  ProgressMeter - Pocillopora_acuta_HIv1___Scaffold_000317F___length_736389:455810             12.8               3797000         296574.2
+12:33:30.241 INFO  ProgressMeter - Pocillopora_acuta_HIv1___Scaffold_000309F___length_719688:75086             13.0               3848000         296637.4
+12:33:40.456 INFO  ProgressMeter - Pocillopora_acuta_HIv1___Scaffold_000318F___length_708132:541340             13.1               3899000         296675.2
+12:33:50.469 INFO  ProgressMeter - Pocillopora_acuta_HIv1___Scaffold_000361F___length_694081:486875             13.3               3950000         296787.2
+12:34:00.615 INFO  ProgressMeter - Pocillopora_acuta_HIv1___Scaffold_000289F___length_675618:263577             13.5               4001000         296847.9
+12:34:10.665 INFO  ProgressMeter - Pocillopora_acuta_HIv1___Scaffold_000378F___length_646438:293055             13.6               4052000         296941.2
+12:34:20.709 INFO  ProgressMeter - Pocillopora_acuta_HIv1___Scaffold_000397F___length_630550:191219             13.8               4103000         297034.7
+12:34:30.784 INFO  ProgressMeter - Pocillopora_acuta_HIv1___Scaffold_000316F___length_620274:496846             14.0               4154000         297115.0
+12:34:40.795 INFO  ProgressMeter - Pocillopora_acuta_HIv1___Scaffold_000421F___length_599719:86372             14.1               4205000         297215.9
+12:34:50.955 INFO  ProgressMeter - Pocillopora_acuta_HIv1___Scaffold_000435F___length_583999:173598             14.3               4257000         297332.6
+12:35:01.155 INFO  ProgressMeter - Pocillopora_acuta_HIv1___Scaffold_000322F___length_563903:151484             14.5               4309000         297432.9
+12:35:11.327 INFO  ProgressMeter - Pocillopora_acuta_HIv1___Scaffold_000472F___length_550470:341112             14.7               4361000         297540.4
+12:35:21.456 INFO  ProgressMeter - Pocillopora_acuta_HIv1___Scaffold_000496F___length_527403:184991             14.8               4412000         297592.3
+12:35:31.493 INFO  ProgressMeter - Pocillopora_acuta_HIv1___Scaffold_000452F___length_506935:445608             15.0               4462000         297606.9
+12:35:41.574 INFO  ProgressMeter - Pocillopora_acuta_HIv1___Scaffold_000537F___length_489654:154191             15.2               4512000         297606.7
+12:35:51.743 INFO  ProgressMeter - Pocillopora_acuta_HIv1___Scaffold_000562F___length_467106:431497             15.3               4563000         297643.2
+12:36:01.858 INFO  ProgressMeter - Pocillopora_acuta_HIv1___Scaffold_000556F___length_448635:242712             15.5               4615000         297760.8
+12:36:11.877 INFO  ProgressMeter - Pocillopora_acuta_HIv1___Scaffold_000627F___length_403232:170589             15.7               4666000         297842.5
+12:36:21.941 INFO  ProgressMeter - Pocillopora_acuta_HIv1___Scaffold_000675F___length_370312:357074             15.8               4717000         297908.3
+12:36:32.083 INFO  ProgressMeter - Pocillopora_acuta_HIv1___Scaffold_000730F___length_343961:196426             16.0               4769000         298011.0
+12:36:42.170 INFO  ProgressMeter - Pocillopora_acuta_HIv1___Scaffold_000769F___length_333873:254321             16.2               4820000         298066.6
+12:36:52.200 INFO  ProgressMeter - Pocillopora_acuta_HIv1___Scaffold_000809F___length_314767:60079             16.3               4871000         298138.4
+12:37:02.377 INFO  ProgressMeter - Pocillopora_acuta_HIv1___Scaffold_000890F___length_286353:161999             16.5               4922000         298164.5
+12:37:12.543 INFO  ProgressMeter - Pocillopora_acuta_HIv1___Scaffold_000931F___length_266316:216292             16.7               4973000         298193.3
+12:37:22.588 INFO  ProgressMeter - Pocillopora_acuta_HIv1___Scaffold_001073F___length_215755:166754             16.8               5025000         298316.7
+12:37:32.626 INFO  ProgressMeter - Pocillopora_acuta_HIv1___Scaffold_001159F___length_189587:149246             17.0               5076000         298380.8
+12:37:42.782 INFO  ProgressMeter - Pocillopora_acuta_HIv1___Scaffold_001363F___length_140151:92778             17.2               5128000         298467.8
+12:37:52.078 INFO  ProgressMeter - Pocillopora_acuta_HIv1___Scaffold_001864F___length_27309:4710             17.3               5174648         298491.5
+12:37:52.078 INFO  ProgressMeter - Traversal complete. Processed 5174648 total variants in 17.3 minutes.
+12:37:52.143 INFO  SelectVariants - Shutting down engine
+[June 13, 2021 at 12:37:52 PM EDT] org.broadinstitute.hellbender.tools.walkers.variantutils.SelectVariants done. Elapsed time: 17.35 minutes.
+Runtime.totalMemory()=4940890112
+Using GATK jar /home/timothy/programs/gatk-4.2.0.0/gatk-package-4.2.0.0-local.jar
+Running:
+    java -Dsamjdk.use_async_io_read_samtools=false -Dsamjdk.use_async_io_write_samtools=true -Dsamjdk.use_async_io_write_tribble=false -Dsamjdk.compression_level=2 -jar /home/timothy/programs/gatk-4.2.0.0/gatk-package-4.2.0.0-local.jar SelectVariants --reference Pocillopora_acuta_HIv1.assembly.purged.fasta --variant GVCFall_SNPs_VarScores_filterPASSED_DPfilter.vcf --output GVCFall_SNPs_VarScores_filterPASSED_DPfilterNoCall.vcf --set-filtered-gt-to-nocall

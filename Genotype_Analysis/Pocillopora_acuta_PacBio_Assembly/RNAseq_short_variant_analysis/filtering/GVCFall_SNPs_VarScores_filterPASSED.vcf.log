@@ -1,0 +1,45 @@
+01:00:47.287 INFO  NativeLibraryLoader - Loading libgkl_compression.so from jar:file:/home/timothy/programs/gatk-4.2.0.0/gatk-package-4.2.0.0-local.jar!/com/intel/gkl/native/libgkl_compression.so
+Jun 13, 2021 1:00:47 AM shaded.cloud_nio.com.google.auth.oauth2.ComputeEngineCredentials runningOnComputeEngine
+INFO: Failed to detect whether we are running on Google Compute Engine.
+01:00:47.424 INFO  IndexFeatureFile - ------------------------------------------------------------
+01:00:47.425 INFO  IndexFeatureFile - The Genome Analysis Toolkit (GATK) v4.2.0.0
+01:00:47.425 INFO  IndexFeatureFile - For support and documentation go to https://software.broadinstitute.org/gatk/
+01:00:47.425 INFO  IndexFeatureFile - Executing as timothy@coral on Linux v5.4.0-72-generic amd64
+01:00:47.425 INFO  IndexFeatureFile - Java runtime: OpenJDK 64-Bit Server VM v11.0.11+9-Ubuntu-0ubuntu2.20.04
+01:00:47.425 INFO  IndexFeatureFile - Start Date/Time: June 13, 2021 at 1:00:47 AM EDT
+01:00:47.425 INFO  IndexFeatureFile - ------------------------------------------------------------
+01:00:47.425 INFO  IndexFeatureFile - ------------------------------------------------------------
+01:00:47.426 INFO  IndexFeatureFile - HTSJDK Version: 2.24.0
+01:00:47.426 INFO  IndexFeatureFile - Picard Version: 2.25.0
+01:00:47.426 INFO  IndexFeatureFile - Built for Spark Version: 2.4.5
+01:00:47.426 INFO  IndexFeatureFile - HTSJDK Defaults.COMPRESSION_LEVEL : 2
+01:00:47.426 INFO  IndexFeatureFile - HTSJDK Defaults.USE_ASYNC_IO_READ_FOR_SAMTOOLS : false
+01:00:47.426 INFO  IndexFeatureFile - HTSJDK Defaults.USE_ASYNC_IO_WRITE_FOR_SAMTOOLS : true
+01:00:47.426 INFO  IndexFeatureFile - HTSJDK Defaults.USE_ASYNC_IO_WRITE_FOR_TRIBBLE : false
+01:00:47.426 INFO  IndexFeatureFile - Deflater: IntelDeflater
+01:00:47.426 INFO  IndexFeatureFile - Inflater: IntelInflater
+01:00:47.426 INFO  IndexFeatureFile - GCS max retries/reopens: 20
+01:00:47.426 INFO  IndexFeatureFile - Requester pays: disabled
+01:00:47.426 INFO  IndexFeatureFile - Initializing engine
+01:00:47.426 INFO  IndexFeatureFile - Done initializing engine
+01:00:47.500 INFO  FeatureManager - Using codec VCFCodec to read file file:///scratch/timothy/projects/0020_Pocillopora_acuta_PacBio_Assembly/03_Analysis/2021_05_26/RNAseq_short_variant_analysis/filtering/GVCFall_SNPs_VarScores_filterPASSED.vcf
+01:00:47.521 INFO  ProgressMeter - Starting traversal
+01:00:47.521 INFO  ProgressMeter -        Current Locus  Elapsed Minutes     Records Processed   Records/Minute
+01:00:57.527 INFO  ProgressMeter - Pocillopora_acuta_HIv1___Scaffold_000020F___length_2467453:1920064              0.2                640000        3838848.3
+01:01:07.534 INFO  ProgressMeter - Pocillopora_acuta_HIv1___Scaffold_000049F___length_1801693:1527825              0.3               1359000        4074555.3
+01:01:17.542 INFO  ProgressMeter - Pocillopora_acuta_HIv1___Scaffold_000088F___length_1443323:1091508              0.5               2033000        4063291.1
+01:01:27.545 INFO  ProgressMeter - Pocillopora_acuta_HIv1___Scaffold_000139F___length_1092541:392040              0.7               2765000        4145013.0
+01:01:37.550 INFO  ProgressMeter - Pocillopora_acuta_HIv1___Scaffold_000249F___length_822133:283439              0.8               3501000        4198764.7
+01:01:47.552 INFO  ProgressMeter - Pocillopora_acuta_HIv1___Scaffold_000418F___length_586541:128471              1.0               4248000        4245806.3
+01:01:57.562 INFO  ProgressMeter - Pocillopora_acuta_HIv1___Scaffold_001017F___length_236914:153092              1.2               4999000        4282410.1
+01:01:59.836 INFO  ProgressMeter - Pocillopora_acuta_HIv1___Scaffold_001864F___length_27309:4710              1.2               5174648        4293422.9
+01:01:59.837 INFO  ProgressMeter - Traversal complete. Processed 5174648 total records in 1.2 minutes.
+01:01:59.893 INFO  IndexFeatureFile - Successfully wrote index to /scratch/timothy/projects/0020_Pocillopora_acuta_PacBio_Assembly/03_Analysis/2021_05_26/RNAseq_short_variant_analysis/filtering/GVCFall_SNPs_VarScores_filterPASSED.vcf.idx
+01:01:59.894 INFO  IndexFeatureFile - Shutting down engine
+[June 13, 2021 at 1:01:59 AM EDT] org.broadinstitute.hellbender.tools.IndexFeatureFile done. Elapsed time: 1.21 minutes.
+Runtime.totalMemory()=3674210304
+Tool returned:
+/scratch/timothy/projects/0020_Pocillopora_acuta_PacBio_Assembly/03_Analysis/2021_05_26/RNAseq_short_variant_analysis/filtering/GVCFall_SNPs_VarScores_filterPASSED.vcf.idx
+Using GATK jar /home/timothy/programs/gatk-4.2.0.0/gatk-package-4.2.0.0-local.jar
+Running:
+    java -Dsamjdk.use_async_io_read_samtools=false -Dsamjdk.use_async_io_write_samtools=true -Dsamjdk.use_async_io_write_tribble=false -Dsamjdk.compression_level=2 -jar /home/timothy/programs/gatk-4.2.0.0/gatk-package-4.2.0.0-local.jar IndexFeatureFile --input GVCFall_SNPs_VarScores_filterPASSED.vcf
